@@ -31,8 +31,6 @@ button {
 	align-items: center;
 	justify-content: space-between;
 }
-.header__img {
-}
 .header__search {
 	width: 57.5%;
 }
@@ -111,14 +109,10 @@ button {
 	box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
 	padding: 68px 0 68px 70px;
 }
-.promo__title {
-}
 .promo__title h2 {
 	font-weight: 700;
 	font-size: 39px;
 	line-height: 46px;
-}
-.promo__subtitle {	
 }
 .promo__subtitle p {
 	max-width: 638px;
@@ -143,8 +137,6 @@ button {
 	justify-content: space-between;
 	-ms-align-items: center;
 	align-items: center;
-}
-.heading__title {
 }
 .heading__title h2 {
 	margin: 0;
@@ -227,8 +219,6 @@ button {
 	align-items: center;
 	justify-content: space-between;
 }
-.card__title {
-}
 .card__title h3 {
 	margin: 0;
 	font-weight: bold;
@@ -271,8 +261,6 @@ button {
 .card__rating img {
 	margin-right: 7px;
 }
-.card__pay {
-}
 .card__pay:after {
 	content: '';
 	width: 5px;
@@ -282,8 +270,6 @@ button {
 	border-radius: 50%;
 	vertical-align: middle;
 	margin-left: 13px;
-}
-.card__pizza {
 }
 .btn__img_restr {
 	margin-bottom: -3px;
@@ -317,12 +303,6 @@ button {
 	justify-content: space-between;
 	-ms-align-items: center;
 	align-items: center;
-}
-.wrapper {
-}
-.footer__logo {
-}
-.logo {
 }
 .footer__nav {
 	display: inline-block;
@@ -444,8 +424,6 @@ button {
 	line-height: 32px;
 	margin-left: auto;
 	margin-right: 45px;
-}
-.modal__counters {
 }
 .modal__counter {
 	width: 41px;
@@ -730,6 +708,10 @@ button {
 	.modal__last_price {
 		padding: 12px 18px;
 		font-size: 18px;
+	}
+	.btn__restr:hover {
+		-webkit-box-shadow: none;
+		box-shadow: none;
 	}
 }
 
