@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #5ea5bd } 
+	</style>
+	<g id="окошки всплывающие">
+		<g id="спасибо">
+			<g id="крестик">
+				<path id="Прямоугольник 7 копия" class="shp0" d="M1.98 4.81L4.81 1.98L26.02 23.19L23.19 26.02L1.98 4.81ZM23.17 2.01L25.99 4.83L4.83 25.99L2.01 23.17L23.17 2.01Z" />
+			</g>
+		</g>
+	</g>
+</svg>
