@@ -58,9 +58,9 @@ $(document).ready(function() {
 	// Плавная прокрутка якоря =============================================================================================
     $('a[href^="#"], *[data-href^="#"]').on('click', function(e){
         e.preventDefault();
-        let t = 1800;
+        let t = 1300;
         let d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
-        $('html, body').stop().animate({ scrollTop: $(d).offset().top }, t);
+        $('html,body').stop().animate({ scrollTop: $(d).offset().top }, t);
     });
 
 	// инициализация и настройки slick слайдера с видеороликами =================================================================================
@@ -89,30 +89,6 @@ $(document).ready(function() {
 	      }
 	    }
 	  ]
-	});
-
-	// Фильтр для слайдера с видеороликами =============================================================================
-	let filter = $("[data-filter]");
-
-	filter.on("click", function(event) {
-		event.preventDefault();
-		
-		let cat = $(this).data('filter');
-
-		if (cat == 'all') {
-			$("[data-cat]").removeClass('hide')
-		} else {
-			$("[data-cat]").each(function() {
-
-			let workCat=$(this).data('cat');
-
-			if (workCat != cat) {
-				$(this).addClass('hide');
-			} else {
-				$(this).removeClass('hide');
-			}
-		});
-		}
 	});
 
 	// инициализация и настройки slick слайдера с партнерами =================================================================================
