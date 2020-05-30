@@ -1,35 +1,48 @@
 $(document).ready(function() {
+	// Переменные =============================================================================================================================
+	const navItems = $('.nav__items'),
+	      body = $('body'),
+	      fixedMenu = $('.fixed__menu'),
+	      fixedClose = $('.fixed__close'),
+	      thanksPopup = $('.thanks-popup');
 
 	// Функции =============================================================================================================================
 	// Функция для открытия меню бургера 
 	function openMenuBurger() {
-		$('.nav__items').addClass('nav__left0');
-		$('body').addClass('blocked');  // блокирование скролла страницы при открытом меню
-		$('.fixed__menu').css('display', 'none');
-		$('.fixed__close').css('display', 'block');
+		navItems.addClass('nav__left0');
+		body.addClass('blocked');  // блокирование скролла страницы при открытом меню
+		fixedMenu.css('display', 'none');
+		fixedClose.css('display', 'block');
 	}
 
 	// Функция для закрытия меню бургера
 	function closeMenuBurger() {
-		$('.nav__items').removeClass('nav__left0');
-		$('body').removeClass('blocked');  // разрешаю скроллится странице при закрытии меню
-		$('.fixed__menu').css('display', 'block');
-		$('.fixed__close').css('display', 'none');
+		navItems.removeClass('nav__left0');
+		body.removeClass('blocked');  // разрешаю скроллится странице при закрытии меню
+		fixedMenu.css('display', 'block');
+		fixedClose.css('display', 'none');
+	}
+
+	// Функция для открытия попапов
+	function openPopups(popup) {
+		$(popup).removeClass('hide');
+		body.addClass('blocked');
+		return popup;
 	}
 
 	// Функция для закрытия попапов
 	function closePopups() {
 		$('.popup').addClass('hide');
-		$('body').removeClass('blocked');
+		body.removeClass('blocked');
 	}
 
 	// Открытие меню при клике на меню бургер =====================================================================================
-	$('.fixed__menu').on('click', function () {
+	fixedMenu.on('click', function () {
 		openMenuBurger();
 	});
 
 	// Закрытие меню при клике на крестик =======================================================================================
-	$('.fixed__close').on('click', function () {
+	fixedClose.on('click', function () {
 		closeMenuBurger();
 	});
 
@@ -45,9 +58,9 @@ $(document).ready(function() {
 	// Плавная прокрутка якоря =============================================================================================
     $('a[href^="#"], *[data-href^="#"]').on('click', function(e){
         e.preventDefault();
-        var t = 1800;
-        var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
-        $('html,body').stop().animate({ scrollTop: $(d).offset().top }, t);
+        let t = 1800;
+        let d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+        $('html, body').stop().animate({ scrollTop: $(d).offset().top }, t);
     });
 
 	// инициализация и настройки slick слайдера с видеороликами =================================================================================
@@ -84,16 +97,16 @@ $(document).ready(function() {
 	filter.on("click", function(event) {
 		event.preventDefault();
 		
-		let cat=$(this).data('filter');
+		let cat = $(this).data('filter');
 
-		if (cat=='all') {
+		if (cat == 'all') {
 			$("[data-cat]").removeClass('hide')
 		} else {
 			$("[data-cat]").each(function() {
 
 			let workCat=$(this).data('cat');
 
-			if (workCat!=cat) {
+			if (workCat != cat) {
 				$(this).addClass('hide');
 			} else {
 				$(this).removeClass('hide');
@@ -139,21 +152,18 @@ $(document).ready(function() {
 	// скрипты для модальных окон ================================================================================================
 	// открытие модального окна для заказа звонка
 	$('.fixed__btn, .btn-tariffs').on('click', function () {
-		$('.short-popup').removeClass('hide');
-		$('body').addClass('blocked');
+		openPopups('.short-popup');
 	});
 
 	// открытие модального окна для заказа юриста
 	$('.lawyer__btn, .btn-tariffs-buy').on('click', function () {
-		$('.long-popup').removeClass('hide');
-		$('body').addClass('blocked');
+		openPopups('.long-popup');
 	});
 
 	// открытие модального окна для доп. инфо-ии
 	$('.info-advantage__btn').on('click', function (event) {
 		event.preventDefault();
-		$('.more-popup').removeClass('hide');
-		$('body').addClass('blocked');
+		openPopups('.more-popup');
 	});
 
 	// закрытие модальных окон при клике на крестик
@@ -181,20 +191,49 @@ $(document).ready(function() {
     $('input[type="tel"]').mask('+7 (999) 999-99-99');
 
     //E-mail Ajax Send ==========================================================================================================
-	$('form').submit(function() { //Change
-		var th = $(this);
+	$('#contact-block__form').submit(function() {
+		let th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "php/mail.php", //Change
+			url: "php/mail.php",
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			openPopups(thanksPopup);
+			th.trigger("reset");
 			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
+				closePopups();
+			}, 4000);
 		});
 		return false;
+	});
+
+	//E-mail Ajax Send для форм в попапе ==========================================================================================================
+	$('#long-popup__form, #short-popup__form').submit(function() {
+		let th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "php/mail.php",
+			data: th.serialize()
+		}).done(function() {
+			closePopups();
+			openPopups(thanksPopup);
+			th.trigger("reset");
+			setTimeout(function() {
+				closePopups();
+			}, 4000);
+		});
+		return false;
+	});
+
+	// Скрипт для кнопки наверх ==========================================================================================================
+	$(window).scroll(function() {
+		let btnUp = $('.btn-up');
+
+		if ($(window).scrollTop() > 500) {
+		   btnUp.removeClass('hide');
+		 } else {
+		   btnUp.addClass('hide');
+		 }
 	});
 
 });

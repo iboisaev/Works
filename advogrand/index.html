@@ -12,7 +12,7 @@
 <body>
 	<div class="wrapper">
 		<!-- header -->
-		<header class="header">
+		<header class="header" id="header">
 			<div class="header__menu fixed">
 				<div class="container">
 					<div class="fixed__row">
@@ -54,7 +54,8 @@
 					</div>
 				</div>
 			</div>
-		</header>		<!-- main content -->
+		</header>		
+		<!-- main content -->
 		<main class="main">
 			<!-- lawyer -->
 			<section class="lawyer" id="lawyer">
@@ -475,10 +476,10 @@
 				<div class="contact-block__form form">
 					<div class="container">
 						<h3 class="form__title">Напишите нам письмо или задайте свой вопрос</h3>
-						<form class="form__form">
+						<form class="form__form" id="contact-block__form">
 							<!-- Hidden Required Fields -->
 							<input type="hidden" name="project_name" value="Advogrand">
-							<input type="hidden" name="admin_email" value="iboisaev@mail.ru">
+							<input type="hidden" name="admin_email" value="samirsaev6@gmail.com">
 							<input type="hidden" name="form_subject" value="Заказать звонок консультанта">
 							<div class="form__section">
 								<label for="name" class="form__label">Введите своё имя</label>
@@ -490,7 +491,7 @@
 							</div>
 							<div class="form__section">
 								<label for="message" class="form__label">Сообщение или вопрос</label>
-								<textarea name="message" name="Сообщение" class="form__input form__textarea" id="message" minlength="5" maxlength="120" required></textarea>
+								<textarea name="Сообщение" class="form__input form__textarea" id="message" minlength="5" maxlength="150" required></textarea>
 							</div>
 							<button class="form__btn btn">Заказать звонок консультанта</button>
 							<p class="form__text">Перезвоним вам в течении 5 минут</p>
@@ -530,18 +531,23 @@
 					</div>
 				</div>
 			</div>
-		</footer>		<!-- попап для заказа звонка -->
+		</footer>		
+		<!-- попап для заказа звонка -->
 		<div class="popup short-popup hide">
 			<div class="popup__body short-popup__form form">
 				<h3 class="form__title">Оставьте свой номер и мы свяжемся с вами</h3>
-				<form class="form__form">
+				<form class="form__form" id="short-popup__form">
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Advogrand">
+					<input type="hidden" name="admin_email" value="samirsaev6@gmail.com">
+					<input type="hidden" name="form_subject" value="Заказать звонок консультанта">
 					<div class="form__section">
 						<label for="nameShortPopup" class="form__label">Введите своё имя</label>
-						<input type="name" class="form__input" id="nameShortPopup">
+						<input type="name" name="Имя" class="form__input" id="nameShortPopup" minlength="2" pattern="[a-zA-Zа-яА-ЯёЁ ]+" required>
 					</div>
 					<div class="form__section">
 						<label for="messageShortPopup" class="form__label">Сообщение или вопрос</label>
-						<textarea name="message" class="form__input form__textarea" id="messageShortPopup"></textarea>
+						<textarea name="Сообщение" class="form__input form__textarea" id="messageShortPopup" minlength="5" maxlength="150" required></textarea>
 					</div>
 					<button class="form__btn btn">Заказать звонок консультанта</button>
 					<p class="form__text">Перезвоним вам в течении 5 минут</p>
@@ -555,18 +561,22 @@
 		<div class="popup long-popup hide">
 			<div class="popup__body long-popup__form form">
 				<h3 class="form__title">Оставьте свой номер и мы свяжемся с вами</h3>
-				<form class="form__form">
+				<form class="form__form" id="long-popup__form">
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Advogrand">
+					<input type="hidden" name="admin_email" value="samirsaev6@gmail.com">
+					<input type="hidden" name="form_subject" value="Заказать звонок консультанта">
 					<div class="form__section">
 						<label for="nameLongPopup" class="form__label">Введите своё имя</label>
-						<input type="name" class="form__input" id="nameLongPopup">
+						<input type="name" name="Имя" class="form__input" id="nameLongPopup" minlength="2" pattern="[a-zA-Zа-яА-ЯёЁ ]+" required>
 					</div>
 					<div class="form__section">
 								<label for="telLongPopup" class="form__label">Ваш номер телефона</label>
-								<input type="tel" class="form__input" id="telLongPopup">
+								<input type="tel" name="Телефон" class="form__input" id="telLongPopup">
 							</div>
 					<div class="form__section">
 						<label for="messageLongPopup" class="form__label">Сообщение или вопрос</label>
-						<textarea name="message" class="form__input form__textarea" id="messageLongPopup"></textarea>
+						<textarea name="Сообщение" class="form__input form__textarea" id="messageLongPopup" minlength="5" maxlength="150" required></textarea>
 					</div>
 					<button class="form__btn btn">Заказать звонок консультанта</button>
 					<p class="form__text">Перезвоним вам в течении 5 минут</p>
@@ -598,13 +608,17 @@
 				</button>
 			</div>
 		</div>
+		<!-- Кнопка наверх -->
+		<a href="#header" class="btn-up hide">
+			<img src="img/icons/arrow-up.svg" class="btn-up__arrow">
+		</a>
 	</div>
 	<!-- scripts -->
 	<!-- jquery -->
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 	<!-- slick slider -->
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<!-- lazy load xt library -->
+	<!-- lazy load xt libraries -->
 	<script src="js/jquery.lazyloadxt.min.js"></script>
 	<script src="js/jquery.lazyloadxt.extra.min.js"></script>
 	<!-- mask for inputs -->
