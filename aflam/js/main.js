@@ -22,6 +22,7 @@ doc.addEventListener('DOMContentLoaded', function () {
 		iconClose = doc.querySelector('.icon--close'),
 		menuBurger = doc.querySelector('.menu-burger'),
 		btnUp = doc.querySelector('.btn-up'),
+		dropdown = doc.querySelectorAll('.dropdown'),
 		lazyAnchor = doc.querySelectorAll('[data-href^="#"]'),
 		form = doc.querySelectorAll('.form'),
 		thanksPopup = doc.querySelector('.thanks-popup'),
@@ -46,16 +47,6 @@ doc.addEventListener('DOMContentLoaded', function () {
 	// 
 	if (window.innerWidth >= 768) {
 		header.classList.add('lock-padding');
-	};
-
-	// function ibg for bg-images
-	function ibg(){
-		let ibg = doc.querySelectorAll(".ibg");
-		for (let i = 0; i < ibg.length; i++) {
-			if(ibg[i].querySelector('img')){
-				ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('src')+')';
-			}
-		}
 	};
 
 	// Блокировка скроллбара
@@ -165,6 +156,29 @@ doc.addEventListener('DOMContentLoaded', function () {
 		 }
 	});
 
+	// For customer dropdown
+	dropdown.forEach(function(item) {
+		const dropdownItems = item.querySelector('.dropdown__items'),
+			dropdownItem = item.querySelectorAll('.dropdown__item'),
+			dropdownText = item.querySelector('.dropdown__text');
+		
+		item.addEventListener('mouseover', function(e) {
+			dropdownItems.classList.add('active');
+		});
+
+		item.addEventListener('mouseout', function(e) {
+			dropdownItems.classList.remove('active');
+		});
+		
+		dropdownItem.forEach(function(item) {
+			item.addEventListener('click', function() {
+				dropdownText.innerText = item.innerText;
+				dropdownItems.classList.remove('active');
+			});
+		});
+	});
+
+
 	// 
 	// form.forEach(function (item) {
 	// 	item.addEventListener('submit', function() {
@@ -185,75 +199,78 @@ doc.addEventListener('DOMContentLoaded', function () {
 	// });
 
 	// инициализация swiper слайдера
-	var mySwiper = new Swiper('.slider', {
-		// Optional parameters
-		slidesPerView: 4,
-		spaceBetween: 30,
-		loop: true,
-		keyboard: {
-			enabled: true,
-		},
+	if (doc.querySelector('.slider')) {
+		var mySwiper = new Swiper('.slider', {
+			// Optional parameters
+			slidesPerView: 4,
+			spaceBetween: 30,
+			loop: true,
+			keyboard: {
+				enabled: true,
+			},
 
-		// pagination
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		},
+			// pagination
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
 
-		// Navigation arrows
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
 
-		// breakpoints
-		breakpoints: {
-			10: {
-				slidesPerView: 1,
-				spaceBetween: 0,
-			},
-			600: {
-				slidesPerView: 2,
-				spaceBetween: 20,
-			},
-			993: {
-				slidesPerView: 3,
-				spaceBetween: 20,
-			},
-			1231: {
-				slidesPerView: 4,
-				spaceBetween: 30,
-			},
-		}
-	});
+			// breakpoints
+			breakpoints: {
+				10: {
+					slidesPerView: 1,
+					spaceBetween: 0,
+				},
+				600: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				993: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+				},
+				1231: {
+					slidesPerView: 4,
+					spaceBetween: 30,
+				},
+			}
+		});
+	}
 
 	// инициализация другого swiper слайдера
-	var mySwiper2 = new Swiper('.reviews__slider', {
-		// Optional parameters
-		slidesPerView: 1,
-		loop: true,
-		autoHeight: true,
+	if (doc.querySelector('.reviews__slider')) {
+		var mySwiper2 = new Swiper('.reviews__slider', {
+			// Optional parameters
+			slidesPerView: 1,
+			loop: true,
+			autoHeight: true,
 
-		autoplay: {
-			delay: 5000,
-		},
+			autoplay: {
+				delay: 5000,
+			},
 
-		// pagination
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		}
-	});
+			// pagination
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			}
+		});
+	}
 
-	// инициализация video JS
-	let player = videojs('my-video', {
-		plugins: {
-			hotkeys: {}
-		}
-	});
-
-	// запуск функции ibg
-	ibg();
+	// инициализация video JS, после проверки на наличие
+	if (doc.querySelector('#my-video')) {
+		let player = videojs('my-video', {
+			plugins: {
+				hotkeys: {}
+			}
+		});
+	}
 
 });
 

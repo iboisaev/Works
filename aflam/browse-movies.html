@@ -7,12 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- swiper slider -->
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-	<!-- video JS -->
-	<link href="https://vjs.zencdn.net/7.8.3/video-js.css" rel="stylesheet" />
 	<!-- Кастомный файл стилей -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/browse-movies.css">
 	<link rel="shortcut icon" href="img/logo.svg">
-	<title>Aflam - Purchase HD movies at the smallest size</title>
+	<title>Aflam - Browse Movies</title>
 </head>
 <body>
 	<!-- preloader -->
@@ -31,10 +29,10 @@
 						<nav class="header__menu">
 							<ul class="header__list">
 								<li class="header__item">
-									<a class="header__link header__link--active" href="index.html">Home</a>
+									<a class="header__link" href="index.html">Home</a>
 								</li>
 								<li class="header__item">
-									<a class="header__link" href="browse-movies.html">Browse movies</a>
+									<a class="header__link header__link--active" href="browse-movies.html">Browse movies</a>
 								</li>
 								<li class="header__item">
 									<a class="header__link" href="#">Blog</a>
@@ -70,9 +68,7 @@
 				</div>
 			</div>
 		</header>
-		<!-- main -->
-		<main class="main">
-			<!-- hero -->
+		<!-- hero -->
 			<section class="hero ibg" style="background-image: url('img/main-bg.png')">
 				<div class="hero__container container">
 					<h1 class="hero__title">Purchase HD movies at the smallest size</h1>
@@ -82,19 +78,64 @@
 						<a class="hero__link" href="#">Latest movies</a>
 					</div>
 				</div>
-			</section>			<!-- downloads -->
-			<section class="downloads movies">
-				<div class="movies__container container">
-					<div class="movies__top">
-						<h2 class="movies__title title">Popular downloads</h2>
-						<p class="movies__subtitle">the most downloaded movies</p>
+			</section>
+		<!-- main -->
+			<main class="main">
+				<section class="filter">
+					<div class="filter__container container">
+						<div class="filter__row">
+							<div class="filter__item dropdown">
+								<span class="dropdown__text">Quality</span>
+								<svg class="dropdown__icon icon icon--arrow icon--arrow-right">
+									<use xlink:href="img/sprite.svg#icon--arrow-right"></use>
+								</svg>
+								<ul class="dropdown__items">
+									<li class="dropdown__item">3D</li>
+									<li class="dropdown__item">1080p</li>
+									<li class="dropdown__item">720p</li>
+								</ul>
+							</div>
+							<div class="filter__item dropdown">
+								<span class="dropdown__text">Genre</span>
+								<svg class="dropdown__icon icon icon--arrow icon--arrow-right">
+									<use xlink:href="img/sprite.svg#icon--arrow-right"></use>
+								</svg>
+								<ul class="dropdown__items">
+									<li class="dropdown__item">Action</li>
+									<li class="dropdown__item">Crime</li>
+									<li class="dropdown__item">Adventure</li>
+								</ul>
+							</div>
+							<div class="filter__item dropdown">
+								<span class="dropdown__text">Rating</span>
+								<svg class="dropdown__icon icon icon--arrow icon--arrow-right">
+									<use xlink:href="img/sprite.svg#icon--arrow-right"></use>
+								</svg>
+								<ul class="dropdown__items">
+									<li class="dropdown__item">1+</li>
+									<li class="dropdown__item">2+</li>
+									<li class="dropdown__item">3+</li>
+									<li class="dropdown__item">4+</li>
+									<li class="dropdown__item">5+</li>
+								</ul>
+							</div>
+							<div class="filter__item dropdown">
+								<span class="dropdown__text">Language</span>
+								<svg class="dropdown__icon icon icon--arrow icon--arrow-right">
+									<use xlink:href="img/sprite.svg#icon--arrow-right"></use>
+								</svg>
+								<ul class="dropdown__items">
+									<li class="dropdown__item">En</li>
+									<li class="dropdown__item">Ru</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-					<!-- Slider main container -->
-					<div class="movies__slider slider swiper-container">
-					    <!-- Additional required wrapper -->
-					    <div class="slider__wrapper swiper-wrapper">
-					        <!-- Slides -->
-					        <div class="slider__slide swiper-slide item">
+				</section>
+				<section class="browse-movies">
+					<div class="browse-movies__container container">
+						<div class="browse-movies__items">
+							<div class="browse-movies__item item">
 					        	<a href="movie-info.html" class="item__img">
 					        		<img data-src="img/slider/lucy.png" alt="Lucy">
 					        		<div class="item__tags">
@@ -144,296 +185,7 @@
 					        		</button>
 					        	</div>
 					        </div>
-					        <div class="slider__slide swiper-slide item">
-					        	<a href="movie-info.html" class="item__img">
-					        		<img data-src="img/slider/spider.png" alt="Spider-man">
-					        		<div class="item__tags">
-					        			<button class="item__tag-btn btn">
-					        				<svg class="item__star icon icon--tag">
-						        				<use xlink:href="img/sprite.svg#icon--tag"></use>
-						        			</svg>
-					        			</button>
-					        			<p class="item__tag-list">Action, Crime, Adventure</p>
-					        		</div>
-					        	</a>
-					        	<div class="item__body">
-					        		<h3 class="item__title">
-					        			<a href="movie-info.html">The amazing Spiderman</a>
-					        		</h3>
-					        		<div class="item__stars">
-					        			<svg class="item__star icon icon--star">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star icon--star--0">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star icon--star--0">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        		</div>
-					        		<div class="item__info">
-					        			<p class="item__price price">&#36;20</p>
-					        			<p class="item__price item__price--before price--before">&#36;30</p>
-					        			<div class="item__qualities">
-					        				<span class="item__quality quality">1080p</span>
-					        				<span class="item__quality quality">720p</span>
-					        			</div>
-					        		</div>
-					        		<button class="item__btn btn btn-cart">
-					        			<svg class="item__cart-icon icon icon--cart">
-					        				<use xlink:href="img/sprite.svg#icon--cart"></use>
-					        			</svg>
-					        			Add to cart
-					        		</button>
-					        	</div>
-					        </div>
-					        <div class="slider__slide swiper-slide item">
-					        	<a href="movie-info.html" class="item__img">
-					        		<img data-src="img/slider/divergent.png" alt="Divergent">
-					        		<div class="item__tags">
-					        			<button class="item__tag-btn btn">
-					        				<svg class="item__star icon icon--tag">
-						        				<use xlink:href="img/sprite.svg#icon--tag"></use>
-						        			</svg>
-					        			</button>
-					        			<p class="item__tag-list">Action, Crime, Adventure</p>
-					        		</div>
-					        	</a>
-					        	<div class="item__body">
-					        		<h3 class="item__title">
-					        			<a href="movie-info.html">Divergent - 2014</a>
-					        		</h3>
-					        		<div class="item__stars">
-					        			<svg class="item__star icon icon--star">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star icon--star--0">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star icon--star--0">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        		</div>
-					        		<div class="item__info">
-					        			<p class="item__price price">&#36;20</p>
-					        			<p class="item__price item__price--before price--before">&#36;30</p>
-					        			<div class="item__qualities">
-					        				<span class="item__quality quality">3D</span>
-					        				<span class="item__quality quality">1080p</span>
-					        				<span class="item__quality quality">720p</span>
-					        			</div>
-					        		</div>
-					        		<button class="item__btn btn btn-cart">
-					        			<svg class="item__cart-icon icon icon--cart">
-					        				<use xlink:href="img/sprite.svg#icon--cart"></use>
-					        			</svg>
-					        			Add to cart
-					        		</button>
-					        	</div>
-					        </div>
-					        <div class="slider__slide swiper-slide item">
-					        	<a href="movie-info.html" class="item__img">
-					        		<img data-src="img/slider/hunger-game.png" alt="The hunger games">
-					        		<div class="item__tags">
-					        			<button class="item__tag-btn btn">
-					        				<svg class="item__star icon icon--tag">
-						        				<use xlink:href="img/sprite.svg#icon--tag"></use>
-						        			</svg>
-					        			</button>
-					        			<p class="item__tag-list">Action, Crime, Adventure</p>
-					        		</div>
-					        	</a>
-					        	<div class="item__body">
-					        		<h3 class="item__title">
-					        			<a href="movie-info.html">The hunger games</a>
-					        		</h3>
-					        		<div class="item__stars">
-					        			<svg class="item__star icon icon--star">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star icon--star--0">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star icon--star--0">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        		</div>
-					        		<div class="item__info">
-					        			<p class="item__price price">&#36;20</p>
-					        			<p class="item__price item__price--before price--before">&#36;30</p>
-					        			<div class="item__qualities">
-					        				<span class="item__quality quality">3D</span>
-					        				<span class="item__quality quality">1080p</span>
-					        				<span class="item__quality quality">720p</span>
-					        			</div>
-					        		</div>
-					        		<button class="item__btn btn btn-cart">
-					        			<svg class="item__cart-icon icon icon--cart">
-					        				<use xlink:href="img/sprite.svg#icon--cart"></use>
-					        			</svg>
-					        			Add to cart
-					        		</button>
-					        	</div>
-					        </div>
-					        <div class="slider__slide swiper-slide item">
-					        	<a href="movie-info.html" class="item__img">
-					        		<img data-src="img/slider/divergent.png" alt="Divergent">
-					        		<div class="item__tags">
-					        			<button class="item__tag-btn btn">
-					        				<svg class="item__star icon icon--tag">
-						        				<use xlink:href="img/sprite.svg#icon--tag"></use>
-						        			</svg>
-					        			</button>
-					        			<p class="item__tag-list">Action, Crime, Adventure</p>
-					        		</div>
-					        	</a>
-					        	<div class="item__body">
-					        		<h3 class="item__title">
-					        			<a href="movie-info.html">Divergent - 2014</a>
-					        		</h3>
-					        		<div class="item__stars">
-					        			<svg class="item__star icon icon--star">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star icon--star--0">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star icon--star--0">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        		</div>
-					        		<div class="item__info">
-					        			<p class="item__price price">&#36;20</p>
-					        			<p class="item__price item__price--before price--before">&#36;30</p>
-					        			<div class="item__qualities">
-					        				<span class="item__quality quality">3D</span>
-					        				<span class="item__quality quality">1080p</span>
-					        				<span class="item__quality quality">720p</span>
-					        			</div>
-					        		</div>
-					        		<button class="item__btn btn btn-cart">
-					        			<svg class="item__cart-icon icon icon--cart">
-					        				<use xlink:href="img/sprite.svg#icon--cart"></use>
-					        			</svg>
-					        			Add to cart
-					        		</button>
-					        	</div>
-					        </div>
-					        <div class="slider__slide swiper-slide item">
-					        	<a href="movie-info.html" class="item__img">
-					        		<img data-src="img/slider/hunger-game.png" alt="The hunger games">
-					        		<div class="item__tags">
-					        			<button class="item__tag-btn btn">
-					        				<svg class="item__star icon icon--tag">
-						        				<use xlink:href="img/sprite.svg#icon--tag"></use>
-						        			</svg>
-					        			</button>
-					        			<p class="item__tag-list">Action, Crime, Adventure</p>
-					        		</div>
-					        	</a>
-					        	<div class="item__body">
-					        		<h3 class="item__title">
-					        			<a href="movie-info.html">The hunger games</a>
-					        		</h3>
-					        		<div class="item__stars">
-					        			<svg class="item__star icon icon--star">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star icon--star--0">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star icon--star--0">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        		</div>
-					        		<div class="item__info">
-					        			<p class="item__price price">&#36;20</p>
-					        			<p class="item__price item__price--before price--before">&#36;30</p>
-					        			<div class="item__qualities">
-					        				<span class="item__quality quality">3D</span>
-					        				<span class="item__quality quality">1080p</span>
-					        				<span class="item__quality quality">720p</span>
-					        			</div>
-					        		</div>
-					        		<button class="item__btn btn btn-cart">
-					        			<svg class="item__cart-icon icon icon--cart">
-					        				<use xlink:href="img/sprite.svg#icon--cart"></use>
-					        			</svg>
-					        			Add to cart
-					        		</button>
-					        	</div>
-					        </div>
-					    </div>
-						<div class="slider__bottom">
-							<!-- pagination -->
-							<div class="slider__pagination pagination swiper-pagination"></div>
-							<!-- navigation buttons -->
-							<div class="slider__btns">
-								<div class="slider__btn btn swiper-button-prev">
-									<svg class="slider__icon icon icon--arrow">
-				        				<use xlink:href="img/sprite.svg#icon--arrow-left"></use>
-				        			</svg>
-								</div>
-								<div class="slider__btn btn swiper-button-next">
-									<svg class="slider__icon icon icon--arrow">
-				        				<use xlink:href="img/sprite.svg#icon--arrow-right"></use>
-				        			</svg>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- video-block -->
-			<section class="video-block">
-				<video class="video-block__video video-js" id="my-video" controls preload="auto" data-setup="{}">
-					<source src="video/greenland.webm" type="video/webm">
-					<source src="video/greenland.mp4" type="video/mp4">
-				</video>
-			</section>
-			<!-- lastest -->
-			<section class="lastest movies">
-				<div class="movies__container container">
-					<div class="movies__top">
-						<h2 class="movies__title title">Latest Movies</h2>
-						<p class="movies__subtitle">the latest movies are here</p>
-					</div>
-					<!-- Slider main container -->
-					<div class="movies__slider slider swiper-container">
-					    <!-- Additional required wrapper -->
-					    <div class="slider__wrapper swiper-wrapper">
-					        <!-- Slides -->
-					        <div class="slider__slide swiper-slide item">
+					        <div class="browse-movies__item item">
 					        	<a href="movie-info.html" class="item__img">
 					        		<img data-src="img/slider/lucy.png" alt="Lucy">
 					        		<div class="item__tags">
@@ -483,9 +235,9 @@
 					        		</button>
 					        	</div>
 					        </div>
-					        <div class="slider__slide swiper-slide item">
+					        <div class="browse-movies__item item">
 					        	<a href="movie-info.html" class="item__img">
-					        		<img data-src="img/slider/spider.png" alt="Spider-man">
+					        		<img data-src="img/slider/lucy.png" alt="Lucy">
 					        		<div class="item__tags">
 					        			<button class="item__tag-btn btn">
 					        				<svg class="item__star icon icon--tag">
@@ -497,56 +249,7 @@
 					        	</a>
 					        	<div class="item__body">
 					        		<h3 class="item__title">
-					        			<a href="movie-info.html">The amazing Spiderman</a>
-					        		</h3>
-					        		<div class="item__stars">
-					        			<svg class="item__star icon icon--star">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star icon--star--0">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        			<svg class="item__star icon icon--star icon--star--0">
-					        				<use xlink:href="img/sprite.svg#icon--star"></use>
-					        			</svg>
-					        		</div>
-					        		<div class="item__info">
-					        			<p class="item__price price">&#36;20</p>
-					        			<p class="item__price item__price--before price--before">&#36;30</p>
-					        			<div class="item__qualities">
-					        				<span class="item__quality quality">1080p</span>
-					        				<span class="item__quality quality">720p</span>
-					        			</div>
-					        		</div>
-					        		<button class="item__btn btn btn-cart">
-					        			<svg class="item__cart-icon icon icon--cart">
-					        				<use xlink:href="img/sprite.svg#icon--cart"></use>
-					        			</svg>
-					        			Add to cart
-					        		</button>
-					        	</div>
-					        </div>
-					        <div class="slider__slide swiper-slide item">
-					        	<a href="movie-info.html" class="item__img">
-					        		<img data-src="img/slider/divergent.png" alt="Divergent">
-					        		<div class="item__tags">
-					        			<button class="item__tag-btn btn">
-					        				<svg class="item__star icon icon--tag">
-						        				<use xlink:href="img/sprite.svg#icon--tag"></use>
-						        			</svg>
-					        			</button>
-					        			<p class="item__tag-list">Action, Crime, Adventure</p>
-					        		</div>
-					        	</a>
-					        	<div class="item__body">
-					        		<h3 class="item__title">
-					        			<a href="movie-info.html">Divergent - 2014</a>
+					        			<a href="movie-info.html">Lucy - 2014</a>
 					        		</h3>
 					        		<div class="item__stars">
 					        			<svg class="item__star icon icon--star">
@@ -582,9 +285,9 @@
 					        		</button>
 					        	</div>
 					        </div>
-					        <div class="slider__slide swiper-slide item">
+					        <div class="browse-movies__item item">
 					        	<a href="movie-info.html" class="item__img">
-					        		<img data-src="img/slider/hunger-game.png" alt="The hunger games">
+					        		<img data-src="img/slider/lucy.png" alt="Lucy">
 					        		<div class="item__tags">
 					        			<button class="item__tag-btn btn">
 					        				<svg class="item__star icon icon--tag">
@@ -596,7 +299,7 @@
 					        	</a>
 					        	<div class="item__body">
 					        		<h3 class="item__title">
-					        			<a href="movie-info.html">The hunger games</a>
+					        			<a href="movie-info.html">Lucy - 2014</a>
 					        		</h3>
 					        		<div class="item__stars">
 					        			<svg class="item__star icon icon--star">
@@ -632,9 +335,9 @@
 					        		</button>
 					        	</div>
 					        </div>
-					        <div class="slider__slide swiper-slide item">
+					        <div class="browse-movies__item item">
 					        	<a href="movie-info.html" class="item__img">
-					        		<img data-src="img/slider/divergent.png" alt="Divergent">
+					        		<img data-src="img/slider/lucy.png" alt="Lucy">
 					        		<div class="item__tags">
 					        			<button class="item__tag-btn btn">
 					        				<svg class="item__star icon icon--tag">
@@ -646,7 +349,7 @@
 					        	</a>
 					        	<div class="item__body">
 					        		<h3 class="item__title">
-					        			<a href="movie-info.html">Divergent - 2014</a>
+					        			<a href="movie-info.html">Lucy - 2014</a>
 					        		</h3>
 					        		<div class="item__stars">
 					        			<svg class="item__star icon icon--star">
@@ -682,9 +385,9 @@
 					        		</button>
 					        	</div>
 					        </div>
-					        <div class="slider__slide swiper-slide item">
+					        <div class="browse-movies__item item">
 					        	<a href="movie-info.html" class="item__img">
-					        		<img data-src="img/slider/hunger-game.png" alt="The hunger games">
+					        		<img data-src="img/slider/lucy.png" alt="Lucy">
 					        		<div class="item__tags">
 					        			<button class="item__tag-btn btn">
 					        				<svg class="item__star icon icon--tag">
@@ -696,7 +399,7 @@
 					        	</a>
 					        	<div class="item__body">
 					        		<h3 class="item__title">
-					        			<a href="movie-info.html">The hunger games</a>
+					        			<a href="movie-info.html">Lucy - 2014</a>
 					        		</h3>
 					        		<div class="item__stars">
 					        			<svg class="item__star icon icon--star">
@@ -732,115 +435,521 @@
 					        		</button>
 					        	</div>
 					        </div>
-					    </div>
-						<div class="slider__bottom">
-							<!-- pagination -->
-							<div class="slider__pagination pagination swiper-pagination"></div>
-							<!-- navigation buttons -->
-							<div class="slider__btns">
-								<div class="slider__btn btn swiper-button-prev">
-									<svg class="slider__icon icon icon--arrow">
-				        				<use xlink:href="img/sprite.svg#icon--arrow-left"></use>
-				        			</svg>
-								</div>
-								<div class="slider__btn btn swiper-button-next">
-									<svg class="slider__icon icon icon--arrow">
-				        				<use xlink:href="img/sprite.svg#icon--arrow-right"></use>
-				        			</svg>
-								</div>
-							</div>
+					        <div class="browse-movies__item item">
+					        	<a href="movie-info.html" class="item__img">
+					        		<img data-src="img/slider/lucy.png" alt="Lucy">
+					        		<div class="item__tags">
+					        			<button class="item__tag-btn btn">
+					        				<svg class="item__star icon icon--tag">
+						        				<use xlink:href="img/sprite.svg#icon--tag"></use>
+						        			</svg>
+					        			</button>
+					        			<p class="item__tag-list">Action, Crime, Adventure</p>
+					        		</div>
+					        	</a>
+					        	<div class="item__body">
+					        		<h3 class="item__title">
+					        			<a href="movie-info.html">Lucy - 2014</a>
+					        		</h3>
+					        		<div class="item__stars">
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        		</div>
+					        		<div class="item__info">
+					        			<p class="item__price price">&#36;20</p>
+					        			<p class="item__price item__price--before price--before">&#36;30</p>
+					        			<div class="item__qualities">
+					        				<span class="item__quality quality">3D</span>
+					        				<span class="item__quality quality">1080p</span>
+					        				<span class="item__quality quality">720p</span>
+					        			</div>
+					        		</div>
+					        		<button class="item__btn btn btn-cart">
+					        			<svg class="item__cart-icon icon icon--cart">
+					        				<use xlink:href="img/sprite.svg#icon--cart"></use>
+					        			</svg>
+					        			Add to cart
+					        		</button>
+					        	</div>
+					        </div>
+					        <div class="browse-movies__item item">
+					        	<a href="movie-info.html" class="item__img">
+					        		<img data-src="img/slider/lucy.png" alt="Lucy">
+					        		<div class="item__tags">
+					        			<button class="item__tag-btn btn">
+					        				<svg class="item__star icon icon--tag">
+						        				<use xlink:href="img/sprite.svg#icon--tag"></use>
+						        			</svg>
+					        			</button>
+					        			<p class="item__tag-list">Action, Crime, Adventure</p>
+					        		</div>
+					        	</a>
+					        	<div class="item__body">
+					        		<h3 class="item__title">
+					        			<a href="movie-info.html">Lucy - 2014</a>
+					        		</h3>
+					        		<div class="item__stars">
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        		</div>
+					        		<div class="item__info">
+					        			<p class="item__price price">&#36;20</p>
+					        			<p class="item__price item__price--before price--before">&#36;30</p>
+					        			<div class="item__qualities">
+					        				<span class="item__quality quality">3D</span>
+					        				<span class="item__quality quality">1080p</span>
+					        				<span class="item__quality quality">720p</span>
+					        			</div>
+					        		</div>
+					        		<button class="item__btn btn btn-cart">
+					        			<svg class="item__cart-icon icon icon--cart">
+					        				<use xlink:href="img/sprite.svg#icon--cart"></use>
+					        			</svg>
+					        			Add to cart
+					        		</button>
+					        	</div>
+					        </div>
+					        <div class="browse-movies__item item">
+					        	<a href="movie-info.html" class="item__img">
+					        		<img data-src="img/slider/lucy.png" alt="Lucy">
+					        		<div class="item__tags">
+					        			<button class="item__tag-btn btn">
+					        				<svg class="item__star icon icon--tag">
+						        				<use xlink:href="img/sprite.svg#icon--tag"></use>
+						        			</svg>
+					        			</button>
+					        			<p class="item__tag-list">Action, Crime, Adventure</p>
+					        		</div>
+					        	</a>
+					        	<div class="item__body">
+					        		<h3 class="item__title">
+					        			<a href="movie-info.html">Lucy - 2014</a>
+					        		</h3>
+					        		<div class="item__stars">
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        		</div>
+					        		<div class="item__info">
+					        			<p class="item__price price">&#36;20</p>
+					        			<p class="item__price item__price--before price--before">&#36;30</p>
+					        			<div class="item__qualities">
+					        				<span class="item__quality quality">3D</span>
+					        				<span class="item__quality quality">1080p</span>
+					        				<span class="item__quality quality">720p</span>
+					        			</div>
+					        		</div>
+					        		<button class="item__btn btn btn-cart">
+					        			<svg class="item__cart-icon icon icon--cart">
+					        				<use xlink:href="img/sprite.svg#icon--cart"></use>
+					        			</svg>
+					        			Add to cart
+					        		</button>
+					        	</div>
+					        </div>
+					        <div class="browse-movies__item item">
+					        	<a href="movie-info.html" class="item__img">
+					        		<img data-src="img/slider/lucy.png" alt="Lucy">
+					        		<div class="item__tags">
+					        			<button class="item__tag-btn btn">
+					        				<svg class="item__star icon icon--tag">
+						        				<use xlink:href="img/sprite.svg#icon--tag"></use>
+						        			</svg>
+					        			</button>
+					        			<p class="item__tag-list">Action, Crime, Adventure</p>
+					        		</div>
+					        	</a>
+					        	<div class="item__body">
+					        		<h3 class="item__title">
+					        			<a href="movie-info.html">Lucy - 2014</a>
+					        		</h3>
+					        		<div class="item__stars">
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        		</div>
+					        		<div class="item__info">
+					        			<p class="item__price price">&#36;20</p>
+					        			<p class="item__price item__price--before price--before">&#36;30</p>
+					        			<div class="item__qualities">
+					        				<span class="item__quality quality">3D</span>
+					        				<span class="item__quality quality">1080p</span>
+					        				<span class="item__quality quality">720p</span>
+					        			</div>
+					        		</div>
+					        		<button class="item__btn btn btn-cart">
+					        			<svg class="item__cart-icon icon icon--cart">
+					        				<use xlink:href="img/sprite.svg#icon--cart"></use>
+					        			</svg>
+					        			Add to cart
+					        		</button>
+					        	</div>
+					        </div>
+					        <div class="browse-movies__item item">
+					        	<a href="movie-info.html" class="item__img">
+					        		<img data-src="img/slider/lucy.png" alt="Lucy">
+					        		<div class="item__tags">
+					        			<button class="item__tag-btn btn">
+					        				<svg class="item__star icon icon--tag">
+						        				<use xlink:href="img/sprite.svg#icon--tag"></use>
+						        			</svg>
+					        			</button>
+					        			<p class="item__tag-list">Action, Crime, Adventure</p>
+					        		</div>
+					        	</a>
+					        	<div class="item__body">
+					        		<h3 class="item__title">
+					        			<a href="movie-info.html">Lucy - 2014</a>
+					        		</h3>
+					        		<div class="item__stars">
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        		</div>
+					        		<div class="item__info">
+					        			<p class="item__price price">&#36;20</p>
+					        			<p class="item__price item__price--before price--before">&#36;30</p>
+					        			<div class="item__qualities">
+					        				<span class="item__quality quality">3D</span>
+					        				<span class="item__quality quality">1080p</span>
+					        				<span class="item__quality quality">720p</span>
+					        			</div>
+					        		</div>
+					        		<button class="item__btn btn btn-cart">
+					        			<svg class="item__cart-icon icon icon--cart">
+					        				<use xlink:href="img/sprite.svg#icon--cart"></use>
+					        			</svg>
+					        			Add to cart
+					        		</button>
+					        	</div>
+					        </div>
+					        <div class="browse-movies__item item">
+					        	<a href="movie-info.html" class="item__img">
+					        		<img data-src="img/slider/lucy.png" alt="Lucy">
+					        		<div class="item__tags">
+					        			<button class="item__tag-btn btn">
+					        				<svg class="item__star icon icon--tag">
+						        				<use xlink:href="img/sprite.svg#icon--tag"></use>
+						        			</svg>
+					        			</button>
+					        			<p class="item__tag-list">Action, Crime, Adventure</p>
+					        		</div>
+					        	</a>
+					        	<div class="item__body">
+					        		<h3 class="item__title">
+					        			<a href="movie-info.html">Lucy - 2014</a>
+					        		</h3>
+					        		<div class="item__stars">
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        		</div>
+					        		<div class="item__info">
+					        			<p class="item__price price">&#36;20</p>
+					        			<p class="item__price item__price--before price--before">&#36;30</p>
+					        			<div class="item__qualities">
+					        				<span class="item__quality quality">3D</span>
+					        				<span class="item__quality quality">1080p</span>
+					        				<span class="item__quality quality">720p</span>
+					        			</div>
+					        		</div>
+					        		<button class="item__btn btn btn-cart">
+					        			<svg class="item__cart-icon icon icon--cart">
+					        				<use xlink:href="img/sprite.svg#icon--cart"></use>
+					        			</svg>
+					        			Add to cart
+					        		</button>
+					        	</div>
+					        </div>
+					        <div class="browse-movies__item item">
+					        	<a href="movie-info.html" class="item__img">
+					        		<img data-src="img/slider/lucy.png" alt="Lucy">
+					        		<div class="item__tags">
+					        			<button class="item__tag-btn btn">
+					        				<svg class="item__star icon icon--tag">
+						        				<use xlink:href="img/sprite.svg#icon--tag"></use>
+						        			</svg>
+					        			</button>
+					        			<p class="item__tag-list">Action, Crime, Adventure</p>
+					        		</div>
+					        	</a>
+					        	<div class="item__body">
+					        		<h3 class="item__title">
+					        			<a href="movie-info.html">Lucy - 2014</a>
+					        		</h3>
+					        		<div class="item__stars">
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        		</div>
+					        		<div class="item__info">
+					        			<p class="item__price price">&#36;20</p>
+					        			<p class="item__price item__price--before price--before">&#36;30</p>
+					        			<div class="item__qualities">
+					        				<span class="item__quality quality">3D</span>
+					        				<span class="item__quality quality">1080p</span>
+					        				<span class="item__quality quality">720p</span>
+					        			</div>
+					        		</div>
+					        		<button class="item__btn btn btn-cart">
+					        			<svg class="item__cart-icon icon icon--cart">
+					        				<use xlink:href="img/sprite.svg#icon--cart"></use>
+					        			</svg>
+					        			Add to cart
+					        		</button>
+					        	</div>
+					        </div>
+					        <div class="browse-movies__item item">
+					        	<a href="movie-info.html" class="item__img">
+					        		<img data-src="img/slider/lucy.png" alt="Lucy">
+					        		<div class="item__tags">
+					        			<button class="item__tag-btn btn">
+					        				<svg class="item__star icon icon--tag">
+						        				<use xlink:href="img/sprite.svg#icon--tag"></use>
+						        			</svg>
+					        			</button>
+					        			<p class="item__tag-list">Action, Crime, Adventure</p>
+					        		</div>
+					        	</a>
+					        	<div class="item__body">
+					        		<h3 class="item__title">
+					        			<a href="movie-info.html">Lucy - 2014</a>
+					        		</h3>
+					        		<div class="item__stars">
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        		</div>
+					        		<div class="item__info">
+					        			<p class="item__price price">&#36;20</p>
+					        			<p class="item__price item__price--before price--before">&#36;30</p>
+					        			<div class="item__qualities">
+					        				<span class="item__quality quality">3D</span>
+					        				<span class="item__quality quality">1080p</span>
+					        				<span class="item__quality quality">720p</span>
+					        			</div>
+					        		</div>
+					        		<button class="item__btn btn btn-cart">
+					        			<svg class="item__cart-icon icon icon--cart">
+					        				<use xlink:href="img/sprite.svg#icon--cart"></use>
+					        			</svg>
+					        			Add to cart
+					        		</button>
+					        	</div>
+					        </div>
+					        <div class="browse-movies__item item">
+					        	<a href="movie-info.html" class="item__img">
+					        		<img data-src="img/slider/lucy.png" alt="Lucy">
+					        		<div class="item__tags">
+					        			<button class="item__tag-btn btn">
+					        				<svg class="item__star icon icon--tag">
+						        				<use xlink:href="img/sprite.svg#icon--tag"></use>
+						        			</svg>
+					        			</button>
+					        			<p class="item__tag-list">Action, Crime, Adventure</p>
+					        		</div>
+					        	</a>
+					        	<div class="item__body">
+					        		<h3 class="item__title">
+					        			<a href="movie-info.html">Lucy - 2014</a>
+					        		</h3>
+					        		<div class="item__stars">
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        		</div>
+					        		<div class="item__info">
+					        			<p class="item__price price">&#36;20</p>
+					        			<p class="item__price item__price--before price--before">&#36;30</p>
+					        			<div class="item__qualities">
+					        				<span class="item__quality quality">3D</span>
+					        				<span class="item__quality quality">1080p</span>
+					        				<span class="item__quality quality">720p</span>
+					        			</div>
+					        		</div>
+					        		<button class="item__btn btn btn-cart">
+					        			<svg class="item__cart-icon icon icon--cart">
+					        				<use xlink:href="img/sprite.svg#icon--cart"></use>
+					        			</svg>
+					        			Add to cart
+					        		</button>
+					        	</div>
+					        </div>
+					        <div class="browse-movies__item item">
+					        	<a href="movie-info.html" class="item__img">
+					        		<img data-src="img/slider/lucy.png" alt="Lucy">
+					        		<div class="item__tags">
+					        			<button class="item__tag-btn btn">
+					        				<svg class="item__star icon icon--tag">
+						        				<use xlink:href="img/sprite.svg#icon--tag"></use>
+						        			</svg>
+					        			</button>
+					        			<p class="item__tag-list">Action, Crime, Adventure</p>
+					        		</div>
+					        	</a>
+					        	<div class="item__body">
+					        		<h3 class="item__title">
+					        			<a href="movie-info.html">Lucy - 2014</a>
+					        		</h3>
+					        		<div class="item__stars">
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        			<svg class="item__star icon icon--star icon--star--0">
+					        				<use xlink:href="img/sprite.svg#icon--star"></use>
+					        			</svg>
+					        		</div>
+					        		<div class="item__info">
+					        			<p class="item__price price">&#36;20</p>
+					        			<p class="item__price item__price--before price--before">&#36;30</p>
+					        			<div class="item__qualities">
+					        				<span class="item__quality quality">3D</span>
+					        				<span class="item__quality quality">1080p</span>
+					        				<span class="item__quality quality">720p</span>
+					        			</div>
+					        		</div>
+					        		<button class="item__btn btn btn-cart">
+					        			<svg class="item__cart-icon icon icon--cart">
+					        				<use xlink:href="img/sprite.svg#icon--cart"></use>
+					        			</svg>
+					        			Add to cart
+					        		</button>
+					        	</div>
+					        </div>
+						</div>
+						<div class="browse-movies__navigation">
+							<a class="browse-movies__link browse-movies__link--active" href="#">1</a>
+							<a class="browse-movies__link" href="#">2</a>
+							<a class="browse-movies__link" href="#">3</a>
+							<a class="browse-movies__link" href="#">4</a>
+							<a class="browse-movies__link" href="#">
+								<svg class="browse-movies__icon icon icon--arrow icon--arrow-right">
+									<use xlink:href="img/sprite.svg#icon--arrow-right"></use>
+								</svg>
+							</a>
 						</div>
 					</div>
-				</div>
-			</section>
-			<!-- reviews -->
-			<section class="reviews">
-				<div class="reviews__container container">
-					<div class="reviews__top">
-						<h2 class="reviews__title title">Customers Reviews</h2>
-						<p class="reviews__subtitle">what people say about us</p>
-					</div>
-					<!-- Slider main container -->
-					<div class="reviews__slider swiper-container">
-						<!-- Additional required wrapper -->
-						<div class="reviews__slider-wrapper swiper-wrapper">
-							<!-- Slides -->
-							<div class="reviews__slide slide-reviews swiper-slide">
-								<div class="slide-reviews__customer">
-									<img class="slide-reviews__customer-img" src="img/customers/1.png" alt="Customer">
-								</div>
-								<div class="slide-reviews__info">
-									<p class="slide-reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-									<p class="slide-reviews__name">Nancy Doe</p>
-									<p class="slide-reviews__job">graphic designer</p>
-									<!-- If we need pagination -->
-									<div class="slide-reviews__pagination pagination swiper-pagination"></div>
-								</div>
-							</div>
-							<div class="reviews__slide slide-reviews swiper-slide">
-								<div class="slide-reviews__customer">
-									<img class="slide-reviews__customer-img" src="img/customers/1.png" alt="Customer">
-								</div>
-								<div class="slide-reviews__info">
-									<p class="slide-reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									<p class="slide-reviews__name">Nancy Doe</p>
-									<p class="slide-reviews__job">graphic designer</p>
-									<!-- If we need pagination -->
-									<div class="slide-reviews__pagination pagination swiper-pagination"></div>
-								</div>
-							</div>
-							<div class="reviews__slide slide-reviews swiper-slide">
-								<div class="slide-reviews__customer">
-									<img class="slide-reviews__customer-img" src="img/customers/1.png" alt="Customer">
-								</div>
-								<div class="slide-reviews__info">
-									<p class="slide-reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-									<p class="slide-reviews__name">Nancy Doe</p>
-									<p class="slide-reviews__job">graphic designer</p>
-									<!-- If we need pagination -->
-									<div class="slide-reviews__pagination pagination swiper-pagination"></div>
-								</div>
-							</div>
-							<div class="reviews__slide slide-reviews swiper-slide">
-								<div class="slide-reviews__customer">
-									<img class="slide-reviews__customer-img" src="img/customers/1.png" alt="Customer">
-								</div>
-								<div class="slide-reviews__info">
-									<p class="slide-reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									<p class="slide-reviews__name">Nancy Doe</p>
-									<p class="slide-reviews__job">graphic designer</p>
-									<!-- If we need pagination -->
-									<div class="slide-reviews__pagination pagination swiper-pagination"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- subscribe -->
-			<section class="subscribe">
-				<div class="subscribe__container container">
-					<div class="subscribe__row">
-						<p class="subscribe__title title">Subscribe to our newsletter</p>
-						<form class="subscribe__form form">
-							<!-- Hidden Required Fields -->
-							<input type="hidden" name="project_name" value="Aflam">
-							<input type="hidden" name="admin_email" value="samirsaev6@gmail.com">
-							<input type="hidden" name="form_subject" value="Subscribe newsletter">
-							<!-- ./End of hidden Required Fields -->
-							<div class="subscribe__input-block">
-								<input class="subscribe__input" type="email" name="email" placeholder="email" required>
-							</div>
-							<button class="subscribe__btn btn">
-								<svg class="subscribe__send icon icon--send">
-			        				<use xlink:href="img/sprite.svg#icon--send"></use>
-			        			</svg>
-							</button>
-						</form>
-					</div>
-				</div>
-			</section>
-		</main>		
+				</section>
+			</main>		
 		<!-- footer -->
 		<footer class="footer">
 			<div class="footer__container container">
@@ -883,11 +992,6 @@
 	</a>
 	<!-- jquery -->
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-	<!-- swiper slider -->
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<!-- videoJS -->
-	<script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
-	<script src="//cdn.sc.gl/videojs-hotkeys/latest/videojs.hotkeys.min.js"></script>
 	<!-- jquery lazy load xt library -->
 	<script src="js/jquery.lazyloadxt.min.js"></script>
 	<!-- Мои скрипты -->
