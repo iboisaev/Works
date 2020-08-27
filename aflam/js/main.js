@@ -47,7 +47,7 @@ doc.addEventListener('DOMContentLoaded', function () {
 	// 
 	if (window.innerWidth >= 768) {
 		header.classList.add('lock-padding');
-	};
+	}
 
 	// Блокировка скроллбара
 	function bodyLock() {
@@ -57,15 +57,15 @@ doc.addEventListener('DOMContentLoaded', function () {
 			for (let index = 0; index < lockPadding.length; index++) {
 			    const el = lockPadding[index];
 			    el.style.paddingRight = lockPaddingValue;
-			};
-		};
+			}
+		}
 
 		if (lockMargin.length > 0) {
 			for (let index = 0; index < lockMargin.length; index++) {
 			    const el = lockMargin[index];
 			    el.style.marginRight = lockPaddingValue;
-			};
-		};
+			}
+		}
 
 		body.style.paddingRight = lockPaddingValue;
 		body.classList.add('locked');
@@ -74,7 +74,7 @@ doc.addEventListener('DOMContentLoaded', function () {
 		setTimeout(function() {
 			unlock = true;
 		}, timeout);
-	};
+	}
 
 	// Отмена блокировки скроллбара
 	function bodyUnlock() {
@@ -83,15 +83,15 @@ doc.addEventListener('DOMContentLoaded', function () {
 				for (let index = 0; index < lockPadding.length; index++) {
 				    const el = lockPadding[index];
 				    el.style.paddingRight = '0px';
-				};
-			};
+				}
+			}
 
 			if (lockMargin) {
 				for (let index = 0; index < lockMargin.length; index++) {
 				    const el = lockMargin[index];
 				    el.style.marginRight = '0px';
-				};
-			};
+				}
+			}
 
 			body.style.paddingRight = 0;
 			body.classList.remove('locked');	
@@ -102,7 +102,7 @@ doc.addEventListener('DOMContentLoaded', function () {
 		setTimeout(function() {
 			unlock = true;
 		}, timeout);
-	};
+	}
 
 	// Функция для открытия попапа
 	function popupOpen(which) {
@@ -111,7 +111,7 @@ doc.addEventListener('DOMContentLoaded', function () {
 			bodyLock();
 			return which;
 		}
-	};
+	}
 	
 	// Функция для закрытия попапа
 	function popupClose(which) {
@@ -120,7 +120,7 @@ doc.addEventListener('DOMContentLoaded', function () {
 			bodyUnlock();
 			return which;
 		}
-	};
+	}
 
 	// Функция для открытия/закрытия меню бургера
 	function toggleMenuBurger() {
@@ -130,8 +130,8 @@ doc.addEventListener('DOMContentLoaded', function () {
 
 		if (!(menuBurger.classList.contains('active') || headerMenu.classList.contains('active'))) {
 			bodyUnlock();
-		};
-	};
+		}
+	}
 
 	// обработчик события для открытия/закрытия поля поиска
 	headerBtn.addEventListener('click', function () {
