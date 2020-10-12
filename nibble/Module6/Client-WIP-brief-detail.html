@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Client-WIP-brief-detail</title>
+</head>
+<body>
+    <header class="header">
+    <div class="container-fluid">
+        <div class="header__content">
+            <div class="header__left">
+                <div class="logo">
+                    <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
+                </div>
+                <nav>
+                    <li><a href="#">Our Story</a></li>
+                    <li class="dropdown"><a href="#">How It Work</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Chomp</a></li>
+                </nav>
+            </div>
+            <div class="header__right">
+                <div class="bell">
+                    <picture><source srcset="img/icons/icons.svg#bell" type="image/webp"><img src="img/icons/icons.svg#bell" class="svg-bell-dims" alt="bell"/></picture>
+                </div>
+                <div class="msg">
+                    <picture><source srcset="img/icons/icons.svg#msg" type="image/webp"><img src="img/icons/icons.svg#msg" class="svg-msg-dims" alt="msg"/></picture>
+                    <span class="count">5</span>
+                </div>
+                <div class="my_acc">
+                    <div class="avatar">
+                        <picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.png" alt=""></picture>
+                        <a href="#"class="dropdown">My Account</a>
+                    </div>
+                </div>
+            </div>
+            <div class="toggler" id="menu_toggler">
+                <span></span>
+            </div>
+        </div>
+            
+    </div>
+        
+</header>
+<div class="menu_mobile ">
+    <div class="mobile_menu_content">
+        <div class="logo">
+            <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
+        </div>
+        <div class="slide_container">
+            <div class="menu" id="menuMain">
+                <picture><source srcset="img/avatar_mobile.webp" type="image/webp"><img src="img/avatar_mobile.png" alt=""></picture> 
+                <span class="name">Lizzie Earl</span>
+                <div class="dashboard_menu">
+                    <div class="bell">
+                        <picture><source srcset="img/icons/icons.svg#bell" type="image/webp"><img src="img/icons/icons.svg#bell" class="svg-bell-dims" alt="bell"/></picture>
+                    </div>
+                    <div class="msg">
+                        <picture><source srcset="img/icons/icons.svg#msg" type="image/webp"><img src="img/icons/icons.svg#msg" class="svg-msg-dims" alt="msg"/></picture>
+                        <span class="count">5</span>
+                    </div>
+                    <div class="logout">
+                        <picture><source srcset="img//icons/icons.svg#logout_lite" type="image/webp"><img src="img//icons/icons.svg#logout_lite" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                    </div>
+                    
+                </div>
+                <nav>
+                    <li><a href="#">Our Story</a></li>
+                    <li class="dropdown"><a href="#">How It Work</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Chomp</a></li>
+                </nav>
+                <button class="btn_orange" id="to_dashboard">Dashboard <picture><source srcset="img/arrow_white.webp" type="image/webp"><img src="img/arrow_white.png" alt=""></picture></button>
+            </div>
+            <div class="dashboard" id="menuDashboard">
+                <div class="dashboard_content">
+                    <div class="item">
+                        <a href="#">
+                            <div class="icon_wrapper">
+                                <picture><source srcset="img//icons/icons.svg#dashboard" type="image/webp"><img src="img//icons/icons.svg#dashboard" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                <picture><source srcset="img//icons/icons.svg#dashboard_active" type="image/webp"><img src="img//icons/icons.svg#dashboard_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="icon_wrapper">
+                                <picture><source srcset="img//icons/icons.svg#work" type="image/webp"><img src="img//icons/icons.svg#work" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                <picture><source srcset="img//icons/icons.svg#work_active" type="image/webp"><img src="img//icons/icons.svg#work_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="icon_wrapper">
+                                <picture><source srcset="img//icons/icons.svg#msg_menu" type="image/webp"><img src="img//icons/icons.svg#msg_menu" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                <picture><source srcset="img//icons/icons.svg#msg_menu_active" type="image/webp"><img src="img//icons/icons.svg#msg_menu_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="icon_wrapper">
+                                <picture><source srcset="img//icons/icons.svg#acc" type="image/webp"><img src="img//icons/icons.svg#acc" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                <picture><source srcset="img//icons/icons.svg#acc_active" type="image/webp"><img src="img//icons/icons.svg#acc_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="icon_wrapper">
+                                <picture><source srcset="img//icons/icons.svg#set" type="image/webp"><img src="img//icons/icons.svg#set" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                <picture><source srcset="img//icons/icons.svg#set_active" type="image/webp"><img src="img//icons/icons.svg#set_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <div class="icon_wrapper">
+                                <picture><source srcset="img//icons/icons.svg#log" type="image/webp"><img src="img//icons/icons.svg#log" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                <picture><source srcset="img//icons/icons.svg#log_active" type="image/webp"><img src="img//icons/icons.svg#log_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="btn_container">
+                        <button class="btn_orange" id="to_main"><picture><source srcset="img/back_white.webp" type="image/webp"><img src="img/back_white.png" alt=""></picture>Main Menu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</div>
+    
+    <main class="with_sidebar">
+        <!-- sidevar -->
+        <aside>
+    <div class="new_work">
+        <div class="add_new">
+            <picture><source srcset="img/icons/icons.svg#AddPost" type="image/webp"><img src="img/icons/icons.svg#AddPost" class="svg-AddPost-dims" alt="AddPost"></picture>
+        </div>
+        <p>Post New Work</p>
+    </div>
+    
+    <nav>
+        <li class="dashboard">
+            <div class="icon_wrapper">
+                <picture><source srcset="img//icons/icons.svg#dashboard" type="image/webp"><img src="img//icons/icons.svg#dashboard" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                <picture><source srcset="img//icons/icons.svg#dashboard_active" type="image/webp"><img src="img//icons/icons.svg#dashboard_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+            </div>
+            <a href="#">Dashboard</a>
+        </li>
+        <li class="dropdown active">
+            <div class="icon_wrapper">
+                <picture><source srcset="img//icons/icons.svg#work" type="image/webp"><img src="img//icons/icons.svg#work" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                <picture><source srcset="img//icons/icons.svg#work_active" type="image/webp"><img src="img//icons/icons.svg#work_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+            </div>
+            <a class="main_link">Work</a>
+            <ul class="main_link_list"  style="display: block;">
+                <li><a href="#">New Briefs <span class="main_link_count">5</span></a></li>
+                <li><a href="#" class="active">Work In Progress</a></li>
+                <li><a href="#">Completed</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="icon_wrapper">
+                <picture><source srcset="img//icons/icons.svg#msg_menu" type="image/webp"><img src="img//icons/icons.svg#msg_menu" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                <picture><source srcset="img//icons/icons.svg#msg_menu_active" type="image/webp"><img src="img//icons/icons.svg#msg_menu_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+            </div>
+            <a href="#">Messages</a>
+        </li>
+        <li>
+            <div class="icon_wrapper">
+                <picture><source srcset="img//icons/icons.svg#fav" type="image/webp"><img src="img//icons/icons.svg#fav" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                <picture><source srcset="img//icons/icons.svg#fav_active" type="image/webp"><img src="img//icons/icons.svg#fav_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+            </div>
+            <a href="#">Favourites</a>
+        </li>
+        <li class="dropdown">
+            <div class="icon_wrapper">
+                <picture><source srcset="img//icons/icons.svg#acc" type="image/webp"><img src="img//icons/icons.svg#acc" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                <picture><source srcset="img//icons/icons.svg#acc_active" type="image/webp"><img src="img//icons/icons.svg#acc_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+            </div>
+            <a class="main_link" >My Account</a>
+            <ul>
+                <li><a href="#">Item1</a></li>
+                <li><a href="#">Item2</a></li>
+                <li><a href="#">Item3</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="icon_wrapper">
+                <picture><source srcset="img//icons/icons.svg#set" type="image/webp"><img src="img//icons/icons.svg#set" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                <picture><source srcset="img//icons/icons.svg#set_active" type="image/webp"><img src="img//icons/icons.svg#set_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+            </div>
+            <a href="#">Settings</a>
+        </li>
+        <li>
+            <div class="icon_wrapper">
+                <picture><source srcset="img//icons/icons.svg#ref" type="image/webp"><img src="img//icons/icons.svg#ref" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                <picture><source srcset="img//icons/icons.svg#ref_active" type="image/webp"><img src="img//icons/icons.svg#ref_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+            </div>
+            <a href="#">Refer Us</a>
+        </li>
+        <li>
+            <div class="icon_wrapper">
+                <picture><source srcset="img//icons/icons.svg#log" type="image/webp"><img src="img//icons/icons.svg#log" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                <picture><source srcset="img//icons/icons.svg#log_active" type="image/webp"><img src="img//icons/icons.svg#log_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+            </div>
+            <a href="#">Logout</a>
+        </li>
+    </nav>
+
+</aside>
+
+<aside class="tablet">
+    <div class="container">
+        <div class="sidebar_content">
+            <div class="btn_container">
+                <div class="add_new">
+                    <picture><source srcset="img/icons/icons.svg#AddPost" type="image/webp"><img src="img/icons/icons.svg#AddPost" class="svg-AddPost-dims" alt="AddPost"></picture>
+                    <p>Post New Work</p>
+                </div>
+            </div>
+            
+            <nav>
+                <li>
+                    <a href="#">
+                        <div class="icon_wrapper">
+                            <picture><source srcset="img//icons/icons.svg#dashboard" type="image/webp"><img src="img//icons/icons.svg#dashboard" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                            <picture><source srcset="img//icons/icons.svg#dashboard_active" type="image/webp"><img src="img//icons/icons.svg#dashboard_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                        </div>
+                    </a>
+                </li>
+                <li class="dropdown active">
+                    <a href="#work">
+                        <div class="icon_wrapper">
+                            <picture><source srcset="img//icons/icons.svg#work" type="image/webp"><img src="img//icons/icons.svg#work" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                            <picture><source srcset="img//icons/icons.svg#work_active" type="image/webp"><img src="img//icons/icons.svg#work_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon_wrapper">
+                            <picture><source srcset="img//icons/icons.svg#msg_menu" type="image/webp"><img src="img//icons/icons.svg#msg_menu" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                            <picture><source srcset="img//icons/icons.svg#msg_menu_active" type="image/webp"><img src="img//icons/icons.svg#msg_menu_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon_wrapper">
+                            <picture><source srcset="img//icons/icons.svg#fav" type="image/webp"><img src="img//icons/icons.svg#fav" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                            <picture><source srcset="img//icons/icons.svg#fav_active" type="image/webp"><img src="img//icons/icons.svg#fav_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon_wrapper">
+                            <picture><source srcset="img//icons/icons.svg#acc" type="image/webp"><img src="img//icons/icons.svg#acc" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                            <picture><source srcset="img//icons/icons.svg#acc_active" type="image/webp"><img src="img//icons/icons.svg#acc_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon_wrapper">
+                            <picture><source srcset="img//icons/icons.svg#set" type="image/webp"><img src="img//icons/icons.svg#set" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                            <picture><source srcset="img//icons/icons.svg#set_active" type="image/webp"><img src="img//icons/icons.svg#set_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon_wrapper">
+                            <picture><source srcset="img//icons/icons.svg#ref" type="image/webp"><img src="img//icons/icons.svg#ref" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                            <picture><source srcset="img//icons/icons.svg#ref_active" type="image/webp"><img src="img//icons/icons.svg#ref_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon_wrapper">
+                            <picture><source srcset="img//icons/icons.svg#log" type="image/webp"><img src="img//icons/icons.svg#log" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                            <picture><source srcset="img//icons/icons.svg#log_active" type="image/webp"><img src="img//icons/icons.svg#log_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                        </div>
+                    </a>
+                </li>
+
+                <ul class="dropdown active" id="work">
+                    <li><a href="#">New Briefs</a></li>
+                    <li><a href="#" class="active">Work In Progress</a></li>
+                    <li><a href="#">Completed</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </div>
+    
+</aside>
+        <!-- sidevar -->
+
+        <!-- main content -->
+        <div class="main_content">
+            <div class="container" style="display: none;">
+              
+                <!-- <h1>Messages</h1> -->
+     
+            </div>
+            <div class="container fix" style="display: none;">
+                <div class="result">
+                    <div class="variant">
+                        <div class="info">
+                            <div class="name">
+                                <h3>PR for a new Tech startup</h3>
+                                <div class="subtitle"> <picture><source srcset="img/icons/icons.svg#portfel" type="image/webp"><img src="img/icons/icons.svg#portfel" class="svg-portfel-dims" alt=""></picture> Vegasmic Vegan toys</div>
+                            </div>
+                       
+
+
+                            
+        </div>
+        
+    </div>
+</div>
+            <!-- popups -->
+
+        </div>
+        <!-- single -->
+        <div class="single">
+            <div class="container-fluid">
+                <div class="single__body">
+                    <div class="single__body-left">
+                        <a href="#" class="single__link-back">
+                            <img src="img/back.png" alt="back">
+                            <span>Back to Work in Progress</span>
+                        </a>
+                        <h1 class="single__title">PR for a new Tech Startup</h1>
+                        <p class="single__subtitle">B2B</p>
+                    </div>
+                    <div class="single__body-right">
+                        <div class="breadcrumbs">
+                           <a href="#">Work </a>
+                           <a href="#">Work in Progress </a>
+                           <a class="current">PR for a new Tech Startup</a>
+                       </div>
+                       <div class="single__company">
+                           <p class="single__company-name">Coca Cola Company</p>
+                           <img src="img/coca-cola.svg" alt="coca-cola">
+                       </div>
+                    </div>
+                </div>
+                <div class="single__body">
+                    <div class="single__body-left">
+                       <div class="single__info info-single single-block">
+                           <div class="info-single__post">
+                               <p class="info-single__title">The industry the work relates to:</p>
+                               <p class="info-single__text">Fashion, Technology, e-commerce</p>
+                           </div>
+                           <div class="info-single__post">
+                               <p class="info-single__title">PR skills required:</p>
+                               <p class="info-single__text">Media relations, Thought leadership</p>
+                           </div>
+                           <div class="info-single__post">
+                               <p class="info-single__title">Overview of the brand, business or person looking for PR, and the vision:</p>
+                               <p class="info-single__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   </p>
+                           </div>
+                           <div class="info-single__post">
+                               <p class="info-single__title">Looking for PR now because:</p>
+                               <p class="info-single__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                           </div>
+                           <div class="info-single__post">
+                               <p class="info-single__title">The PR needs to achieve: </p>
+                               <p class="info-single__text">Lorem, Ipsum, Dolor, Amet, Consectetur</p>
+                           </div>
+                           <div class="info-single__post">
+                               <p class="info-single__title">The audience to reach and some insights about them: </p>
+                               <p class="info-single__text">PR freelancers, Instagram Influencers, Celebrities</p>
+                           </div>
+                           <div class="info-single__post">
+                               <p class="info-single__title">Main competitors:</p>
+                               <p class="info-single__text">Munch PR, Vegasmic Toys, Ted Talk, BBC</p>
+                           </div>
+                           <button href="#" class="info-single__btn">
+                               <span>Read more</span>
+                               <svg>
+                                    <use xlink:href="img/arrow_more.svg#arrow_more"></use>
+                                </svg>
+                           </button>
+                       </div> 
+                    </div>
+                    <div class="single__body-right">
+                        <div class="single__overview overview-single single-block">
+                            <div class="single-block__top" data-top="tab-1">
+                                <p class="single-block__title">Overview</p>
+                                <svg>
+                                    <use xlink:href="img/angle-down.svg#angle-down"></use>
+                                </svg>
+                            </div>
+                            <div class="single-block__body" data-body="tab-1">
+                                <div class="overview-single__row">
+                                    <p class="overview-single__name">Package</p>
+                                    <p class="overview-single__info">Retainer</p>
+                                </div>
+                                <div class="overview-single__row">
+                                    <p class="overview-single__name">Start Date</p>
+                                    <p class="overview-single__info">25 Aug 2020</p>
+                                </div>
+                                <div class="overview-single__row">
+                                    <p class="overview-single__name">Duration</p>
+                                    <p class="overview-single__info">n/a</p>
+                                </div>
+                                <div class="overview-single__row">
+                                    <p class="overview-single__name">Budget</p>
+                                    <p class="overview-single__info">£4,500</p>
+                                </div>
+                                <div class="overview-single__row">
+                                    <p class="overview-single__name">Docs</p>
+                                    <p class="overview-single__info">
+                                        <a href="#" class="overview-single__info-docs">Brief.pdf</a>
+                                        <a href="#" class="overview-single__info-docs">Details.pdf</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single__overview attributes-single single-block">
+                            <div class="single-block__top" data-top="tab-2">
+                                <p class="single-block__title">Professional Attributes</p>
+                                <svg>
+                                    <use xlink:href="img/angle-down.svg#angle-down"></use>
+                                </svg>
+                            </div>
+                            <div class="single-block__body"  data-body="tab-2">
+                                <div class="attributes-single__items">
+                                    <a href="#" class="attributes-single__item">-  Strategic</a>
+                                    <a href="#" class="attributes-single__item">-  Organised</a>
+                                    <a href="#" class="attributes-single__item">-  Flexible</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single__match match-single">
+                    <h2 class="match-single__title">Your <span>match</span></h2>
+                    <div class="match-single__block single-block">
+                        <div class="match-single__profile">
+                            <div class="match-single__img">
+                                <img src="img/human_4.png" alt="">
+                            </div>
+                            <div class="match-single__info">
+                                <div class="match-single__info-top">
+                                    <p class="match-single__name"><a href="#">Jessica Kwak</a></p>
+                                    <span class="match-single__rating">5.0</span>
+                                    <button class="match-single__info-btn">
+                                        <svg>
+                                            <use xlink:href="img/heart.svg#heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <p class="match-single__info-job">Designer with 10+ years of experience</p>
+                            </div>
+                        </div>
+                        <div class="match-single__bottom">
+                            <div class="match-single__btns">
+                                <a href="#" class="match-single__btn btn-orange btn-lg">View Proposal</a>
+                                <a href="#" class="match-single__btn btn-white">
+                                    <svg>
+                                        <use xlink:href="img/telegram.svg#telegram"></use>
+                                    </svg>
+                                    <span>Message</span>
+                                </a>
+                                <a href="#" class="match-single__btn btn-white">View Profile</a>
+                            </div>
+                            <p class="match-single__retainer">
+                                <span class="match-single__retainer-block">
+                                    <span class="match-single__retainer-count">£4,500</span>
+                                    Retainer
+                                </span>
+                            </p>
+                        </div>
+                        <a href="#" class="match-single__list-menu" title="View contract">
+                            <svg>
+                                <use xlink:href="img/list-menu.svg#list-menu"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main content -->
+    </main>
+    
+    <!-- footer  -->
+        <footer class="footer">
+    <div class="container-fluid">
+        <div class="footer__content">
+            <div class="logo">
+                <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
+            </div>
+            <ul class="menu_footer">
+                <li class="head">about us</li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">Pricing and Packages</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul class="menu_footer">
+                <li class="head">resources</li>
+                <li>XXXXXXX</li>
+                <li>XXXXXXX</li>
+                <li>XXXXXXX</li>
+            </ul>
+            <ul class="menu_footer">
+                <li class="head">legal</li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Private Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+            <div class="subscribe">
+                <h4>SUBSCRIBE TO CHOMP</h4>
+                <p>Get interviews, advice, tips and guides about <br> business and PR from our blog every month. </p>
+                <form>
+                    <input type="email" name="email" placeholder="example@email.com" required> <button type="submit" class="sub">Subscribe</button>
+                </form>
+            </div>
+            <div class="follow_us">
+                <p><span>Follow Us On</span></p>
+                <a href="#"><picture><source srcset="img/icons/icons.svg#in" type="image/webp"><img src="img/icons/icons.svg#in" class="svg-in-dims" alt=""></picture></a>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2020 Nibble Tech Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- footer  -->
+
+    
+
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>
