@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Client-Project-Detail-view</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+        <div class="container-fluid">
+            <div class="header__content">
+                <div class="header__left">
+                    <div class="logo">
+                        <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
+                    </div>
+                    <nav>
+                        <li><a href="#">Our Story</a></li>
+                        <li class="dropdown"><a href="#">How It Work</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Chomp</a></li>
+                    </nav>
+                </div>
+                <div class="header__right">
+                    <div class="bell">
+                        <picture><source srcset="img/icons/icons.svg#bell" type="image/webp"><img src="img/icons/icons.svg#bell" class="svg-bell-dims" alt="bell"/></picture>
+                    </div>
+                    <div class="msg">
+                        <picture><source srcset="img/icons/icons.svg#msg" type="image/webp"><img src="img/icons/icons.svg#msg" class="svg-msg-dims" alt="msg"/></picture>
+                        <span class="count">5</span>
+                    </div>
+                    <div class="my_acc">
+                        <div class="avatar">
+                            <picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.png" alt=""></picture>
+                            <a href="#"class="dropdown">My Account</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="toggler" id="menu_toggler">
+                    <span></span>
+                </div>
+            </div>
+                
+        </div>
+            
+        </header>
+        <div class="menu_mobile ">
+            <div class="mobile_menu_content">
+                <div class="logo">
+                    <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
+                </div>
+                <div class="slide_container">
+                    <div class="menu" id="menuMain">
+                        <picture><source srcset="img/avatar_mobile.webp" type="image/webp"><img src="img/avatar_mobile.png" alt=""></picture> 
+                        <span class="name">Lizzie Earl</span>
+                        <div class="dashboard_menu">
+                            <div class="bell">
+                                <picture><source srcset="img/icons/icons.svg#bell" type="image/webp"><img src="img/icons/icons.svg#bell" class="svg-bell-dims" alt="bell"/></picture>
+                            </div>
+                            <div class="msg">
+                                <picture><source srcset="img/icons/icons.svg#msg" type="image/webp"><img src="img/icons/icons.svg#msg" class="svg-msg-dims" alt="msg"/></picture>
+                                <span class="count">5</span>
+                            </div>
+                            <div class="logout">
+                                <picture><source srcset="img//icons/icons.svg#logout_lite" type="image/webp"><img src="img//icons/icons.svg#logout_lite" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                            </div>
+                            
+                        </div>
+                        <nav>
+                            <li><a href="#">Our Story</a></li>
+                            <li class="dropdown"><a href="#">How It Work</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Chomp</a></li>
+                        </nav>
+                        <button class="btn_orange" id="to_dashboard">Dashboard <picture><source srcset="img/arrow_white.webp" type="image/webp"><img src="img/arrow_white.png" alt=""></picture></button>
+                    </div>
+                    <div class="dashboard" id="menuDashboard">
+                        <div class="dashboard_content">
+                            <div class="item">
+                                <a href="#">
+                                    <div class="icon_wrapper">
+                                        <picture><source srcset="img//icons/icons.svg#dashboard" type="image/webp"><img src="img//icons/icons.svg#dashboard" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                        <picture><source srcset="img//icons/icons.svg#dashboard_active" type="image/webp"><img src="img//icons/icons.svg#dashboard_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="icon_wrapper">
+                                        <picture><source srcset="img//icons/icons.svg#work" type="image/webp"><img src="img//icons/icons.svg#work" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                        <picture><source srcset="img//icons/icons.svg#work_active" type="image/webp"><img src="img//icons/icons.svg#work_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="icon_wrapper">
+                                        <picture><source srcset="img//icons/icons.svg#msg_menu" type="image/webp"><img src="img//icons/icons.svg#msg_menu" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                        <picture><source srcset="img//icons/icons.svg#msg_menu_active" type="image/webp"><img src="img//icons/icons.svg#msg_menu_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="icon_wrapper">
+                                        <picture><source srcset="img//icons/icons.svg#acc" type="image/webp"><img src="img//icons/icons.svg#acc" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                        <picture><source srcset="img//icons/icons.svg#acc_active" type="image/webp"><img src="img//icons/icons.svg#acc_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="icon_wrapper">
+                                        <picture><source srcset="img//icons/icons.svg#set" type="image/webp"><img src="img//icons/icons.svg#set" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                        <picture><source srcset="img//icons/icons.svg#set_active" type="image/webp"><img src="img//icons/icons.svg#set_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="icon_wrapper">
+                                        <picture><source srcset="img//icons/icons.svg#log" type="image/webp"><img src="img//icons/icons.svg#log" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                        <picture><source srcset="img//icons/icons.svg#log_active" type="image/webp"><img src="img//icons/icons.svg#log_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div class="btn_container">
+                                <button class="btn_orange" id="to_main"><picture><source srcset="img/back_white.webp" type="image/webp"><img src="img/back_white.png" alt=""></picture>Main Menu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+            
+            <main class="with_sidebar">
+                <!-- sidevar -->
+                <aside>
+            <div class="new_work">
+                <div class="add_new">
+                    <picture><source srcset="img/icons/icons.svg#AddPost" type="image/webp"><img src="img/icons/icons.svg#AddPost" class="svg-AddPost-dims" alt="AddPost"></picture>
+                </div>
+                <p>Post New Work</p>
+            </div>
+            
+            <nav>
+                <li class="dashboard">
+                    <div class="icon_wrapper">
+                        <picture><source srcset="img//icons/icons.svg#dashboard" type="image/webp"><img src="img//icons/icons.svg#dashboard" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                        <picture><source srcset="img//icons/icons.svg#dashboard_active" type="image/webp"><img src="img//icons/icons.svg#dashboard_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                    </div>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li class="dropdown">
+                    <div class="icon_wrapper">
+                        <picture><source srcset="img//icons/icons.svg#work" type="image/webp"><img src="img//icons/icons.svg#work" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                        <picture><source srcset="img//icons/icons.svg#work_active" type="image/webp"><img src="img//icons/icons.svg#work_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                    </div>
+                    <a class="main_link">Work</a>
+                    <ul class="main_link_list">
+                        <li><a href="#">New Briefs <span class="main_link_count">5</span></a></li>
+                        <li><a href="#">Work In Progress</a></li>
+                        <li><a href="#">Completed</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="icon_wrapper">
+                        <picture><source srcset="img//icons/icons.svg#msg_menu" type="image/webp"><img src="img//icons/icons.svg#msg_menu" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                        <picture><source srcset="img//icons/icons.svg#msg_menu_active" type="image/webp"><img src="img//icons/icons.svg#msg_menu_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                    </div>
+                    <a href="#">Messages</a>
+                </li>
+                <li class="active">
+                    <div class="icon_wrapper">
+                        <picture><source srcset="img//icons/icons.svg#fav" type="image/webp"><img src="img//icons/icons.svg#fav" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                        <picture><source srcset="img//icons/icons.svg#fav_active" type="image/webp"><img src="img//icons/icons.svg#fav_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                    </div>
+                    <a href="#" class="main_link">Favourites</a>
+                </li>
+                <li class="dropdown">
+                    <div class="icon_wrapper">
+                        <picture><source srcset="img//icons/icons.svg#acc" type="image/webp"><img src="img//icons/icons.svg#acc" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                        <picture><source srcset="img//icons/icons.svg#acc_active" type="image/webp"><img src="img//icons/icons.svg#acc_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                    </div>
+                    <a class="main_link" >My Account</a>
+                    <ul>
+                        <li><a href="#">Edit My Profile</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">My Reviews</a></li>
+                        <li><a href="#">My Public Profile</a></li>
+                        <li><a href="#">Billing & Invoices</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="icon_wrapper">
+                        <picture><source srcset="img//icons/icons.svg#set" type="image/webp"><img src="img//icons/icons.svg#set" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                        <picture><source srcset="img//icons/icons.svg#set_active" type="image/webp"><img src="img//icons/icons.svg#set_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                    </div>
+                    <a href="#">Settings</a>
+                </li>
+                <li>
+                    <div class="icon_wrapper">
+                        <picture><source srcset="img//icons/icons.svg#ref" type="image/webp"><img src="img//icons/icons.svg#ref" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                        <picture><source srcset="img//icons/icons.svg#ref_active" type="image/webp"><img src="img//icons/icons.svg#ref_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                    </div>
+                    <a href="#">Refer Us</a>
+                </li>
+                <li>
+                    <div class="icon_wrapper">
+                        <picture><source srcset="img//icons/icons.svg#log" type="image/webp"><img src="img//icons/icons.svg#log" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                        <picture><source srcset="img//icons/icons.svg#log_active" type="image/webp"><img src="img//icons/icons.svg#log_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                    </div>
+                    <a href="#">Logout</a>
+                </li>
+            </nav>
+
+        </aside>
+
+        <aside class="tablet">
+            <div class="container">
+                <div class="sidebar_content">
+                    <div class="btn_container">
+                        <div class="add_new">
+                            <picture><source srcset="img/icons/icons.svg#AddPost" type="image/webp"><img src="img/icons/icons.svg#AddPost" class="svg-AddPost-dims" alt="AddPost"></picture>
+                            <p>Post New Work</p>
+                        </div>
+                    </div>
+                    
+                    <nav>
+                        <li>
+                            <a href="#">
+                                <div class="icon_wrapper">
+                                    <picture><source srcset="img//icons/icons.svg#dashboard" type="image/webp"><img src="img//icons/icons.svg#dashboard" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                    <picture><source srcset="img//icons/icons.svg#dashboard_active" type="image/webp"><img src="img//icons/icons.svg#dashboard_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown active">
+                            <a href="#work">
+                                <div class="icon_wrapper">
+                                    <picture><source srcset="img//icons/icons.svg#work" type="image/webp"><img src="img//icons/icons.svg#work" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                    <picture><source srcset="img//icons/icons.svg#work_active" type="image/webp"><img src="img//icons/icons.svg#work_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon_wrapper">
+                                    <picture><source srcset="img//icons/icons.svg#msg_menu" type="image/webp"><img src="img//icons/icons.svg#msg_menu" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                    <picture><source srcset="img//icons/icons.svg#msg_menu_active" type="image/webp"><img src="img//icons/icons.svg#msg_menu_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon_wrapper">
+                                    <picture><source srcset="img//icons/icons.svg#fav" type="image/webp"><img src="img//icons/icons.svg#fav" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                    <picture><source srcset="img//icons/icons.svg#fav_active" type="image/webp"><img src="img//icons/icons.svg#fav_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon_wrapper">
+                                    <picture><source srcset="img//icons/icons.svg#acc" type="image/webp"><img src="img//icons/icons.svg#acc" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                    <picture><source srcset="img//icons/icons.svg#acc_active" type="image/webp"><img src="img//icons/icons.svg#acc_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon_wrapper">
+                                    <picture><source srcset="img//icons/icons.svg#set" type="image/webp"><img src="img//icons/icons.svg#set" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                    <picture><source srcset="img//icons/icons.svg#set_active" type="image/webp"><img src="img//icons/icons.svg#set_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon_wrapper">
+                                    <picture><source srcset="img//icons/icons.svg#ref" type="image/webp"><img src="img//icons/icons.svg#ref" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                    <picture><source srcset="img//icons/icons.svg#ref_active" type="image/webp"><img src="img//icons/icons.svg#ref_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon_wrapper">
+                                    <picture><source srcset="img//icons/icons.svg#log" type="image/webp"><img src="img//icons/icons.svg#log" alt="dashboard" class="svg-menuIcon-dims"></picture>
+                                    <picture><source srcset="img//icons/icons.svg#log_active" type="image/webp"><img src="img//icons/icons.svg#log_active" alt="dashboard" class=" svg-menuIcon-dims icon_hover"></picture>
+                                </div>
+                            </a>
+                        </li>
+
+                        <ul class="dropdown active" id="work">
+                            <li><a href="#" class="active">New Briefs</a></li>
+                            <li><a href="#">Work In Progress</a></li>
+                            <li><a href="#">Completed</a></li>
+                        </ul>
+                        
+                    </nav>
+                </div>
+            </div>
+            
+        </aside>
+                <!-- sidevar -->
+
+                <!-- main content -->
+                <div class="main_content">
+                    <div class="container" style="display: none;">
+                      
+                        <!-- <h1>Messages</h1> -->
+             
+                    </div>
+                    <div class="container fix" style="display: none;">
+                        <div class="result">
+                            <div class="variant">
+                                <div class="info">
+                                    <div class="name">
+                                        <h3>PR for a new Tech startup</h3>
+                                        <div class="subtitle"> <picture><source srcset="img/icons/icons.svg#portfel" type="image/webp"><img src="img/icons/icons.svg#portfel" class="svg-portfel-dims" alt=""></picture> Vegasmic Vegan toys</div>
+                                    </div>
+                               
+
+
+                                    
+                </div>
+                
+            </div>
+        </div>
+                    <!-- popups -->
+
+                </div>
+                <!-- single -->
+                <div class="single">
+                    <div class="container-fluid">
+                        <div class="single__body">
+                            <div class="single__body-left">
+                                <a href="#" class="single__link-back">
+                                    <img src="img/back.png" alt="back">
+                                    <span>Back to Matches</span>
+                                </a>
+                                <div class="user-container">
+                                    <img src="img/human_1.png" alt="">
+                                    <div class="user-grade">
+                                         <h1 class="single__title">Lizzie Earl</h1>
+                                         <div class="adapt-user">
+                                            <div class="average-mark">5.0</div>
+                                         <img src="img/heart-empty.svg" alt="" class="user-heart">
+                                     </div>
+                                         
+                                     </div>
+                            
+                                <p class="single__subtitle">PR professional with 20 years of experience</p>
+                            </div>   
+                            </div>
+                            <div class="single__body-right">
+                               <div class="single__company buttons-details" id="page-details">
+                                  <button class="user-invite-to-submit btn-orange">Invite to Submit</button>
+                                  <button class="user-message btn-white"><img src="img/telegram.svg"> Message</button>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="single__body">
+                            <div class="single__body-left">
+                               <div class="single__info info-single single-block user-about-block">
+                                   <div class="info-single__post">
+                                       <p class="info-single__title"><strong>About Me</strong><img src="img/angle-down.svg" alt=""></p>
+                                       <p class="info-single__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br>
+                                - Ut enim ad minim veniam, quis nostrud exercitation  <br>
+                                - ullamco laboris nisi ut aliquip ex ea commodo consequat.  <br>
+                                - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. <br><br>
+                                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+                                    <br>
+                                    
+        Sed arcu non odio euismod lacinia at quis. Sodales ut eu sem integer vitae. Etiam sit amet nisl purus in mollis nunc sed id. Id faucibus nisl tincidunt eget         nullam non. Vulputate odio ut                       enim blandit. Nam aliquam sem et tortor consequat id porta.
+
+                                        </p>
+                                   </div>
+                               </div> 
+                                <div class="single__info info-single single-block user-about-block">
+                                   <div class="info-single__post">
+                                       <p class="info-single__title"><strong>Work Highlight</strong><img src="img/angle-down.svg" alt=""></p>
+                                       <p class="info-single__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus orci ac auctor augue mauris augue neque. Vestibulum lorem sed risus ultricies tristique. Lobortis elementum nibh tellus molestie nunc. Fermentum odio eu feugiat pretium. Aliquam ultrices sagittis orci a scelerisque. Neque egestas congue quisque egestas. Nibh praesent tristique magna sit. Vitae aliquet nec ullamcorper sit amet.
+
+                                        </p>
+                                   </div>
+                               </div> 
+                                <div class="single__info info-single single-block user-about-block">
+                                   <div class="info-single__post reviews">
+                                       <p class="info-single__title"><strong>Experience and Reviews</strong><img src="img/angle-down.svg" alt=""></p>
+                                       <div class="reviews-block">
+                                            <div class="review-text-block">
+                                                <h2>PR for a Tech Startup</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices justo id porta bibendum. Fusce non enim risus. Quisque imperdiet viverra quam, non lacinia nulla efficitur sed. Cras scelerisque mi vel erat porttitor, sit amet....</p>
+                                                
+                                            </div>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                               <div class="reviews-block">
+                                            <div class="review-text-block">
+                                                <h2>New fashion startup needs a PR</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices justo id porta bibendum. Fusce non enim risus. Quisque imperdiet viverra quam, non lacinia nulla efficitur sed. Cras scelerisque mi vel erat porttitor, sit amet....</p>
+                                                
+                                            </div>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                               <div class="reviews-block">
+                                            <div class="review-text-block">
+                                                <h2>PR for an IG influencerp</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultrices justo id porta bibendum. Fusce non enim risus. Quisque imperdiet viverra quam, non lacinia nulla efficitur sed. Cras scelerisque mi vel erat porttitor, sit amet....</p>
+                                                
+                                            </div>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                   </div>
+                               </div> 
+                            </div>
+                            <div class="single__body-right">
+                                <div class="single__overview overview-single single-block user-more-information">
+                                    <div class="single-block__top" data-top="tab-1">
+                                     <p class="info-single__title more-info-head"><strong>More Information</strong></p>
+                                            <img src="img/angle-down.svg"></img>
+                                    </div>
+                                    <div class="single-block__body" data-body="tab-1">
+                                        <div class="overview-single__row">
+                                            <p class="overview-single__name">Rating</p>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                        <div class="overview-single__row">
+                                            <p class="overview-single__name">Experience</p>
+                                            <p class="overview-single__info"><strong>20 years</strong></p>
+                                        </div>
+                                        <div class="overview-single__row">
+                                            <p class="overview-single__name">Seniority</p>
+                                            <p class="overview-single__info"><strong>Management level</strong></p>
+                                        </div>
+                                        <div class="overview-single__row">
+                                            <p class="overview-single__name">Practice</p>
+                                            <p class="overview-single__info"><strong>B2B</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="single__overview overview-single single-block user-more-information">
+                                    <div class="single-block__top " data-top="tab-1">
+                                     <p class="info-single__title more-info-head"><strong>Top Rated Skills</strong></p>
+                                <img src="img/angle-down.svg"></img>
+                                    </div>
+                                    <div class="single-block__body rated-adapt" data-body="tab-1">
+                                        <div class="overview-single__row">
+                                            <p class="overview-single__name">Skill1</p>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                            <div class="overview-single__row">
+                                            <p class="overview-single__name">Skill2</p>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                            <div class="overview-single__row">
+                                            <p class="overview-single__name">Skill3</p>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                            <div class="overview-single__row">
+                                            <p class="overview-single__name">Skill4</p>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                            <div class="overview-single__row">
+                                            <p class="overview-single__name">Skill5</p>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single__overview overview-single single-block user-more-information">
+                                    <div class="single-block__top" data-top="tab-1">
+                                     <p class="info-single__title more-info-head"><strong>Rated Professional Attributes</strong></p>
+                                    <img src="img/angle-down.svg"></img>
+                                    </div>
+                                    <div class="single-block__body rated-adapt" data-body="tab-1">
+                                       <div class="overview-single__row">
+                                            <p class="overview-single__name">Strategic</p>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                            <div class="overview-single__row">
+                                            <p class="overview-single__name">Articulate</p>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                            <div class="overview-single__row">
+                                            <p class="overview-single__name">Creative</p>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                            <div class="overview-single__row">
+                                            <p class="overview-single__name">Tenacious</p>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                            <div class="overview-single__row">
+                                            <p class="overview-single__name">Flexible</p>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                        <div class="overview-single__row">
+                                            <p class="overview-single__name">Resourceful</p>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                            <div class="overview-single__row">
+                                            <p class="overview-single__name">Detail Oriented</p>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                            <div class="overview-single__row">
+                                            <p class="overview-single__name">Organised</p>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                            <div class="overview-single__row">
+                                            <p class="overview-single__name">Project Management</p>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                            <div class="overview-single__row">
+                                            <p class="overview-single__name">Prompt</p>
+                                            <div class="review-rate-block"><img src="img/stars.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="single__overview overview-single single-block user-more-information main-downloads">
+                                    <div class="single-block__top" data-top="tab-1">
+                                     <p class="info-single__title more-info-head"><strong>Downloads</strong></p>
+                                      <img src="img/angle-down.svg"></img>
+                                    </div>
+                                    <div class="single-block__body downloads-block" data-body="tab-1">
+                                        <div class="overview-single__row">
+                                            <label>
+                                             <input type="file">
+                                             <svg width="166" height="68" viewBox="0 0 166 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="166" height="68" rx="5" fill="#FFE3DC"/>
+                                                <path d="M81.76 21.64H78.192V19.608H87.856V21.64H84.288V31H81.76V21.64ZM89.0229 22.888H91.4389V31H89.0229V22.888ZM91.5189 19.08V21.352H88.9429V19.08H91.5189ZM96.4535 24.696V27.848C96.4535 28.296 96.5708 28.6267 96.8055 28.84C97.0402 29.0427 97.3442 29.144 97.7175 29.144C97.9522 29.144 98.2188 29.1067 98.5175 29.032V30.904C98.1335 31.0533 97.6695 31.128 97.1255 31.128C96.1228 31.128 95.3548 30.8453 94.8215 30.28C94.2988 29.7147 94.0375 28.92 94.0375 27.896V24.696H92.5015V22.888H94.0375V20.984L96.4535 20.2V22.888H98.5175V24.696H96.4535ZM99.7573 19.224H102.173V31H99.7573V19.224ZM111.428 27.144H106.084C106.127 27.9013 106.324 28.456 106.676 28.808C107.028 29.1493 107.551 29.32 108.244 29.32C108.66 29.32 109.076 29.2507 109.492 29.112C109.908 28.9733 110.292 28.7707 110.644 28.504L111.284 30.136C110.9 30.4453 110.42 30.6907 109.844 30.872C109.279 31.0427 108.708 31.128 108.132 31.128C106.767 31.128 105.695 30.7547 104.916 30.008C104.137 29.2507 103.748 28.2213 103.748 26.92C103.748 26.0987 103.913 25.368 104.244 24.728C104.585 24.0773 105.06 23.576 105.668 23.224C106.276 22.8613 106.964 22.68 107.732 22.68C108.873 22.68 109.775 23.0533 110.436 23.8C111.097 24.536 111.428 25.5333 111.428 26.792V27.144ZM107.796 24.376C107.337 24.376 106.964 24.5093 106.676 24.776C106.399 25.0427 106.217 25.432 106.132 25.944H109.348C109.22 24.8987 108.703 24.376 107.796 24.376Z" fill="#FA4616"/>
+                                                <path d="M61.46 40.952H65.288V47H64.076V41.888H61.46V47H60.248V41.888H59.072V40.952H60.248V40.244C60.248 39.724 60.324 39.312 60.476 39.008C60.636 38.704 60.892 38.484 61.244 38.348C61.604 38.204 62.092 38.132 62.708 38.132H63.116V39.044H62.816C62.424 39.044 62.136 39.08 61.952 39.152C61.768 39.216 61.64 39.344 61.568 39.536C61.496 39.72 61.46 40.012 61.46 40.412V40.952ZM65.396 38.252V39.56H63.968V38.252H65.396ZM67.0482 38.168H68.2482V47H67.0482V38.168ZM75.1847 44H70.8647C70.9047 45.416 71.5487 46.124 72.7967 46.124C73.4927 46.124 74.1287 45.896 74.7047 45.44L75.0767 46.304C74.8047 46.544 74.4567 46.736 74.0327 46.88C73.6167 47.016 73.1967 47.084 72.7727 47.084C71.8047 47.084 71.0447 46.808 70.4927 46.256C69.9407 45.696 69.6647 44.932 69.6647 43.964C69.6647 43.348 69.7847 42.8 70.0247 42.32C70.2727 41.84 70.6167 41.468 71.0567 41.204C71.4967 40.94 71.9967 40.808 72.5567 40.808C73.3727 40.808 74.0127 41.072 74.4767 41.6C74.9487 42.128 75.1847 42.86 75.1847 43.796V44ZM72.5807 41.708C72.1247 41.708 71.7527 41.844 71.4647 42.116C71.1767 42.388 70.9927 42.776 70.9127 43.28H74.1167C74.0687 42.768 73.9127 42.38 73.6487 42.116C73.3847 41.844 73.0287 41.708 72.5807 41.708ZM79.7915 40.808C81.2395 40.808 81.9635 41.616 81.9635 43.232V47H80.7515V43.304C80.7515 42.776 80.6475 42.392 80.4395 42.152C80.2395 41.912 79.9155 41.792 79.4675 41.792C78.9555 41.792 78.5435 41.952 78.2315 42.272C77.9275 42.592 77.7755 43.02 77.7755 43.556V47H76.5755V42.656C76.5755 42.024 76.5435 41.456 76.4795 40.952H77.6075L77.7155 41.996C77.9075 41.612 78.1835 41.32 78.5435 41.12C78.9115 40.912 79.3275 40.808 79.7915 40.808ZM89.2208 40.952V47H88.0208V45.968C87.8448 46.328 87.5808 46.604 87.2288 46.796C86.8848 46.988 86.4808 47.084 86.0168 47.084C85.4808 47.084 85.0088 46.956 84.6008 46.7C84.2008 46.444 83.8888 46.084 83.6648 45.62C83.4408 45.148 83.3288 44.6 83.3288 43.976C83.3288 43.352 83.4408 42.8 83.6648 42.32C83.8968 41.84 84.2168 41.468 84.6248 41.204C85.0328 40.94 85.4968 40.808 86.0168 40.808C86.4808 40.808 86.8848 40.908 87.2288 41.108C87.5728 41.3 87.8368 41.576 88.0208 41.936V40.952H89.2208ZM86.3048 46.124C86.8488 46.124 87.2688 45.936 87.5648 45.56C87.8688 45.176 88.0208 44.64 88.0208 43.952C88.0208 43.256 87.8688 42.72 87.5648 42.344C87.2688 41.968 86.8448 41.78 86.2928 41.78C85.7488 41.78 85.3208 41.976 85.0088 42.368C84.7048 42.752 84.5528 43.288 84.5528 43.976C84.5528 44.656 84.7048 45.184 85.0088 45.56C85.3208 45.936 85.7528 46.124 86.3048 46.124ZM97.9013 40.808C99.2453 40.808 99.9173 41.616 99.9173 43.232V47H98.7053V43.292C98.7053 42.772 98.6133 42.392 98.4293 42.152C98.2533 41.912 97.9653 41.792 97.5653 41.792C97.1013 41.792 96.7333 41.952 96.4613 42.272C96.1973 42.592 96.0653 43.028 96.0653 43.58V47H94.8533V43.292C94.8533 42.772 94.7613 42.392 94.5773 42.152C94.4013 41.912 94.1133 41.792 93.7133 41.792C93.2493 41.792 92.8813 41.952 92.6093 42.272C92.3373 42.592 92.2013 43.028 92.2013 43.58V47H91.0013V42.656C91.0013 42.024 90.9693 41.456 90.9053 40.952H92.0333L92.1413 41.96C92.3173 41.592 92.5693 41.308 92.8973 41.108C93.2253 40.908 93.6093 40.808 94.0493 40.808C94.9853 40.808 95.5973 41.196 95.8853 41.972C96.0693 41.612 96.3373 41.328 96.6893 41.12C97.0493 40.912 97.4533 40.808 97.9013 40.808ZM106.814 44H102.494C102.534 45.416 103.178 46.124 104.426 46.124C105.122 46.124 105.758 45.896 106.334 45.44L106.706 46.304C106.434 46.544 106.086 46.736 105.662 46.88C105.246 47.016 104.826 47.084 104.402 47.084C103.434 47.084 102.674 46.808 102.122 46.256C101.57 45.696 101.294 44.932 101.294 43.964C101.294 43.348 101.414 42.8 101.654 42.32C101.902 41.84 102.246 41.468 102.686 41.204C103.126 40.94 103.626 40.808 104.186 40.808C105.002 40.808 105.642 41.072 106.106 41.6C106.578 42.128 106.814 42.86 106.814 43.796V44ZM104.21 41.708C103.754 41.708 103.382 41.844 103.094 42.116C102.806 42.388 102.622 42.776 102.542 43.28H105.746C105.698 42.768 105.542 42.38 105.278 42.116C105.014 41.844 104.658 41.708 104.21 41.708ZM109.476 45.56V47H108.036V45.56H109.476ZM116.432 38.168V47H115.232V45.968C115.056 46.328 114.792 46.604 114.44 46.796C114.096 46.988 113.692 47.084 113.228 47.084C112.708 47.084 112.244 46.952 111.836 46.688C111.428 46.424 111.108 46.056 110.876 45.584C110.652 45.104 110.54 44.552 110.54 43.928C110.54 43.304 110.652 42.756 110.876 42.284C111.1 41.812 111.412 41.448 111.812 41.192C112.22 40.936 112.692 40.808 113.228 40.808C113.684 40.808 114.084 40.904 114.428 41.096C114.78 41.288 115.044 41.56 115.22 41.912V38.168H116.432ZM113.504 46.124C114.056 46.124 114.48 45.936 114.776 45.56C115.08 45.176 115.232 44.64 115.232 43.952C115.232 43.264 115.08 42.732 114.776 42.356C114.48 41.972 114.06 41.78 113.516 41.78C112.964 41.78 112.532 41.968 112.22 42.344C111.916 42.72 111.764 43.248 111.764 43.928C111.764 44.616 111.916 45.156 112.22 45.548C112.532 45.932 112.96 46.124 113.504 46.124ZM120.816 47.084C120.224 47.084 119.704 46.956 119.256 46.7C118.808 46.444 118.46 46.08 118.212 45.608C117.972 45.136 117.852 44.584 117.852 43.952C117.852 43.32 117.972 42.768 118.212 42.296C118.46 41.816 118.808 41.448 119.256 41.192C119.704 40.936 120.224 40.808 120.816 40.808C121.4 40.808 121.916 40.936 122.364 41.192C122.812 41.448 123.156 41.816 123.396 42.296C123.644 42.768 123.768 43.32 123.768 43.952C123.768 44.584 123.644 45.136 123.396 45.608C123.156 46.08 122.812 46.444 122.364 46.7C121.916 46.956 121.4 47.084 120.816 47.084ZM120.804 46.124C121.364 46.124 121.792 45.94 122.088 45.572C122.384 45.204 122.532 44.664 122.532 43.952C122.532 43.256 122.38 42.72 122.076 42.344C121.78 41.968 121.36 41.78 120.816 41.78C120.264 41.78 119.836 41.968 119.532 42.344C119.228 42.72 119.076 43.256 119.076 43.952C119.076 44.664 119.224 45.204 119.52 45.572C119.824 45.94 120.252 46.124 120.804 46.124ZM127.813 47.084C127.205 47.084 126.673 46.956 126.217 46.7C125.769 46.444 125.425 46.084 125.185 45.62C124.945 45.148 124.825 44.6 124.825 43.976C124.825 43.352 124.949 42.8 125.197 42.32C125.453 41.84 125.809 41.468 126.265 41.204C126.721 40.94 127.253 40.808 127.861 40.808C128.285 40.808 128.693 40.88 129.085 41.024C129.477 41.16 129.793 41.348 130.033 41.588L129.661 42.464C129.093 42.016 128.521 41.792 127.945 41.792C127.361 41.792 126.905 41.984 126.577 42.368C126.249 42.744 126.085 43.276 126.085 43.964C126.085 44.652 126.249 45.184 126.577 45.56C126.905 45.928 127.361 46.112 127.945 46.112C128.537 46.112 129.109 45.888 129.661 45.44L130.033 46.316C129.777 46.556 129.449 46.744 129.049 46.88C128.657 47.016 128.245 47.084 127.813 47.084ZM136.753 47H135.313L133.525 44.768L131.761 47H130.309L132.829 43.892L130.453 40.952H131.905L133.525 43.016L135.157 40.952H136.621L134.245 43.892L136.753 47Z" fill="#FA4616"/>
+                                                <g clip-path="url(#clip0)">
+                                                <path d="M48.1926 36.4081L46.3436 34.5591L38.0235 26.2394C36.4901 24.7175 34.0149 24.722 32.4872 26.2497C30.9596 27.7773 30.955 30.2525 32.4769 31.7859L40.7967 40.1082C41.1369 40.4486 41.6889 40.4486 42.0294 40.1082C42.3697 39.7677 42.3697 39.2159 42.0294 38.8754L33.7096 30.5532C32.8587 29.7023 32.8587 28.323 33.7096 27.4721C34.5605 26.6212 35.9398 26.6212 36.7908 27.4721L45.113 35.7918L46.962 37.6406C48.4938 39.173 48.4933 41.657 46.961 43.1887C45.4286 44.7204 42.9448 44.72 41.4129 43.1876L39.8725 41.6465L31.2444 33.0184L30.6279 32.4022C28.4733 30.1802 28.5007 26.6403 30.6892 24.4516C32.8779 22.2631 36.4177 22.2357 38.6397 24.3904L47.8841 33.6349C48.1044 33.855 48.4253 33.9409 48.726 33.8604C49.0268 33.7798 49.2619 33.545 49.3424 33.2441C49.423 32.9432 49.3369 32.6225 49.1168 32.4022L39.8725 23.1578C36.9774 20.276 32.2959 20.2813 29.4075 23.1699C26.5189 26.0583 26.5135 30.7398 29.3954 33.6349L38.6397 42.8792L40.1825 44.4203C42.4074 46.5573 45.9333 46.5217 48.1143 44.3399C50.2955 42.1583 50.3302 38.6324 48.1926 36.4081Z" fill="#FA4616"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0">
+                                                <rect width="25" height="25" fill="white" transform="translate(26 21)"/>
+                                                </clipPath>
+                                                </defs>
+                                             </svg>
+                                            </label>
+
+
+                                        </div>
+                                        <div class="overview-single__row">
+                                            <label>
+                                             <input type="file">
+                                             <svg width="166" height="68" viewBox="0 0 166 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="166" height="68" rx="5" fill="#FFE3DC"/>
+                                                <path d="M81.76 21.64H78.192V19.608H87.856V21.64H84.288V31H81.76V21.64ZM89.0229 22.888H91.4389V31H89.0229V22.888ZM91.5189 19.08V21.352H88.9429V19.08H91.5189ZM96.4535 24.696V27.848C96.4535 28.296 96.5708 28.6267 96.8055 28.84C97.0402 29.0427 97.3442 29.144 97.7175 29.144C97.9522 29.144 98.2188 29.1067 98.5175 29.032V30.904C98.1335 31.0533 97.6695 31.128 97.1255 31.128C96.1228 31.128 95.3548 30.8453 94.8215 30.28C94.2988 29.7147 94.0375 28.92 94.0375 27.896V24.696H92.5015V22.888H94.0375V20.984L96.4535 20.2V22.888H98.5175V24.696H96.4535ZM99.7573 19.224H102.173V31H99.7573V19.224ZM111.428 27.144H106.084C106.127 27.9013 106.324 28.456 106.676 28.808C107.028 29.1493 107.551 29.32 108.244 29.32C108.66 29.32 109.076 29.2507 109.492 29.112C109.908 28.9733 110.292 28.7707 110.644 28.504L111.284 30.136C110.9 30.4453 110.42 30.6907 109.844 30.872C109.279 31.0427 108.708 31.128 108.132 31.128C106.767 31.128 105.695 30.7547 104.916 30.008C104.137 29.2507 103.748 28.2213 103.748 26.92C103.748 26.0987 103.913 25.368 104.244 24.728C104.585 24.0773 105.06 23.576 105.668 23.224C106.276 22.8613 106.964 22.68 107.732 22.68C108.873 22.68 109.775 23.0533 110.436 23.8C111.097 24.536 111.428 25.5333 111.428 26.792V27.144ZM107.796 24.376C107.337 24.376 106.964 24.5093 106.676 24.776C106.399 25.0427 106.217 25.432 106.132 25.944H109.348C109.22 24.8987 108.703 24.376 107.796 24.376Z" fill="#FA4616"/>
+                                                <path d="M61.46 40.952H65.288V47H64.076V41.888H61.46V47H60.248V41.888H59.072V40.952H60.248V40.244C60.248 39.724 60.324 39.312 60.476 39.008C60.636 38.704 60.892 38.484 61.244 38.348C61.604 38.204 62.092 38.132 62.708 38.132H63.116V39.044H62.816C62.424 39.044 62.136 39.08 61.952 39.152C61.768 39.216 61.64 39.344 61.568 39.536C61.496 39.72 61.46 40.012 61.46 40.412V40.952ZM65.396 38.252V39.56H63.968V38.252H65.396ZM67.0482 38.168H68.2482V47H67.0482V38.168ZM75.1847 44H70.8647C70.9047 45.416 71.5487 46.124 72.7967 46.124C73.4927 46.124 74.1287 45.896 74.7047 45.44L75.0767 46.304C74.8047 46.544 74.4567 46.736 74.0327 46.88C73.6167 47.016 73.1967 47.084 72.7727 47.084C71.8047 47.084 71.0447 46.808 70.4927 46.256C69.9407 45.696 69.6647 44.932 69.6647 43.964C69.6647 43.348 69.7847 42.8 70.0247 42.32C70.2727 41.84 70.6167 41.468 71.0567 41.204C71.4967 40.94 71.9967 40.808 72.5567 40.808C73.3727 40.808 74.0127 41.072 74.4767 41.6C74.9487 42.128 75.1847 42.86 75.1847 43.796V44ZM72.5807 41.708C72.1247 41.708 71.7527 41.844 71.4647 42.116C71.1767 42.388 70.9927 42.776 70.9127 43.28H74.1167C74.0687 42.768 73.9127 42.38 73.6487 42.116C73.3847 41.844 73.0287 41.708 72.5807 41.708ZM79.7915 40.808C81.2395 40.808 81.9635 41.616 81.9635 43.232V47H80.7515V43.304C80.7515 42.776 80.6475 42.392 80.4395 42.152C80.2395 41.912 79.9155 41.792 79.4675 41.792C78.9555 41.792 78.5435 41.952 78.2315 42.272C77.9275 42.592 77.7755 43.02 77.7755 43.556V47H76.5755V42.656C76.5755 42.024 76.5435 41.456 76.4795 40.952H77.6075L77.7155 41.996C77.9075 41.612 78.1835 41.32 78.5435 41.12C78.9115 40.912 79.3275 40.808 79.7915 40.808ZM89.2208 40.952V47H88.0208V45.968C87.8448 46.328 87.5808 46.604 87.2288 46.796C86.8848 46.988 86.4808 47.084 86.0168 47.084C85.4808 47.084 85.0088 46.956 84.6008 46.7C84.2008 46.444 83.8888 46.084 83.6648 45.62C83.4408 45.148 83.3288 44.6 83.3288 43.976C83.3288 43.352 83.4408 42.8 83.6648 42.32C83.8968 41.84 84.2168 41.468 84.6248 41.204C85.0328 40.94 85.4968 40.808 86.0168 40.808C86.4808 40.808 86.8848 40.908 87.2288 41.108C87.5728 41.3 87.8368 41.576 88.0208 41.936V40.952H89.2208ZM86.3048 46.124C86.8488 46.124 87.2688 45.936 87.5648 45.56C87.8688 45.176 88.0208 44.64 88.0208 43.952C88.0208 43.256 87.8688 42.72 87.5648 42.344C87.2688 41.968 86.8448 41.78 86.2928 41.78C85.7488 41.78 85.3208 41.976 85.0088 42.368C84.7048 42.752 84.5528 43.288 84.5528 43.976C84.5528 44.656 84.7048 45.184 85.0088 45.56C85.3208 45.936 85.7528 46.124 86.3048 46.124ZM97.9013 40.808C99.2453 40.808 99.9173 41.616 99.9173 43.232V47H98.7053V43.292C98.7053 42.772 98.6133 42.392 98.4293 42.152C98.2533 41.912 97.9653 41.792 97.5653 41.792C97.1013 41.792 96.7333 41.952 96.4613 42.272C96.1973 42.592 96.0653 43.028 96.0653 43.58V47H94.8533V43.292C94.8533 42.772 94.7613 42.392 94.5773 42.152C94.4013 41.912 94.1133 41.792 93.7133 41.792C93.2493 41.792 92.8813 41.952 92.6093 42.272C92.3373 42.592 92.2013 43.028 92.2013 43.58V47H91.0013V42.656C91.0013 42.024 90.9693 41.456 90.9053 40.952H92.0333L92.1413 41.96C92.3173 41.592 92.5693 41.308 92.8973 41.108C93.2253 40.908 93.6093 40.808 94.0493 40.808C94.9853 40.808 95.5973 41.196 95.8853 41.972C96.0693 41.612 96.3373 41.328 96.6893 41.12C97.0493 40.912 97.4533 40.808 97.9013 40.808ZM106.814 44H102.494C102.534 45.416 103.178 46.124 104.426 46.124C105.122 46.124 105.758 45.896 106.334 45.44L106.706 46.304C106.434 46.544 106.086 46.736 105.662 46.88C105.246 47.016 104.826 47.084 104.402 47.084C103.434 47.084 102.674 46.808 102.122 46.256C101.57 45.696 101.294 44.932 101.294 43.964C101.294 43.348 101.414 42.8 101.654 42.32C101.902 41.84 102.246 41.468 102.686 41.204C103.126 40.94 103.626 40.808 104.186 40.808C105.002 40.808 105.642 41.072 106.106 41.6C106.578 42.128 106.814 42.86 106.814 43.796V44ZM104.21 41.708C103.754 41.708 103.382 41.844 103.094 42.116C102.806 42.388 102.622 42.776 102.542 43.28H105.746C105.698 42.768 105.542 42.38 105.278 42.116C105.014 41.844 104.658 41.708 104.21 41.708ZM109.476 45.56V47H108.036V45.56H109.476ZM116.432 38.168V47H115.232V45.968C115.056 46.328 114.792 46.604 114.44 46.796C114.096 46.988 113.692 47.084 113.228 47.084C112.708 47.084 112.244 46.952 111.836 46.688C111.428 46.424 111.108 46.056 110.876 45.584C110.652 45.104 110.54 44.552 110.54 43.928C110.54 43.304 110.652 42.756 110.876 42.284C111.1 41.812 111.412 41.448 111.812 41.192C112.22 40.936 112.692 40.808 113.228 40.808C113.684 40.808 114.084 40.904 114.428 41.096C114.78 41.288 115.044 41.56 115.22 41.912V38.168H116.432ZM113.504 46.124C114.056 46.124 114.48 45.936 114.776 45.56C115.08 45.176 115.232 44.64 115.232 43.952C115.232 43.264 115.08 42.732 114.776 42.356C114.48 41.972 114.06 41.78 113.516 41.78C112.964 41.78 112.532 41.968 112.22 42.344C111.916 42.72 111.764 43.248 111.764 43.928C111.764 44.616 111.916 45.156 112.22 45.548C112.532 45.932 112.96 46.124 113.504 46.124ZM120.816 47.084C120.224 47.084 119.704 46.956 119.256 46.7C118.808 46.444 118.46 46.08 118.212 45.608C117.972 45.136 117.852 44.584 117.852 43.952C117.852 43.32 117.972 42.768 118.212 42.296C118.46 41.816 118.808 41.448 119.256 41.192C119.704 40.936 120.224 40.808 120.816 40.808C121.4 40.808 121.916 40.936 122.364 41.192C122.812 41.448 123.156 41.816 123.396 42.296C123.644 42.768 123.768 43.32 123.768 43.952C123.768 44.584 123.644 45.136 123.396 45.608C123.156 46.08 122.812 46.444 122.364 46.7C121.916 46.956 121.4 47.084 120.816 47.084ZM120.804 46.124C121.364 46.124 121.792 45.94 122.088 45.572C122.384 45.204 122.532 44.664 122.532 43.952C122.532 43.256 122.38 42.72 122.076 42.344C121.78 41.968 121.36 41.78 120.816 41.78C120.264 41.78 119.836 41.968 119.532 42.344C119.228 42.72 119.076 43.256 119.076 43.952C119.076 44.664 119.224 45.204 119.52 45.572C119.824 45.94 120.252 46.124 120.804 46.124ZM127.813 47.084C127.205 47.084 126.673 46.956 126.217 46.7C125.769 46.444 125.425 46.084 125.185 45.62C124.945 45.148 124.825 44.6 124.825 43.976C124.825 43.352 124.949 42.8 125.197 42.32C125.453 41.84 125.809 41.468 126.265 41.204C126.721 40.94 127.253 40.808 127.861 40.808C128.285 40.808 128.693 40.88 129.085 41.024C129.477 41.16 129.793 41.348 130.033 41.588L129.661 42.464C129.093 42.016 128.521 41.792 127.945 41.792C127.361 41.792 126.905 41.984 126.577 42.368C126.249 42.744 126.085 43.276 126.085 43.964C126.085 44.652 126.249 45.184 126.577 45.56C126.905 45.928 127.361 46.112 127.945 46.112C128.537 46.112 129.109 45.888 129.661 45.44L130.033 46.316C129.777 46.556 129.449 46.744 129.049 46.88C128.657 47.016 128.245 47.084 127.813 47.084ZM136.753 47H135.313L133.525 44.768L131.761 47H130.309L132.829 43.892L130.453 40.952H131.905L133.525 43.016L135.157 40.952H136.621L134.245 43.892L136.753 47Z" fill="#FA4616"/>
+                                                <g clip-path="url(#clip0)">
+                                                <path d="M48.1926 36.4081L46.3436 34.5591L38.0235 26.2394C36.4901 24.7175 34.0149 24.722 32.4872 26.2497C30.9596 27.7773 30.955 30.2525 32.4769 31.7859L40.7967 40.1082C41.1369 40.4486 41.6889 40.4486 42.0294 40.1082C42.3697 39.7677 42.3697 39.2159 42.0294 38.8754L33.7096 30.5532C32.8587 29.7023 32.8587 28.323 33.7096 27.4721C34.5605 26.6212 35.9398 26.6212 36.7908 27.4721L45.113 35.7918L46.962 37.6406C48.4938 39.173 48.4933 41.657 46.961 43.1887C45.4286 44.7204 42.9448 44.72 41.4129 43.1876L39.8725 41.6465L31.2444 33.0184L30.6279 32.4022C28.4733 30.1802 28.5007 26.6403 30.6892 24.4516C32.8779 22.2631 36.4177 22.2357 38.6397 24.3904L47.8841 33.6349C48.1044 33.855 48.4253 33.9409 48.726 33.8604C49.0268 33.7798 49.2619 33.545 49.3424 33.2441C49.423 32.9432 49.3369 32.6225 49.1168 32.4022L39.8725 23.1578C36.9774 20.276 32.2959 20.2813 29.4075 23.1699C26.5189 26.0583 26.5135 30.7398 29.3954 33.6349L38.6397 42.8792L40.1825 44.4203C42.4074 46.5573 45.9333 46.5217 48.1143 44.3399C50.2955 42.1583 50.3302 38.6324 48.1926 36.4081Z" fill="#FA4616"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0">
+                                                <rect width="25" height="25" fill="white" transform="translate(26 21)"/>
+                                                </clipPath>
+                                                </defs>
+                                             </svg>
+                                            </label>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                       
+                    </div>
+                </div>
+                <!-- main content -->
+            </main>
+            
+            <!-- footer  -->
+                <footer class="footer">
+            <div class="container-fluid">
+                <div class="footer__content">
+                    <div class="logo">
+                        <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
+                    </div>
+                    <ul class="menu_footer">
+                        <li class="head">about us</li>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Pricing and Packages</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <ul class="menu_footer">
+                        <li class="head">resources</li>
+                        <li>XXXXXXX</li>
+                        <li>XXXXXXX</li>
+                        <li>XXXXXXX</li>
+                    </ul>
+                    <ul class="menu_footer">
+                        <li class="head">legal</li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Private Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                    <div class="subscribe">
+                        <h4>SUBSCRIBE TO CHOMP</h4>
+                        <p>Get interviews, advice, tips and guides about <br> business and PR from our blog every month. </p>
+                        <form>
+                            <input type="email" name="email" placeholder="example@email.com" required> <button type="submit" class="sub">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="follow_us">
+                        <p><span>Follow Us On</span></p>
+                        <a href="#"><picture><source srcset="img/icons/icons.svg#in" type="image/webp"><img src="img/icons/icons.svg#in" class="svg-in-dims" alt=""></picture></a>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright © 2020 Nibble Tech Ltd. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+            <!-- footer  -->
+    </div>
+
+    
+
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
