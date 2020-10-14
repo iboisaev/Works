@@ -243,11 +243,6 @@ ul {
   flex-direction: column;
   width: 100%;
 }
-@media (max-width: 560px) {
-  .chat_right__account {
-    display: none !important;
-  }
-}
 .chat_right__account {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -647,15 +642,20 @@ label[for='upload-photo'] {
   .chat_more-block {
     display: flex;
   }
-  .chat_right__messages > ul > li,
-  .chat_right__messages > ul > li:nth-child(2n) {
-    font-size: 16px;
-    line-height: 17px;
-  }
   .chat_right {
     -webkit-box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.2);
     box-shadow: 0px -3px 5px 0px rgba(0,0,0,0.2);
+  }
+  .chat_right__account,
+  .chat_right__messages,
+  .chat_right__submit {
+    display: none;
+  }
+  .chat_right__messages > ul > li,
+  .chat_right__messages > ul > li:nth-child(2n) {
+    font-size: 16px;
+    line-height: 17px;
   }
   .chat_right__messages > ul > li {
     position: relative;
