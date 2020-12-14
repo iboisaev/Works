@@ -1,5 +1,65 @@
 [
 	{
+		"id": 25,
+		"img": "img/books/cexIonich.jpg",
+		"name": "Ионыч",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 24,
+		"img": "img/books/cexUchitelSlovesnosti.jpg",
+		"name": "Учитель словесности",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 23,
+		"img": "img/books/cexPoprigunya.jpg",
+		"name": "Попрыгунья",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 22,
+		"img": "img/books/cexNepriyatnost.jpg",
+		"name": "Неприятность",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 21,
+		"img": "img/books/cexKashtanka.jpg",
+		"name": "Каштанка",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 20,
+		"img": "img/books/cexovVanka.jpg",
+		"name": "Ванька",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
 		"id": 19,
 		"img": "img/books/cexMecti.jpg",
 		"name": "Мечты",
