@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<!-- Кастомный файл стилей -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="https://atom.io/favicon.ico">
+	<title>Start</title>
+</head>
+<body class="scroll">
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header">
+			<div class="header__container container">
+				<a class="header__left" href="https://www.facebook.com/ibrahim.isaev.54/" target="_blank">
+					<div class="header__me">
+						<img class="header__avatar" src="img/avatar.png" alt="avatar">
+					</div>
+					<div class="header__info">
+						<h2 class="header__name">Ибрагим Исаев</h2>
+						<h3 class="header__job">Frontend-разработчик</h3>
+					</div>
+				</a>
+				<div class="header__right">
+					<a href="tel:+995557432018" class="header__link phone">
+						<svg class="icon icon--phone">
+							<use xlink:href="img/icons/phone.svg#phone"></use>
+						</svg>
+					</a>
+					<a href="mailto:iboisaev@mail.ru" class="header__link mail">
+						<svg class="icon icon--mail">
+							<use xlink:href="img/icons/mail.svg#mail"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</header>
+		<!-- main -->
+<main class="main">
+	<div class="books">
+		<div class="books__titles">
+			<h1 class="books__title">Прочитанные мною книги</h1>
+			<p class="books__suptitle">Здесь находится список всех книг и произведений, которые я прочитал начиная с 2018 года</p>
+			<a href="#items" class="btn-down lazy-anchor">
+				<svg class="icon icon--angle-dbldown">
+					<use xlink:href="img/icons/angle-dbldown.svg#angle-dbldown"></use>
+				</svg>
+			</a>
+		</div>
+		<div class="books__body container">
+			<!-- filters -->
+			<div class="filters">
+				<p class="filters__all">Фильтр</p>
+				<div class="filters__item">
+					<h2 class="filters__title active">
+						<span>Автор</span>
+						<svg class="icon icon--angle-down">
+							<use xlink:href="img/icons/angle-down.svg#angle-down"></use>
+						</svg>
+					</h2>
+					<div class="filters__btns-container open" style="display: block;">
+						<div class="filters__btns btn-group js-radio-button-group" data-filter-group="author">
+						  <button class="filters__btn is-checked" data-filter=""><span></span>Все</button>
+						  <button class="filters__btn" data-filter=".cexov"><span></span>А. П. Чехов</button>
+						  <button class="filters__btn" data-filter=".pushkin"><span></span>А. С. Пушкин</button>
+						  <button class="filters__btn" data-filter=".bulqakov"><span></span>Михаил Булгаков</button>
+						  <button class="filters__btn" data-filter=".maksimGorkiy"><span></span>Максим Горький</button>
+						  <button class="filters__btn" data-filter=".aleksandrKuprin"><span></span>Александр Куприн</button>
+						  <button class="filters__btn" data-filter=".petrVazemsky"><span></span>Пётр Вяземский</button>
+						  <button class="filters__btn" data-filter=".sashaKruqosvetov"><span></span>Саша Кругосветов</button>
+						  <button class="filters__btn" data-filter=".vaclavVorovsky"><span></span>Вацлав Воровский</button>
+						  <button class="filters__btn" data-filter=".adelaidaPaevskaya"><span></span>Аделаида Паевская</button>
+						  <button class="filters__btn" data-filter=".andreyBeliy"><span></span>Андрей Белый</button>
+						  <button class="filters__btn" data-filter=".tolmacev"><span></span>В. М. Толмачёв</button>
+						  <button class="filters__btn" data-filter=".vlasDoroshevic"><span></span>Влас Дорошевич</button>
+						  <button class="filters__btn" data-filter=".alexBayxou"><span></span>Алекс Байхоу</button>
+						  <button class="filters__btn" data-filter=".aleksandrNikolsky"><span></span>А. П. Никольский</button>
+						  <button class="filters__btn" data-filter=".rayBradbury"><span></span>Ray Bradbury</button>
+						  <button class="filters__btn" data-filter=".friedrichNietzsche"><span></span>Friedrich Nietzsche</button>
+						  <button class="filters__btn" data-filter=".victorHugo"><span></span>Victor Hugo</button>
+						  <button class="filters__btn" data-filter=".lewisCarroll"><span></span>Lewis Carroll</button>
+						  <button class="filters__btn" data-filter=".christopherHitchens"><span></span>Christopher Hitchens</button>
+						  <button class="filters__btn" data-filter=".stephenKing"><span></span>Stephen King</button>
+						  <button class="filters__btn" data-filter=".robertSheckley"><span></span>Robert Sheckley</button>
+						  <button class="filters__btn" data-filter=".gianniRodari"><span></span>Gianni Rodari</button>
+						  <button class="filters__btn" data-filter=".georgesSimenon"><span></span>Georges Simenon</button>
+						  <button class="filters__btn" data-filter=".ingmarBergman"><span></span>Ingmar Bergman</button>
+						  <button class="filters__btn" data-filter=".benFrain"><span></span>Ben Frain</button>
+						  <button class="filters__btn" data-filter=".davidMcFarland"><span></span>David McFarland</button>
+						  <button class="filters__btn" data-filter=".keithGrant"><span></span>Keith J. Grant</button>
+						  <button class="filters__btn" data-filter=".nateCooper"><span></span>Nate Cooper</button>
+						  <button class="filters__btn" data-filter=".chrisMinnick"><span></span>Chris Minnick</button>
+						  <button class="filters__btn" data-filter=".evaHolland"><span></span>Eva Holland</button>
+						  <button class="filters__btn" data-filter=".marijnHaverbeke"><span></span>Marijn Haverbeke</button>
+						  <button class="filters__btn" data-filter=".novruzMurtuzov"><span></span>Novruz Murtuzov</button>
+						  <button class="filters__btn" data-filter=".mehrabSadiqniya"><span></span>Mehrab Sadiqniya</button>
+						  <button class="filters__btn" data-filter=".ocaqNejad"><span></span>Ocaq Nejad</button>
+						  <button class="filters__btn" data-filter=".məkarimŞirazi"><span></span>Məkarim Şirazi</button>
+						  <button class="filters__btn" data-filter=".muhəmmədrzaMuşfiqipur"><span></span>Muhəmmədrza Muşfiqipur</button>
+						  <button class="filters__btn" data-filter=".mehdiPişvayi"><span></span>Mehdi Pişvayi</button>
+						  <button class="filters__btn" data-filter=".cəfərSubhani"><span></span>Cəfər Subhani</button>
+						  <button class="filters__btn" data-filter=".mirağaMustafazadə"><span></span>Mirağa Mustafazadə</button>
+						  <button class="filters__btn" data-filter=".qulamrzaKürdəfşari"><span></span>Qulamrza Kürdəfşari</button>
+						  <button class="filters__btn" data-filter=".huriyəMəhəmmədi"><span></span>Huriyə Məhəmmədi</button>
+						  <button class="filters__btn" data-filter=".əliƏkbər"><span></span>Əli Əkbər</button>
+						  <button class="filters__btn" data-filter=".mürtəzaMütəhhəri"><span></span>Mürtəza Mütəhhəri</button>
+						  <button class="filters__btn" data-filter=".abbasQumi"><span></span>Abbas Qumi</button>
+						  <button class="filters__btn" data-filter=".shotaChantladze"><span></span>შოთა ჩანტლაძე</button>
+						  <button class="filters__btn" data-filter=".shotaRustaveli"><span></span>შოთა რუსთაველი</button>
+						  <button class="filters__btn" data-filter=".akaMorchiladze"><span></span>აკა მორჩილაძე</button>
+						  <button class="filters__btn" data-filter=".revazİnanishvili"><span></span>რევაზ ინანიშვილი</button>
+						  <button class="filters__btn" data-filter=".guramDochanishvili"><span></span>გურამ დოჩანაშვილი</button>
+						</div>
+					</div>
+				</div>
+				<div class="filters__item">
+					<h2 class="filters__title">
+						<span>Жанр</span>
+						<svg class="icon icon--angle-down">
+							<use xlink:href="img/icons/angle-down.svg#angle-down"></use>
+						</svg>
+					</h2>
+					<div class="filters__btns-container">
+						<div class="filters__btns btn-group js-radio-button-group" data-filter-group="genre">
+						  <button class="filters__btn is-checked" data-filter=""><span></span>Все</button>
+						  <button class="filters__btn" data-filter=".povest"><span></span>Повесть</button>
+						  <button class="filters__btn" data-filter=".authorsFantasy"><span></span>Художественный вымысел</button>
+						  <button class="filters__btn" data-filter=".raskaz"><span></span>Рассказ</button>
+						  <button class="filters__btn" data-filter=".comedy"><span></span>Комедия</button>
+						  <button class="filters__btn" data-filter=".romantikNovel"><span></span>Любовный роман</button>
+						  <button class="filters__btn" data-filter=".humorLit"><span></span>Юмористическая художественная литература</button>
+						  <button class="filters__btn" data-filter=".drama"><span></span>Драма</button>
+						  <button class="filters__btn" data-filter=".novel"><span></span>Роман</button>
+						</div>
+					</div>
+				</div>
+				<div class="filters__item">
+					<h2 class="filters__title">
+						<span>Язык</span>
+						<svg class="icon icon--angle-down">
+							<use xlink:href="img/icons/angle-down.svg#angle-down"></use>
+						</svg>
+					</h2>
+					<div class="filters__btns-container">
+						<div class="filters__btns btn-group js-radio-button-group" data-filter-group="shape">
+						  <button class="filters__btn is-checked" data-filter=""><span></span>Все</button>
+						  <button class="filters__btn" data-filter=".rus"><span></span>Русский</button>
+						  <button class="filters__btn" data-filter=".en"><span></span>English</button>
+						  <button class="filters__btn" data-filter=".az"><span></span>Azerbaycanca</button>
+						  <button class="filters__btn" data-filter=".ge"><span></span>ქართული</button>
+						  <button class="filters__btn" data-filter=".tur"><span></span>Türkçe</button>
+						</div>
+					</div>
+				</div>
+				<div class="filters__item">
+					<h2 class="filters__title">
+						<span>Год</span>
+						<svg class="icon icon--angle-down">
+							<use xlink:href="img/icons/angle-down.svg#angle-down"></use>
+						</svg>
+					</h2>
+					<div class="filters__btns-container">
+						<div class="filters__btns btn-group js-radio-button-group" data-filter-group="year">
+						  <button class="filters__btn is-checked" data-filter=""><span></span>Все</button>
+						  <button class="filters__btn" data-filter=".year1"><span></span>2018-2020</button>
+						  <button class="filters__btn" data-filter=".year2"><span></span>2021-2022</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- items -->
+			<div class="books__right">
+				<p class="books__right-title">Всего <span></span></p>
+				<div class="items" id="items">
+					<!-- <a href="#" class="item cexov comedy rus year1">
+					  	<span class="item__img ibg" style="background-image: url('img/books/cexViwSad.jpg');">
+					  		<span class="item__cover">
+					  			<svg class="icon icon--view">
+									<use xlink:href="img/icons/view.svg#view"></use>
+								</svg>
+					  		</span>
+					  	</span>
+					  	<span class="item__title">А. П. Чехов - "Вишнёвый сад"</span>
+					</a> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</main>		
+		<!-- footer -->
+		<footer class="footer">
+			<div class="footer__body container">
+				<p class="footer__copy">&copy;2020, Ибрагим Исаев. Все права защищены</p>
+				<ul class="footer__socs">
+					<li class="footer__soc">
+						<a class="footer__link" href="https://www.facebook.com/ibrahim.isaev.54/" target="_blank">
+							<svg class="icon icon--fb">
+								<use xlink:href="img/icons/fb.svg#fb"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="footer__soc">
+						<a class="footer__link" href="https://www.instagram.com/iboisaev_/" target="_blank">
+							<svg class="icon icon--instagram">
+								<use xlink:href="img/icons/instagram.svg#instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="footer__soc">
+						<a class="footer__link" href="https://vk.com/id261918250" target="_blank">
+							<svg class="icon icon--vk">
+								<use xlink:href="img/icons/vk.svg#vk"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="footer__soc">
+						<a class="footer__link" href="https://github.com/iboisaev" target="_blank">
+							<svg class="icon icon--github">
+								<use xlink:href="img/icons/github.svg#github"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<!-- popups -->
+		<!-- попап для благодарства -->
+		<!-- <div class="popup thanks-popup">
+			<div class="popup__body thanks-popup__body">
+				<a href="index.html" class="popup__close">&times;</a>
+				<h3 class="popup__title">Благодарим за отправку заявки</h3>
+				<p class="popup__text">Наш менеджер свяжется с вами в течении 5 минут</p>
+			</div>
+		</div> -->	</div>
+	<!-- scripts -->
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<!-- isotope js -->
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<!-- Мои скрипты -->
+	<script src="js/main.js"></script></body>
+</html>

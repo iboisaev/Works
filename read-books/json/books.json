@@ -1,0 +1,192 @@
+[
+	{
+		"id": 19,
+		"img": "img/books/cexMecti.jpg",
+		"name": "Мечты",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 18,
+		"img": "img/books/cexShutochka.jpg",
+		"name": "Шуточка",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел, Любовный роман",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy romantikNovel rus year1"
+	},
+	{
+		"id": 17,
+		"img": "img/books/cexAnuta.jpg",
+		"name": "Переполох",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел, Любовный роман",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy romantikNovel rus year1"
+	},
+	{
+		"id": 16,
+		"img": "img/books/cexPerepolox.jpg",
+		"name": "Переполох",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 15,
+		"img": "img/books/cexToska.jpg",
+		"name": "Тоска",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 14,
+		"img": "img/books/cexUnterPrishibeev.jpg",
+		"name": "Унтер Пришибеев",
+		"author": "А. П. Чехов",
+		"genres": "Юмористическая художественная литература, Рассказ",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov humorLit raskaz rus year1"
+	},
+	{
+		"id": 13,
+		"img": "img/books/cexLoshadinyaFamilya.jpg",
+		"name": "Лошадиная фамилия",
+		"author": "А. П. Чехов",
+		"genres": "Художественный вымысел, Рассказ",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 12,
+		"img": "img/books/cexDachniki.jpg",
+		"name": "Дачники",
+		"author": "А. П. Чехов",
+		"genres": "Художественный вымысел, Рассказ",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 11,
+		"img": "img/books/cexMaska.jpg",
+		"name": "Маска",
+		"author": "А. П. Чехов",
+		"genres": "Художественный вымысел, Рассказ",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 10,
+		"img": "img/books/cexTolstiyITonkiy.jpg",
+		"name": "Толстый и тонкий",
+		"author": "А. П. Чехов",
+		"genres": "Художественный вымысел, Рассказ",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 9,
+		"img": "img/books/cexSmertCinovnika.jpg",
+		"name": "Смерть чиновника",
+		"author": "А. П. Чехов",
+		"genres": "Художественный вымысел, Рассказ",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 8,
+		"img": "img/books/cexZagadochnayaNatura.jpg",
+		"name": "Загадочная натура",
+		"author": "А. П. Чехов",
+		"genres": "Художественный вымысел, Рассказ",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 7,
+		"img": "img/books/cexViwSad.jpg",
+		"name": "Вишнёвый сад",
+		"author": "А. П. Чехов",
+		"genres": "Комедия, Драма",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov comedy drama rus year1"
+	},
+	{
+		"id": 6,
+		"img": "img/books/cexDomSMezoninom.jpg",
+		"name": "Дом с мезонином",
+		"author": "А. П. Чехов",
+		"genres": "Художественный вымысел, Рассказ",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 5,
+		"img": "img/books/cexBlackMonax.jpg",
+		"name": "Черный монах",
+		"author": "А. П. Чехов",
+		"genres": "Художественный вымысел, Повесть",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov povest authorsFantasy rus year1"
+	},
+	{
+		"id": 4,
+		"img": "img/books/cexNevesta.jpg",
+		"name": "Невеста",
+		"author": "А. П. Чехов",
+		"genres": "Художественный вымысел, Рассказ",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 3,
+		"img": "img/books/cexXirurgiya.jpg",
+		"name": "Хирургия",
+		"author": "А. П. Чехов",
+		"genres": "Художественный вымысел, Рассказ",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 2,
+		"img": "img/books/cexPalata6.jpg",
+		"name": "Палата № 6",
+		"author": "А. П. Чехов",
+		"genres": "Повесть",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov povest rus year1"
+	},
+	{
+		"id": 1,
+		"img": "img/books/cexXameleon.jpg",
+		"name": "Хамелеон",
+		"author": "А. П. Чехов",
+		"genres": "Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov authorsFantasy rus year1"
+	}
+]
