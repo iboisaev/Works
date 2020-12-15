@@ -1,5 +1,165 @@
 [
 	{
+		"id": 41,
+		"img": "img/books/bredberi451Gradus.jpg",
+		"name": "451 градус по Фаренгейту",
+		"author": "Рэй Брэдбери",
+		"genres": "Роман, Политическая фантастика, Научная фантастика, Антиутопия",
+		"originalLang": "English",
+		"langs": "Русский",
+		"classes": "item rayBradbury novel politickFantasy scientickFantasy antiutopiya en year1"
+	},
+	{
+		"id": 40,
+		"img": "img/books/cexStudent.jpg",
+		"name": "Студент",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественная проза",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz literaryFiction rus year1"
+	},
+	{
+		"id": 39,
+		"img": "img/books/cexAnnaNaShee.jpg",
+		"name": "Анна на шее",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 38,
+		"img": "img/books/cexPeresolil.jpg",
+		"name": "Пересолил",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел, Любовный роман",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy romantikNovel rus year1"
+	},
+	{
+		"id": 37,
+		"img": "img/books/cexSkuchnayaIstoriya.jpg",
+		"name": "Скучная история",
+		"author": "А. П. Чехов",
+		"genres": "Повесть, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov povest authorsFantasy rus year1"
+	},
+	{
+		"id": 36,
+		"img": "img/books/cexBesedaPyanogoSTrezvymChertom.jpg",
+		"name": "Беседа пьяного с трезвым чертом",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 35,
+		"img": "img/books/cexZerkalo.jpg",
+		"name": "Зеркало",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 34,
+		"img": "img/books/cexDvaSkandala.jpg",
+		"name": "Два скандала",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 33,
+		"img": "img/books/cex29Iyun.jpg",
+		"name": "Двадцать девятое июня",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 32,
+		"img": "img/books/cexZloumishlennik.jpg",
+		"name": "Злоумышленник",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел, Любовный роман",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy romantikNovel rus year1"
+	},
+	{
+		"id": 31,
+		"img": "img/books/cexRazmazya.jpg",
+		"name": "Размазня",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 30,
+		"img": "img/books/cexDushechka.jpg",
+		"name": "Душечка",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 29,
+		"img": "img/books/cexKryzhovnik.jpg",
+		"name": "Крыжовник",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел, Любовный роман",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy romantikNovel rus year1"
+	},
+	{
+		"id": 28,
+		"img": "img/books/cexDamaSSobachkoy.jpeg",
+		"name": "Дама с собачкой",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 27,
+		"img": "img/books/cexOLubvi.jpg",
+		"name": "О любви",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
+		"id": 26,
+		"img": "img/books/cexManInFutlar.jpg",
+		"name": "Человек в футляре",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year1"
+	},
+	{
 		"id": 25,
 		"img": "img/books/cexIonich.jpg",
 		"name": "Ионыч",
