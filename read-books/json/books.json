@@ -1,5 +1,45 @@
 [
 	{
+		"id": 45,
+		"img": "img/books/nejadFikirDamlalari.jpg",
+		"name": "Fikir damlaları",
+		"author": "Ocaq Nejad",
+		"genres": "Религиозный",
+		"originalLang": "Azerbaycanca",
+		"langs": "Azerbaycanca",
+		"classes": "item ocaqNejad religion az year1"
+	},
+	{
+		"id": 44,
+		"img": "img/books/mehrabNeceYasamali.jpg",
+		"name": "Neçə yaşamalı",
+		"author": "Mehrab Sadiqniya",
+		"genres": "Религиозный",
+		"originalLang": "Azerbaycanca",
+		"langs": "Azerbaycanca",
+		"classes": "item mehrabSadiqniya religion az year1"
+	},
+	{
+		"id": 43,
+		"img": "img/books/fiqhRisalesi.jpg",
+		"name": "Fiqh risaləsi",
+		"author": "Seyid Əli Xamenei",
+		"genres": "Религиозный",
+		"originalLang": "Fars",
+		"langs": "Azerbaycanca",
+		"classes": "item əliXamenei religion az year1"
+	},
+	{
+		"id": 42,
+		"img": "img/books/novruzQuranVeTebabet.jpg",
+		"name": "Quran və Təbabət",
+		"author": "Novruz Murtuzov",
+		"genres": "Религиозный",
+		"originalLang": "Azerbaycanca",
+		"langs": "Azerbaycanca",
+		"classes": "item novruzMurtuzov religion az year1"
+	},
+	{
 		"id": 41,
 		"img": "img/books/bredberi451Gradus.jpg",
 		"name": "451 градус по Фаренгейту",
