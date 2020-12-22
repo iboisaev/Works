@@ -8,6 +8,8 @@
 	<!-- fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<!-- pagination css -->
+	
 	<!-- Кастомный файл стилей -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" href="https://atom.io/favicon.ico">
@@ -144,6 +146,8 @@
 						  <button class="filters__btn" data-filter=".scientickFantasy"><span></span>Научная фантастика</button>
 						  <button class="filters__btn" data-filter=".antiutopiya"><span></span>Антиутопия</button>
 						  <button class="filters__btn" data-filter=".religion"><span></span>Религиозный</button>
+						  <button class="filters__btn" data-filter=".history"><span></span>Исторический</button>
+						  <button class="filters__btn" data-filter=".motivation"><span></span>Мотивационный</button>
 						</div>
 					</div>
 				</div>
@@ -183,7 +187,10 @@
 			</div>
 			<!-- items -->
 			<div class="books__right">
-				<p class="books__right-title">Всего <span></span></p>
+				<div class="books__right-top">
+					<p class="books__right-title">Всего <span></span></p>
+					<input class="search-items" type="text" placeholder="Поиск...">
+				</div>
 				<div class="items" id="items">
 					<!-- <a href="#" class="item cexov comedy rus year1">
 					  	<span class="item__img ibg" style="background-image: url('img/books/cexViwSad.jpg');">
@@ -196,6 +203,7 @@
 					  	<span class="item__title">А. П. Чехов - "Вишнёвый сад"</span>
 					</a> -->
 				</div>
+				<!-- <button class="books__right-btn more">Show all</button> -->
 			</div>
 		</div>
 	</div>

@@ -1,5 +1,95 @@
 [
 	{
+		"id": 54,
+		"img": "img/books/qumiImamTaqi.jpg",
+		"name": "İmam Məhəmməd Təqi əleyhissalamın həyatı",
+		"author": "Abbas Qumi",
+		"genres": "Религиозный",
+		"originalLang": "Fars",
+		"langs": "Azerbaycanca",
+		"classes": "item abbasQumi religion az year1"
+	},
+	{
+		"id": 53,
+		"img": "img/books/murtezaIslamVeZaman.jpg",
+		"name": "İslam və Zamanın Ehtiyacları",
+		"author": "Mürtəza Mütəhhəri",
+		"genres": "Религиозный",
+		"originalLang": "Fars",
+		"langs": "Azerbaycanca",
+		"classes": "item mürtəzaMütəhhəri religion az year1"
+	},
+	{
+		"id": 52,
+		"img": "img/books/aliNevvabSefevi.jpg",
+		"name": "Şəhid Nəvvab Səfəvi xatirələr aynasında",
+		"author": "Əli Əkbər",
+		"genres": "Религиозный",
+		"originalLang": "Fars",
+		"langs": "Azerbaycanca",
+		"classes": "item əliƏkbər religion az year1"
+	},
+	{
+		"id": 51,
+		"img": "img/books/jehovaGencleinSuallari.jpg",
+		"name": "Gənclərin sualları. Praktiki məsləhətlər",
+		"author": "Yehovanın Şahidləri",
+		"genres": "Религиозный",
+		"originalLang": "Unknown",
+		"langs": "Azerbaycanca",
+		"classes": "item religion az year1"
+	},
+	{
+		"id": 50,
+		"img": "img/books/subhaniIslamTarixi.jpg",
+		"name": "Islam tarixi",
+		"author": "Cəfər Subhani",
+		"genres": "Религиозный, Исторический",
+		"originalLang": "Fars",
+		"langs": "Azerbaycanca",
+		"classes": "item cəfərSubhani religion history az year1"
+	},
+	{
+		"id": 49,
+		"img": "img/books/qulamrzaSaglamHeyat.jpg",
+		"name": "Sağlam həyat üçün həyəcan təbili",
+		"author": "Dr. Qulamrza Kürdəfşari, Dr. Huriyə Məhəmmədi",
+		"genres": "Религиозный",
+		"originalLang": "Fars",
+		"langs": "Azerbaycanca",
+		"classes": "item qulamrzaKürdəfşari huriyəMəhəmmədi religion az year1"
+	},
+	{
+		"id": 48,
+		"img": "img/books/subhaniNeceUgurQazanmali.jpg",
+		"name": "Necə uğur qazanmalı",
+		"author": "Cəfər Subhani",
+		"genres": "Религиозный, Мотивационный",
+		"originalLang": "Fars",
+		"langs": "Azerbaycanca",
+		"classes": "item cəfərSubhani religion motivation az year1"
+	},
+	{
+		"id": 47,
+		"img": "img/books/pishvayiImamlarinSimasi.jpg",
+		"name": "İmamların siması tarix guşəsində",
+		"author": "Mehdi Pişvayi",
+		"genres": "Религиозный, Исторический",
+		"originalLang": "Azerbaycanca",
+		"langs": "Azerbaycanca",
+		"classes": "item mehdiPişvayi religion history az year1"
+	},
+	{
+		"id": 46,
+		"img": "img/books/shirazi50Ders.jpg",
+		"name": "Gənclər üçün üsuliddin haqqinda 50 dərs",
+		"author": "Məkarim Şirazi",
+		"genres": "Религиозный",
+		"originalLang": "Fars",
+		"langs": "Azerbaycanca",
+		"classes": "item məkarimŞirazi religion az year1"
+	},
+	{
 		"id": 45,
 		"img": "img/books/nejadFikirDamlalari.jpg",
 		"name": "Fikir damlaları",
@@ -12,7 +102,7 @@
 	{
 		"id": 44,
 		"img": "img/books/mehrabNeceYasamali.jpg",
-		"name": "Neçə yaşamalı",
+		"name": "Necə yaşamalı",
 		"author": "Mehrab Sadiqniya",
 		"genres": "Религиозный",
 		"originalLang": "Azerbaycanca",
@@ -47,7 +137,7 @@
 		"genres": "Роман, Политическая фантастика, Научная фантастика, Антиутопия",
 		"originalLang": "English",
 		"langs": "Русский",
-		"classes": "item rayBradbury novel politickFantasy scientickFantasy antiutopiya en year1"
+		"classes": "item rayBradbury novel politickFantasy scientickFantasy antiutopiya rus year1"
 	},
 	{
 		"id": 40,
