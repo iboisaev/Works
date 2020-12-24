@@ -1,5 +1,95 @@
 [
 	{
+		"id": 63,
+		"img": "img/books/kruqosvetovParadoksi.jpg",
+		"name": "Естественно-научные парадоксы и нонсенсы в книгах Льюиса Кэрролла и Умберто Эко",
+		"author": "Саша Кругосветов",
+		"genres": "Твёрдая научная фантастика",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item sashaKruqosvetov hardScientickFantasy rus year1"
+	},
+	{
+		"id": 62,
+		"img": "img/books/vazemkyOBulqakivix.jpg",
+		"name": "Воспоминание о Булгаковых",
+		"author": "Пётр Вяземский",
+		"genres": "Биография",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item petrVazemsky biography rus year1"
+	},
+	{
+		"id": 61,
+		"img": "img/books/huqoOtverjeniye.jpg",
+		"name": "Отверженные",
+		"author": "Виктор Гюго",
+		"genres": "Роман, Трагедия, Эпопея, Драма, Детская литература, Исторический, Любовный роман, Сага",
+		"originalLang": "Французский",
+		"langs": "Русский",
+		"classes": "item victorHugo novel tragedy epopeya drama childlit history romantikNovel saga rus year1"
+	},
+	{
+		"id": 60,
+		"img": "img/books/huqoSobor.jpg",
+		"name": "Собор Парижской Богоматери",
+		"author": "Виктор Гюго",
+		"genres": "Роман, Готика, Романтизм",
+		"originalLang": "Французский",
+		"langs": "Русский",
+		"classes": "item victorHugo novel gotick romantizm rus year1"
+	},
+	{
+		"id": 59,
+		"img": "img/books/huqoLastDay.jpg",
+		"name": "Последний день приговорённого к смерти",
+		"author": "Виктор Гюго",
+		"genres": "Роман, Художественный вымысел, Романтизм, Повесть",
+		"originalLang": "Французский",
+		"langs": "Русский",
+		"classes": "item victorHugo novel authorsFantasy romantizm povest rus az year1"
+	},
+	{
+		"id": 58,
+		"img": "img/books/bulgakovMorphy.jpg",
+		"name": "Морфий",
+		"author": "Михаил Булгаков",
+		"genres": "Драма",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item bulqakov drama rus year1"
+	},
+	{
+		"id": 57,
+		"img": "img/books/bulgakovZapiskiNaManjetax.jpg",
+		"name": "Записки на манжетах",
+		"author": "Михаил Булгаков",
+		"genres": "Художественный вымысел, Повесть",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item bulqakov authorsFantasy povest rus year1"
+	},
+	{
+		"id": 56,
+		"img": "img/books/bulgakovZapiskiVracha.jpg",
+		"name": "Записки юного врача",
+		"author": "Михаил Булгаков",
+		"genres": "Художественный вымысел, Драма",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item bulqakov authorsFantasy drama rus year1"
+	},
+	{
+		"id": 55,
+		"img": "img/books/nichshePoTuStoronu.jpg",
+		"name": "По ту сторону добра и зла",
+		"author": "Фридрих Ницше",
+		"genres": "Художественный вымысел, Философия, Справочник",
+		"originalLang": "Немецкий",
+		"langs": "Русский",
+		"classes": "item friedrichNietzsche authorsFantasy philosophy spravka rus year1"
+	},
+	{
 		"id": 54,
 		"img": "img/books/qumiImamTaqi.jpg",
 		"name": "İmam Məhəmməd Təqi əleyhissalamın həyatı",
