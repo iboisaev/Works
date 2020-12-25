@@ -632,7 +632,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .items {
-  max-height: 1675px;
+  max-height: 105vh;
   overflow-y: auto;
 }
 .items::-webkit-scrollbar {

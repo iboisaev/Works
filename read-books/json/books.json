@@ -1,5 +1,175 @@
 [
 	{
+		"id": 80,
+		"img": "img/books/hitcensNotGreat.jpg",
+		"name": "Tanrı Böyük Deyil",
+		"author": "Kristofer Hitçens",
+		"genres": "Религиозный",
+		"originalLang": "Английский",
+		"langs": "Azerbaycanca",
+		"classes": "item christopherHitchens religion az year1"
+	},
+	{
+		"id": 79,
+		"img": "img/books/rustaveliVepxistyaosani.jpg",
+		"name": "ვეფხისტყაოსანი",
+		"author": "შოთა რუსთაველი",
+		"genres": "Проза",
+		"originalLang": "Грузинский",
+		"langs": "ქართული",
+		"classes": "item shotaRustaveli literaryFiction ge year1"
+	},
+	{
+		"id": 78,
+		"img": "img/books/cantaldze100leksi.jpg",
+		"name": "100 ლექსი",
+		"author": "შოთა ჩანტლაძე",
+		"genres": "Стихи",
+		"originalLang": "Грузинский",
+		"langs": "ქართული",
+		"classes": "item shotaChantladze stixi ge year1"
+	},
+	{
+		"id": 77,
+		"img": "img/books/vorovskyCexovIIntelligency.jpg",
+		"name": "А. П. Чехов и русская интеллигенция",
+		"author": "Вацлав Воровский",
+		"genres": "Критика",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item vaclavVorovsky kritika rus year1"
+	},
+	{
+		"id": 76,
+		"img": "img/books/vorovskyCexov.jpg",
+		"name": "А. П. Чехов",
+		"author": "Вацлав Воровский",
+		"genres": "Проза",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item vaclavVorovsky literaryFiction rus year1"
+	},
+	{
+		"id": 75,
+		"img": "img/books/simenonMegreInRooms.jpg",
+		"name": "Мегрэ в меблированных комнатах",
+		"author": "Жорж Сименон",
+		"genres": "Детектив",
+		"originalLang": "Французский",
+		"langs": "Русский",
+		"classes": "item georgesSimenon detectiv rus year1"
+	},
+	{
+		"id": 74,
+		"img": "img/books/kerolAliceInMirror.jpg",
+		"name": "Алиса в Зазеркалье",
+		"author": "Льюис Кэрролл",
+		"genres": "Фэнтези, Литература абсурда, Сказка",
+		"originalLang": "Английский",
+		"langs": "Русский",
+		"classes": "item lewisCarroll fantasy absurd shazka rus year1"
+	},
+	{
+		"id": 73,
+		"img": "img/books/kerolAliceInCountry.jpg",
+		"name": "Алиса в Стране чудес",
+		"author": "Льюис Кэрролл",
+		"genres": "Фэнтези, Литература абсурда, Сказка",
+		"originalLang": "Английский",
+		"langs": "Русский",
+		"classes": "item lewisCarroll fantasy absurd shazka rus year1"
+	},
+	{
+		"id": 72,
+		"img": "img/books/bergmanGulaxdiliSaubrebi.jpg",
+		"name": "გულახდილი საუბრები",
+		"author": "ინგმარ ბერგმანი",
+		"genres": "Рассказ",
+		"originalLang": "Шведский",
+		"langs": "ქართული",
+		"classes": "item ingmarBergman raskaz ge year1"
+	},
+	{
+		"id": 71,
+		"img": "img/books/shekleyBirds.jpg",
+		"name": "წაღები",
+		"author": "რობერტ შეკლი",
+		"genres": "Научная фантастика",
+		"originalLang": "Английский",
+		"langs": "ქართული",
+		"classes": "item robertSheckley scientickFantasy ge year1"
+	},
+	{
+		"id": 70,
+		"img": "img/books/shekleyBirds.jpg",
+		"name": "აბსოლუტური იარაღი",
+		"author": "რობერტ შეკლი",
+		"genres": "Научная фантастика",
+		"originalLang": "Английский",
+		"langs": "ქართული",
+		"classes": "item robertSheckley scientickFantasy ge year1"
+	},
+	{
+		"id": 69,
+		"img": "img/books/shekleyBirds.jpg",
+		"name": "ბრძოლა",
+		"author": "რობერტ შეკლი",
+		"genres": "Научная фантастика",
+		"originalLang": "Английский",
+		"langs": "ქართული",
+		"classes": "item robertSheckley scientickFantasy ge year1"
+	},
+	{
+		"id": 68,
+		"img": "img/books/shekleyBirds.jpg",
+		"name": "პრემია რისკისთვის",
+		"author": "რობერტ შეკლი",
+		"genres": "Научная фантастика",
+		"originalLang": "Английский",
+		"langs": "ქართული",
+		"classes": "item robertSheckley scientickFantasy ge year1"
+	},
+	{
+		"id": 67,
+		"img": "img/books/shekleyBirds.jpg",
+		"name": "უდაბნოს ყვავილი",
+		"author": "რობერტ შეკლი",
+		"genres": "Научная фантастика",
+		"originalLang": "Английский",
+		"langs": "ქართული",
+		"classes": "item robertSheckley scientickFantasy ge year1"
+	},
+	{
+		"id": 66,
+		"img": "img/books/shekleyBirds.jpg",
+		"name": "აზრის სურნელი",
+		"author": "რობერტ შეკლი",
+		"genres": "Научная фантастика",
+		"originalLang": "Английский",
+		"langs": "ქართული",
+		"classes": "item robertSheckley scientickFantasy ge year1"
+	},
+	{
+		"id": 65,
+		"img": "img/books/shekleyBirds.jpg",
+		"name": "უსახელო მთა",
+		"author": "რობერტ შეკლი",
+		"genres": "Научная фантастика",
+		"originalLang": "Английский",
+		"langs": "ქართული",
+		"classes": "item robertSheckley scientickFantasy ge year1"
+	},
+	{
+		"id": 64,
+		"img": "img/books/shekleyBirds.jpg",
+		"name": "გუშაგი ჩიტები",
+		"author": "რობერტ შეკლი",
+		"genres": "Научная фантастика",
+		"originalLang": "Английский",
+		"langs": "ქართული",
+		"classes": "item robertSheckley scientickFantasy ge year1"
+	},
+	{
 		"id": 63,
 		"img": "img/books/kruqosvetovParadoksi.jpg",
 		"name": "Естественно-научные парадоксы и нонсенсы в книгах Льюиса Кэрролла и Умберто Эко",
