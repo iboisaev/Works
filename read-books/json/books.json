@@ -1,5 +1,275 @@
 [
 	{
+		"id": 107,
+		"img": "img/books/kuprinBraslet.jpg",
+		"name": "Гранатовый браслет",
+		"author": "Александр Куприн",
+		"genres": "Новелла, Психологический реализм",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item aleksandrKuprin novella pshycorealizm rus year1"
+	},
+	{
+		"id": 106,
+		"img": "img/books/bayxouYazikovoyDetonator.jpg",
+		"name": "Языковой детонатор",
+		"author": "Алекс Байхоу",
+		"genres": "Языки",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item alexBayxou langs rus year1"
+	},
+	{
+		"id": 105,
+		"img": "img/books/maksimCexov.jpg",
+		"name": "А. П. Чехов",
+		"author": "Максим Горький",
+		"genres": "Критика",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item maksimGorkiy kritika rus year1"
+	},
+	{
+		"id": 104,
+		"img": "img/books/vlasCexov.jpg",
+		"name": "А. П. Чехов",
+		"author": "Влас Дорошевич",
+		"genres": "Критика",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item vlasDoroshevic kritika rus year1"
+	},
+	{
+		"id": 103,
+		"img": "img/books/tolmachevHuqo.jpg",
+		"name": "Свидетель века Виктор Гюго",
+		"author": "В. М. Толмачёв",
+		"genres": "Критика",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item tolmacev kritika rus year1"
+	},
+	{
+		"id": 102,
+		"img": "img/books/belyyCexov.jpg",
+		"name": "А. П. Чехов",
+		"author": "Андрей Белый",
+		"genres": "Критика",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item andreyBeliy kritika rus year1"
+	},
+	{
+		"id": 101,
+		"img": "img/books/belyyFridrihNicshe.jpg",
+		"name": "Фридрих Ницше",
+		"author": "Андрей Белый",
+		"genres": "Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item andreyBeliy authorsFantasy rus year1"
+	},
+	{
+		"id": 100,
+		"img": "img/books/dochanishvili.jpg",
+		"name": "ყველაზე კარგი პაპა",
+		"author": "გურამ დოჩანაშვილი",
+		"genres": "Сказка",
+		"originalLang": "Грузинский",
+		"langs": "ქართული",
+		"classes": "item guramDochanishvili shazka ge year1"
+	},
+	{
+		"id": 99,
+		"img": "img/books/dochanishvili.jpg",
+		"name": "ბაქანი",
+		"author": "გურამ დოჩანაშვილი",
+		"genres": "Сказка",
+		"originalLang": "Грузинский",
+		"langs": "ქართული",
+		"classes": "item guramDochanishvili shazka ge year1"
+	},
+	{
+		"id": 98,
+		"img": "img/books/pushkinSkazkaOMertvojTsarevne.jpeg",
+		"name": "Сказка о мёртвой царевне и о семи богатырях",
+		"author": "А. С. Пушкин",
+		"genres": "Сказка",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item pushkin shazka rus year1"
+	},
+	{
+		"id": 97,
+		"img": "img/books/pushkinRibakRibka.jpg",
+		"name": "Сказка о рыбаке и рыбке",
+		"author": "А. С. Пушкин",
+		"genres": "Сказка",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item pushkin shazka rus year1"
+	},
+	{
+		"id": 96,
+		"img": "img/books/pushkinEvgeniy.jpg",
+		"name": "Евгений Онегин",
+		"author": "А. С. Пушкин",
+		"genres": "Роман",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item pushkin novel rus year1"
+	},
+	{
+		"id": 95,
+		"img": "img/books/pushkinBarishnaKrestyanka.jpg",
+		"name": "Барышня-крестьянка",
+		"author": "А. С. Пушкин",
+		"genres": "Повесть, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item pushkin povest authorsFantasy rus year1"
+	},
+	{
+		"id": 94,
+		"img": "img/books/pushkinVsadnik.jpg",
+		"name": "Медный всадник",
+		"author": "А. С. Пушкин",
+		"genres": "Поэма",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item pushkin poema rus year1"
+	},
+	{
+		"id": 93,
+		"img": "img/books/pushkinPikovayaDama.jpg",
+		"name": "Пиковая дама",
+		"author": "А. С. Пушкин",
+		"genres": "Художественный вымысел, Повесть",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item pushkin authorsFantasy povest rus year1"
+	},
+	{
+		"id": 92,
+		"img": "img/books/pushkinKapitanDochka.jpg",
+		"name": "Капитанская дочка",
+		"author": "А. С. Пушкин",
+		"genres": "Роман, Исторический",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item pushkin novel history rus year1"
+	},
+	{
+		"id": 91,
+		"img": "img/books/kingLori.jpg",
+		"name": "Лори",
+		"author": "Стивен Кинг",
+		"genres": "Триллер",
+		"originalLang": "Английский",
+		"langs": "Русский",
+		"classes": "item stephenKing triller rus year1"
+	},
+	{
+		"id": 90,
+		"img": "img/books/revaz.jpg",
+		"name": "ეთერი",
+		"author": "რევაზ ინანიშვილი",
+		"genres": "Детская литература",
+		"originalLang": "Грузинский",
+		"langs": "ქართული",
+		"classes": "item revazİnanishvili childlit ge year1"
+	},
+	{
+		"id": 89,
+		"img": "img/books/revaz.jpg",
+		"name": "მაყვალზე",
+		"author": "რევაზ ინანიშვილი",
+		"genres": "Детская литература",
+		"originalLang": "Грузинский",
+		"langs": "ქართული",
+		"classes": "item revazİnanishvili childlit ge year1"
+	},
+	{
+		"id": 88,
+		"img": "img/books/revazGogona.jpg",
+		"name": "გოგონა - ღამე რომ შეუყვარდა",
+		"author": "რევაზ ინანიშვილი",
+		"genres": "Детская литература",
+		"originalLang": "Грузинский",
+		"langs": "ქართული",
+		"classes": "item revazİnanishvili childlit ge year1"
+	},
+	{
+		"id": 87,
+		"img": "img/books/revaz.jpg",
+		"name": "ბღუკები",
+		"author": "რევაზ ინანიშვილი",
+		"genres": "Детская литература",
+		"originalLang": "Грузинский",
+		"langs": "ქართული",
+		"classes": "item revazİnanishvili childlit ge year1"
+	},
+	{
+		"id": 86,
+		"img": "img/books/revaz.jpg",
+		"name": "საიდუმლო",
+		"author": "რევაზ ინანიშვილი",
+		"genres": "Детская литература",
+		"originalLang": "Грузинский",
+		"langs": "ქართული",
+		"classes": "item revazİnanishvili childlit ge year1"
+	},
+	{
+		"id": 85,
+		"img": "img/books/revaz.jpg",
+		"name": "მელია და მე",
+		"author": "რევაზ ინანიშვილი",
+		"genres": "Детская литература",
+		"originalLang": "Грузинский",
+		"langs": "ქართული",
+		"classes": "item revazİnanishvili childlit ge year1"
+	},
+	{
+		"id": 84,
+		"img": "img/books/revaz.jpg",
+		"name": "ლოჭინში",
+		"author": "რევაზ ინანიშვილი",
+		"genres": "Детская литература",
+		"originalLang": "Грузинский",
+		"langs": "ქართული",
+		"classes": "item revazİnanishvili childlit ge year1"
+	},
+	{
+		"id": 83,
+		"img": "img/books/revazLamaziCremlebi.jpg",
+		"name": "ლამაზი ცრემლები",
+		"author": "რევაზ ინანიშვილი",
+		"genres": "Художественная проза",
+		"originalLang": "Грузинский",
+		"langs": "ქართული",
+		"classes": "item revazİnanishvili literaryFiction ge year1"
+	},
+	{
+		"id": 82,
+		"img": "img/books/paevskayaHuqo.jpg",
+		"name": "Виктор Гюго. Его жизнь и литературная деятельность",
+		"author": "Аделаида Паевская",
+		"genres": "Биография",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item adelaidaPaevskaya biography rus year1"
+	},
+	{
+		"id": 81,
+		"img": "img/books/akaMogzaurobaYarabagshi.jpg",
+		"name": "მოგზაურობა ყარაბაღში",
+		"author": "აკა მორჩილაძე",
+		"genres": "Роман",
+		"originalLang": "Грузинский",
+		"langs": "ქართული",
+		"classes": "item akaMorchiladze novel ge year1"
+	},
+	{
 		"id": 80,
 		"img": "img/books/hitcensNotGreat.jpg",
 		"name": "Tanrı Böyük Deyil",
