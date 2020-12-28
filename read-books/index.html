@@ -12,10 +12,14 @@
 	
 	<!-- Кастомный файл стилей -->
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" href="https://atom.io/favicon.ico">
+	<link rel="shortcut icon" href="img/icons/favicon.ico">
 	<title>Read Books - Прочитанные мною книги</title>
 </head>
 <body class="scroll">
+	<!-- preloader -->
+	<div class="preloader">
+		<div class="preloader__item"></div>
+	</div>
 	<div class="wrapper">
 		<!-- header -->
 		<header class="header">
@@ -169,6 +173,7 @@
 						  <button class="filters__btn" data-filter=".langs"><span></span>Языки</button>
 						  <button class="filters__btn" data-filter=".novella"><span></span>Новелла</button>
 						  <button class="filters__btn" data-filter=".pshycorealizm"><span></span>Психологический реализм</button>
+						  <button class="filters__btn" data-filter=".coding"><span></span>Программирование</button>
 						</div>
 					</div>
 				</div>
@@ -213,18 +218,7 @@
 					<input class="search-items" type="text" placeholder="Поиск...">
 				</div>
 				<div class="items" id="items">
-					<!-- <a href="#" class="item cexov comedy rus year1">
-					  	<span class="item__img ibg" style="background-image: url('img/books/cexViwSad.jpg');">
-					  		<span class="item__cover">
-					  			<svg class="icon icon--view">
-									<use xlink:href="img/icons/view.svg#view"></use>
-								</svg>
-					  		</span>
-					  	</span>
-					  	<span class="item__title">А. П. Чехов - "Вишнёвый сад"</span>
-					</a> -->
 				</div>
-				<!-- <button class="books__right-btn more">Show all</button> -->
 			</div>
 		</div>
 	</div>
@@ -270,10 +264,10 @@
 		<div class="popup cart-popup">
 			<div class="popup__body cart-popup__body">
 				<a class="popup__close" href="index.html">&times;</a>
-				<h3 class="cart-popup__title popup__title"></h3>
+				<h3 class="cart-popup__title popup__title">Title</h3>
 				<div class="cart-popup__row">
 					<div class="cart-popup__left">
-						<img class="cart-popup__img" src="" alt="Book's image">
+						<img class="cart-popup__img" src="/" alt="Book's image">
 					</div>
 					<div class="cart-popup__right">
 						<p class="cart-popup__item cart-popup__author">Автор: <span></span></p>
