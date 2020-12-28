@@ -1,5 +1,95 @@
 [
 	{
+		"id": 116,
+		"img": "img/books/miragaHaqqinYolu.jpg",
+		"name": "Haqqın yolu",
+		"author": "Mirağa Mustafazadə",
+		"genres": "Религиозный",
+		"originalLang": "Азербайджанский",
+		"langs": "Азербайджанский",
+		"classes": "item mirağaMustafazadə religion az year1"
+	},
+	{
+		"id": 115,
+		"img": "img/books/rodariChipollino.jpg",
+		"name": "Приключения Чиполлино",
+		"author": "Джанни Родари",
+		"genres": "Сказка",
+		"originalLang": "Итальянский",
+		"langs": "Русский",
+		"classes": "item gianniRodari shazka rus year1"
+	},
+	{
+		"id": 114,
+		"img": "img/books/xaverbekeJs.jpg",
+		"name": "Выразительный JavaScript",
+		"author": "Марейн Хавербеке",
+		"genres": "Программирование",
+		"originalLang": "Английский",
+		"langs": "Русский",
+		"classes": "item marijnHaverbeke coding rus year1"
+	},
+	{
+		"id": 113,
+		"img": "img/books/minnickJSForDummies.jpg",
+		"name": "JavaScript для чайников",
+		"author": "Крис Минник, Ева Холланд",
+		"genres": "Программирование",
+		"originalLang": "Английский",
+		"langs": "Русский",
+		"classes": "item chrisMinnick evaHolland coding rus year1"
+	},
+	{
+		"id": 112,
+		"img": "img/books/nilolskyJSNaPriperax.jpg",
+		"name": "Javascript на примерах. Практика, практика и только практика",
+		"author": "Никольский А. П.",
+		"genres": "Программирование",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item aleksandrNikolsky coding rus year1"
+	},
+	{
+		"id": 111,
+		"img": "img/books/cooperHtmlCssWp.jpg",
+		"name": "Как создать сайт: Комикс-путеводитель по HTML, CSS и WordPress",
+		"author": "Нейт Купер",
+		"genres": "Программирование",
+		"originalLang": "Английский",
+		"langs": "Русский",
+		"classes": "item nateCooper coding rus year1"
+	},
+	{
+		"id": 110,
+		"img": "img/books/grantCssDlyaProfi.jpg",
+		"name": "CSS для профи",
+		"author": "Кит Грант",
+		"genres": "Программирование",
+		"originalLang": "Английский",
+		"langs": "Русский",
+		"classes": "item keithGrant coding rus year1"
+	},	
+	{
+		"id": 109,
+		"img": "img/books/mackfarlandBigCSS.jpg",
+		"name": "Новая большая книга CSS",
+		"author": "Дэвид Мак-Фарленд",
+		"genres": "Программирование",
+		"originalLang": "Английский",
+		"langs": "Русский",
+		"classes": "item davidMcFarland coding rus year1"
+	},
+	{
+		"id": 108,
+		"img": "img/books/freynHtmlICss.png",
+		"name": "HTML5 и CSS3.Разработка сайтов для любых браузеров и устройств",
+		"author": "Бен Фрэйн",
+		"genres": "Программирование",
+		"originalLang": "Английский",
+		"langs": "Русский",
+		"classes": "item benFrain coding rus year1"
+	},
+	{
 		"id": 107,
 		"img": "img/books/kuprinBraslet.jpg",
 		"name": "Гранатовый браслет",
