@@ -1,0 +1,30 @@
+// dropdown
+.dropdown
+	position: relative
+	&__text
+		+_3dots
+	&__icon
+		position: absolute
+		top: 50%
+		right: 20px
+		fill: #fff
+		transform: rotate(90deg) translateX(-50%)
+	&__items
+		position: absolute
+		top: 105%
+		left: 0
+		z-index: 1
+		width: 100%
+		padding: 20px 0
+		background: #353564
+		
+		transition: all .35s
+		opacity: 0
+		visibility: hidden
+		&.active
+			opacity: 1
+			visibility: visible
+	&__item
+		padding: 10px 30px
+		&:hover
+			background: $brand-yellow

@@ -1,0 +1,175 @@
+<main class="main">
+	<div class="books">
+		<div class="books__titles">
+			<h1 class="books__title">Прочитанные мною книги</h1>
+			<p class="books__suptitle">Здесь находится список всех книг и произведений, которые я прочитал начиная с 2018 года</p>
+			<a href="#items" class="btn-down lazy-anchor">
+				<svg class="icon icon--angle-dbldown">
+					<use xlink:href="img/icons/angle-dbldown.svg#angle-dbldown"></use>
+				</svg>
+			</a>
+		</div>
+		<div class="books__body container">
+			<!-- filters -->
+			<div class="filters">
+				<p class="filters__all">Фильтр</p>
+				<div class="filters__item">
+					<h2 class="filters__title active">
+						<span>Автор</span>
+						<svg class="icon icon--angle-down">
+							<use xlink:href="img/icons/angle-down.svg#angle-down"></use>
+						</svg>
+					</h2>
+					<div class="filters__btns-container open" style="display: block;">
+						<div class="filters__btns btn-group js-radio-button-group" data-filter-group="author">
+						  <button class="filters__btn is-checked" data-filter=""><span></span>Все</button>
+						  <button class="filters__btn" data-filter=".cexov"><span></span>А. П. Чехов</button>
+						  <button class="filters__btn" data-filter=".pushkin"><span></span>А. С. Пушкин</button>
+						  <button class="filters__btn" data-filter=".bulqakov"><span></span>Михаил Булгаков</button>
+						  <button class="filters__btn" data-filter=".aleksandrKuprin"><span></span>Александр Куприн</button>
+						  <button class="filters__btn" data-filter=".sashaKruqosvetov"><span></span>Саша Кругосветов</button>
+						  <button class="filters__btn" data-filter=".petrVazemsky"><span></span>Пётр Вяземский</button>
+						  <button class="filters__btn" data-filter=".vaclavVorovsky"><span></span>Вацлав Воровский</button>
+						  <button class="filters__btn" data-filter=".adelaidaPaevskaya"><span></span>Аделаида Паевская</button>
+						  <button class="filters__btn" data-filter=".andreyBeliy"><span></span>Андрей Белый</button>
+						  <button class="filters__btn" data-filter=".tolmacev"><span></span>В. М. Толмачёв</button>
+						  <button class="filters__btn" data-filter=".vlasDoroshevic"><span></span>Влас Дорошевич</button>
+						  <button class="filters__btn" data-filter=".maksimGorkiy"><span></span>Максим Горький</button>
+						  <button class="filters__btn" data-filter=".alexBayxou"><span></span>Алекс Байхоу</button>
+						  <button class="filters__btn" data-filter=".aleksandrNikolsky"><span></span>А. П. Никольский</button>
+						  <button class="filters__btn" data-filter=".rayBradbury"><span></span>Ray Bradbury</button>
+						  <button class="filters__btn" data-filter=".friedrichNietzsche"><span></span>Friedrich Nietzsche</button>
+						  <button class="filters__btn" data-filter=".victorHugo"><span></span>Victor Hugo</button>
+						  <button class="filters__btn" data-filter=".lewisCarroll"><span></span>Lewis Carroll</button>
+						  <button class="filters__btn" data-filter=".stephenKing"><span></span>Stephen King</button>
+						  <button class="filters__btn" data-filter=".robertSheckley"><span></span>Robert Sheckley</button>
+						  <button class="filters__btn" data-filter=".christopherHitchens"><span></span>Christopher Hitchens</button>
+						  <button class="filters__btn" data-filter=".gianniRodari"><span></span>Gianni Rodari</button>
+						  <button class="filters__btn" data-filter=".georgesSimenon"><span></span>Georges Simenon</button>
+						  <button class="filters__btn" data-filter=".ingmarBergman"><span></span>Ingmar Bergman</button>
+						  <button class="filters__btn" data-filter=".benFrain"><span></span>Ben Frain</button>
+						  <button class="filters__btn" data-filter=".davidMcFarland"><span></span>David McFarland</button>
+						  <button class="filters__btn" data-filter=".keithGrant"><span></span>Keith J. Grant</button>
+						  <button class="filters__btn" data-filter=".nateCooper"><span></span>Nate Cooper</button>
+						  <button class="filters__btn" data-filter=".chrisMinnick"><span></span>Chris Minnick</button>
+						  <button class="filters__btn" data-filter=".evaHolland"><span></span>Eva Holland</button>
+						  <button class="filters__btn" data-filter=".marijnHaverbeke"><span></span>Marijn Haverbeke</button>
+						  <button class="filters__btn" data-filter=".novruzMurtuzov"><span></span>Novruz Murtuzov</button>
+						  <button class="filters__btn" data-filter=".mehrabSadiqniya"><span></span>Mehrab Sadiqniya</button>
+						  <button class="filters__btn" data-filter=".ocaqNejad"><span></span>Ocaq Nejad</button>
+						  <button class="filters__btn" data-filter=".məkarimŞirazi"><span></span>Məkarim Şirazi</button>
+						  <button class="filters__btn" data-filter=".muhəmmədrzaMuşfiqipur"><span></span>Muhəmmədrza Muşfiqipur</button>
+						  <button class="filters__btn" data-filter=".mehdiPişvayi"><span></span>Mehdi Pişvayi</button>
+						  <button class="filters__btn" data-filter=".cəfərSubhani"><span></span>Cəfər Subhani</button>
+						  <button class="filters__btn" data-filter=".mirağaMustafazadə"><span></span>Mirağa Mustafazadə</button>
+						  <button class="filters__btn" data-filter=".qulamrzaKürdəfşari"><span></span>Qulamrza Kürdəfşari</button>
+						  <button class="filters__btn" data-filter=".huriyəMəhəmmədi"><span></span>Huriyə Məhəmmədi</button>
+						  <button class="filters__btn" data-filter=".əliƏkbər"><span></span>Əli Əkbər</button>
+						  <button class="filters__btn" data-filter=".mürtəzaMütəhhəri"><span></span>Mürtəza Mütəhhəri</button>
+						  <button class="filters__btn" data-filter=".abbasQumi"><span></span>Abbas Qumi</button>
+						  <button class="filters__btn" data-filter=".raminİgdov"><span></span>Ramin İgidov</button>
+						  <button class="filters__btn" data-filter=".əliXamenei"><span></span>Seyid Əli Xamenei</button>
+						  <button class="filters__btn" data-filter=".shotaRustaveli"><span></span>შოთა რუსთაველი</button>
+						  <button class="filters__btn" data-filter=".shotaChantladze"><span></span>შოთა ჩანტლაძე</button>
+						  <button class="filters__btn" data-filter=".akaMorchiladze"><span></span>აკა მორჩილაძე</button>
+						  <button class="filters__btn" data-filter=".revazİnanishvili"><span></span>რევაზ ინანიშვილი</button>
+						  <button class="filters__btn" data-filter=".guramDochanishvili"><span></span>გურამ დოჩანაშვილი</button>
+						</div>
+					</div>
+				</div>
+				<div class="filters__item">
+					<h2 class="filters__title">
+						<span>Жанр</span>
+						<svg class="icon icon--angle-down">
+							<use xlink:href="img/icons/angle-down.svg#angle-down"></use>
+						</svg>
+					</h2>
+					<div class="filters__btns-container">
+						<div class="filters__btns btn-group js-radio-button-group" data-filter-group="genre">
+						  <button class="filters__btn is-checked" data-filter=""><span></span>Все</button>
+						  <button class="filters__btn" data-filter=".povest"><span></span>Повесть</button>
+						  <button class="filters__btn" data-filter=".authorsFantasy"><span></span>Художественный вымысел</button>
+						  <button class="filters__btn" data-filter=".poema"><span></span>Поэма</button>
+						  <button class="filters__btn" data-filter=".raskaz"><span></span>Рассказ</button>
+						  <button class="filters__btn" data-filter=".shazka"><span></span>Сказка</button>
+						  <button class="filters__btn" data-filter=".literaryFiction"><span></span>Художественная проза</button>
+						  <button class="filters__btn" data-filter=".comedy"><span></span>Комедия</button>
+						  <button class="filters__btn" data-filter=".humorLit"><span></span>Юмористическая художественная литература</button>
+						  <button class="filters__btn" data-filter=".novel"><span></span>Роман</button>
+						  <button class="filters__btn" data-filter=".epopeya"><span></span>Эпопея</button>
+						  <button class="filters__btn" data-filter=".drama"><span></span>Драма</button>
+						  <button class="filters__btn" data-filter=".tragedy"><span></span>Трагедия</button>
+						  <button class="filters__btn" data-filter=".romantizm"><span></span>Романтизм</button>
+						  <button class="filters__btn" data-filter=".romantikNovel"><span></span>Любовный роман</button>
+						  <button class="filters__btn" data-filter=".childlit"><span></span>Детская литература</button>
+						  <button class="filters__btn" data-filter=".fantasy"><span></span>Фэнтези</button>
+						  <button class="filters__btn" data-filter=".scientickFantasy"><span></span>Научная фантастика</button>
+						  <button class="filters__btn" data-filter=".politickFantasy"><span></span>Политическая фантастика</button>
+						  <button class="filters__btn" data-filter=".hardScientickFantasy"><span></span>Твёрдая научная фантастика</button>
+						  <button class="filters__btn" data-filter=".antiutopiya"><span></span>Антиутопия</button>
+						  <button class="filters__btn" data-filter=".religion"><span></span>Религиозный</button>
+						  <button class="filters__btn" data-filter=".history"><span></span>Исторический</button>
+						  <button class="filters__btn" data-filter=".philosophy"><span></span>Философия</button>
+						  <button class="filters__btn" data-filter=".detectiv"><span></span>Детектив</button>
+						  <button class="filters__btn" data-filter=".spravka"><span></span>Справочник</button>
+						  <button class="filters__btn" data-filter=".motivation"><span></span>Мотивационный</button>
+						  <button class="filters__btn" data-filter=".kritika"><span></span>Критика</button>
+						  <button class="filters__btn" data-filter=".gotick"><span></span>Готика</button>
+						  <button class="filters__btn" data-filter=".saga"><span></span>Сага</button>
+						  <button class="filters__btn" data-filter=".absurd"><span></span>Литература абсурда</button>
+						  <button class="filters__btn" data-filter=".biography"><span></span>Биография</button>
+						  <button class="filters__btn" data-filter=".triller"><span></span>Триллер</button>
+						  <button class="filters__btn" data-filter=".stixi"><span></span>Стихи</button>
+						  <button class="filters__btn" data-filter=".langs"><span></span>Языки</button>
+						  <button class="filters__btn" data-filter=".novella"><span></span>Новелла</button>
+						  <button class="filters__btn" data-filter=".pshycorealizm"><span></span>Психологический реализм</button>
+						  <button class="filters__btn" data-filter=".coding"><span></span>Программирование</button>
+						</div>
+					</div>
+				</div>
+				<div class="filters__item">
+					<h2 class="filters__title">
+						<span>Язык</span>
+						<svg class="icon icon--angle-down">
+							<use xlink:href="img/icons/angle-down.svg#angle-down"></use>
+						</svg>
+					</h2>
+					<div class="filters__btns-container">
+						<div class="filters__btns btn-group js-radio-button-group" data-filter-group="language">
+						  <button class="filters__btn is-checked" data-filter=""><span></span>Все</button>
+						  <button class="filters__btn" data-filter=".rus"><span></span>Русский</button>
+						  <button class="filters__btn" data-filter=".en"><span></span>English</button>
+						  <button class="filters__btn" data-filter=".az"><span></span>Azerbaycanca</button>
+						  <button class="filters__btn" data-filter=".ge"><span></span>ქართული</button>
+						  <button class="filters__btn" data-filter=".tur"><span></span>Türkçe</button>
+						</div>
+					</div>
+				</div>
+				<div class="filters__item">
+					<h2 class="filters__title">
+						<span>Год</span>
+						<svg class="icon icon--angle-down">
+							<use xlink:href="img/icons/angle-down.svg#angle-down"></use>
+						</svg>
+					</h2>
+					<div class="filters__btns-container">
+						<div class="filters__btns btn-group js-radio-button-group" data-filter-group="year">
+						  <button class="filters__btn is-checked" data-filter=""><span></span>Все</button>
+						  <button class="filters__btn" data-filter=".year1"><span></span>2018-2020</button>
+						  <button class="filters__btn" data-filter=".year2"><span></span>2021-2022</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- items -->
+			<div class="books__right">
+				<div class="books__right-top">
+					<p class="books__right-title">Всего <span></span></p>
+					<input class="search-items" type="text" placeholder="Поиск...">
+				</div>
+				<div class="items" id="items">
+				</div>
+			</div>
+		</div>
+	</div>
+</main>

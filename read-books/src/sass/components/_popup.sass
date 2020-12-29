@@ -1,0 +1,87 @@
+// popups
+.popup 
+	width: 100%
+	height: 100%
+
+	+flexbox()
+	justify-content: center
+	align-items: flex-start
+
+	position: fixed
+	top: 0
+	left: 0
+
+	background: rgba(0, 0, 0, 0.7)
+	z-index: 10
+	overflow-y: auto
+	overflow-x: hidden
+
+	opacity: 0
+	visibility: hidden
+	transition: all .5s ease
+	&__body 
+		max-width: 700px
+		margin-top: 80px
+		padding: 25px 30px
+		background: #fff
+		position: relative
+		opacity: 0
+		transform: translate(0, -100%)
+		// transform: perpective(120px) translate(0, -100%) rotateX(45deg)
+		transition: all .5s ease
+		@media (max-width: $md3)
+			margin-top: 50px
+		@media (max-width: $md4)
+			margin-top: 30px
+	&__title 
+		font-size: 1.7rem
+		font-weight: 700
+		margin-bottom: 1em
+		@media (max-width: $md4)
+			font-size: 1.5rem
+		@media (max-width: $md5)
+			font-size: 1.3rem
+	&__text
+		font-size: 1.2rem
+		line-height: 1.1
+	&__close
+		position: absolute
+		top: 15px
+		right: 15px
+		font-size: 30px
+	&.open
+		opacity: 1
+		visibility: visible
+		& .popup__body
+			opacity: 1
+			transform: translate(0, 0)
+			// transform: perpective(120px) translate(0, 0) rotateX(0)
+
+// cart-popup
+.cart-popup
+	&__body 
+	&__title
+	&__row
+		display: flex
+		justify-content: space-between
+		@media (max-width: $md4)
+			flex-direction: column
+	&__left
+	&__img
+		max-width: 280px
+		object-fit: cover
+	&__right
+		padding-left: 25px
+		@media (max-width: $md4)
+			margin-top: 20px
+			padding-left: 0
+	&__item
+		margin-bottom: 15px
+		font-weight: 700
+		line-height: 1.2
+		& span 
+			font-weight: 400
+	&__author
+	&__name
+	&__genres
+	&__original-lang

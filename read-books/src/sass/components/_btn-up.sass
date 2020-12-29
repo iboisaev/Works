@@ -1,0 +1,23 @@
+// кнопка наверх
+.btn-up 
+	position: fixed
+	bottom: 25px
+	right: 25px
+	width: 65px
+	height: 65px
+	border-radius: 20%
+	background-color: #cc0000
+	cursor: pointer
+	opacity: .8
+	transition: opacity .2s
+	@media (max-width: $md3)
+		display: none
+	&:hover 
+		opacity: 1
+	&__arrow 
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 55px
+		height: 35px
+		transform: translate(-50%, -50%)
