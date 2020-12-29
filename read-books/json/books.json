@@ -1,5 +1,15 @@
 [
 	{
+		"id": 117,
+		"img": "img/books/huqo93Year.jpg",
+		"name": "Девяносто третий год",
+		"author": "Виктор Гюго",
+		"genres": "Роман, Художественный вымысел",
+		"originalLang": "Французский",
+		"langs": "Русский",
+		"classes": "item victorHugo novel authorsFantasy rus year1"
+	},
+	{
 		"id": 116,
 		"img": "img/books/miragaHaqqinYolu.jpg",
 		"name": "Haqqın yolu",
