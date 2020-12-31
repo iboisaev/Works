@@ -1,0 +1,37 @@
+html, body 
+	font-family: 'Roboto', sans-serif
+	font-size: 16px
+	font-weight: 400
+	color: #262f32
+
+// стилизация скроллбара
+*::-webkit-scrollbar 
+	width: 17px
+
+*::-webkit-scrollbar-track 
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3)
+	background: #f5f5f5
+
+*::-webkit-scrollbar-thumb 
+	background: #262f32
+
+.wrapper
+	width: 100%
+	min-height: 100%
+	overflow: hidden
+	@media (min-width: $md2)
+		display: grid
+		grid-template-columns: repeat(9, 1fr)
+		grid-template-areas: "a a a a a a b b b" "c c c c d d d d d" "c c c c e e e e e" "f f f g g g g g g"
+
+.title
+	font-size: 45px
+	letter-spacing: 1px
+	line-height: 66px
+	font-weight: 300
+	@media (max-width: $md1)
+		font-size: 35px
+	@media (max-width: $md2)
+		font-size: 30px
+	& span
+		font-weight: 900
