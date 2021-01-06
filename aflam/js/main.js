@@ -23,7 +23,7 @@ doc.addEventListener('DOMContentLoaded', function () {
 		menuBurger = doc.querySelector('.menu-burger'),
 		btnUp = doc.querySelector('.btn-up'),
 		dropdown = doc.querySelectorAll('.dropdown'),
-		lazyAnchor = doc.querySelectorAll('[data-href^="#"]'),
+		lazyAnchor = doc.querySelectorAll('.lazy-anchor'),
 		form = doc.querySelectorAll('.form'),
 		thanksPopup = doc.querySelector('.thanks-popup'),
 		closePopup = doc.querySelector('.popup__close'),
@@ -31,15 +31,6 @@ doc.addEventListener('DOMContentLoaded', function () {
 		lockMargin = doc.querySelectorAll('.lock-margin'),
 		timeout = 500;
 
- //        	console.log(body.stop());
-	// lazyAnchor.forEach(function (item) {
-	// 	item.addEventListener('click', function (e) {
-	// 		e.preventDefault();
-	// 		let t = 1800;
- //        	let d = this.getAttribute('data-href') ? this.getAttribute('data-href') : this.getAttribute('href');
- //        	body.stop.animate({ scrollTop: d.offset().top }, t);
-	// 	});
-	// });
 
 	// переменные let
 	let unlock = true;
@@ -156,6 +147,24 @@ doc.addEventListener('DOMContentLoaded', function () {
 		 }
 	});
 
+	lazyAnchor.forEach(link => {
+	    link.addEventListener('click', function(e) {
+	        e.preventDefault();
+
+	        let href = this.getAttribute('href').substring(1);
+	        const scrollTarget = document.getElementById(href);
+	        const topOffset = 30;
+	        // const topOffset = 0; // если не нужен отступ сверху 
+	        const elementPosition = scrollTarget.getBoundingClientRect().top;
+	        const offsetPosition = elementPosition - topOffset;
+
+	        window.scrollBy({
+	            top: offsetPosition,
+	            behavior: 'smooth',
+	        });
+	    });
+	});
+
 	// For customer dropdown
 	dropdown.forEach(function(item) {
 		const dropdownItems = item.querySelector('.dropdown__items'),
@@ -263,6 +272,26 @@ doc.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 
+	if (doc.querySelector('.slider-post')) {
+		let sliderPost = new Swiper('.slider-post', {
+			// Optional parameters
+			slidesPerView: 1,
+			loop: true,
+
+			// navigation
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+
+			// pagination
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		});
+	}
+
 	// инициализация video JS, после проверки на наличие
 	if (doc.querySelector('#my-video')) {
 		let player = videojs('my-video', {
@@ -299,14 +328,6 @@ $(doc).ready(function(){
 		which.removeClass('open');
 		return which;
 	}
-
-	// Плавная прокрутка якоря 
-    $('*[data-href^="#"]').on('click', function(e){
-        e.preventDefault();
-        let t = 1800;
-        let d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
-        $('html,body').stop().animate({ scrollTop: $(d).offset().top }, t);
-    });
 
     // 
     $('.form').submit(function() {
