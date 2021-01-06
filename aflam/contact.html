@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Кастомный файл стилей -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/logo.svg">
+	<title>Aflam - Contact</title>
+</head>
+<body>
+	<!-- preloader -->
+	<div class="preloader">
+		<div class="preloader__item"></div>
+	</div>
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header lock-padding" id="header">
+			<div class="header__container container">
+				<div class="header__body">
+					<a class="header__logo-link" href="index.html">
+						<img class="header__logo-img" src="img/logo.svg" alt="Logo of site">
+					</a>
+					<div class="header__left">
+						<nav class="header__menu">
+							<ul class="header__list">
+								<li class="header__item">
+									<a class="header__link header__link--active" href="index.html">Home</a>
+								</li>
+								<li class="header__item">
+									<a class="header__link" href="browse-movies.html">Browse movies</a>
+								</li>
+								<li class="header__item">
+									<a class="header__link" href="blog.html">Blog</a>
+								</li>
+								<li class="header__item">
+									<a class="header__link" href="contact.html">Contact</a>
+								</li>
+							</ul>
+						</nav>
+						<button class="header__btn btn">
+							<svg class="header__icon icon icon--search active">
+								<use xlink:href="img/sprite.svg#icon--search"></use>
+							</svg>
+							<svg class="header__icon icon icon--close">
+								<use xlink:href="img/sprite.svg#icon--close"></use>
+							</svg>
+						</button>
+					</div>
+					<!-- menu burger -->
+					<div class="menu-burger">
+						<span class="menu-burger__icon"></span>
+					</div>
+				</div>
+				<div class="header__search">
+					<form class="header__form">
+						<div class="header__form-item">
+							<input class="header__input" type="text" placeholder="Search the movies ...">
+						</div>
+					</form>
+				</div>
+			</div>
+		</header>
+		<!-- main -->
+		<section class="hero ibg" style="background-image: url('img/contact-bg.png')">
+			<div class="hero__container container">
+				<h1 class="hero__title">Contact aflam team</h1>
+				<p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				<div class="hero__links">
+					<a class="hero__link hero__link--color--brand btn" href="browse-movies.html">Browse movies</a>
+					<a class="hero__link hero__link--big" href="browse-movies.html">Latest movies</a>
+				</div>
+			</div>
+		</section>
+		<section class="contacts">
+			<div class="container">
+				<div class="contacts__top">
+					<h2 class="title">Contact Us</h2>
+					<p class="contacts__subtitle">you can request a movie</p>
+				</div>
+				<form class="contacts__form form-contacts form">
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Aflam">
+					<input type="hidden" name="admin_email" value="samirsaev6@gmail.com">
+					<input type="hidden" name="form_subject" value="Contact">
+					<!-- ./End of hidden Required Fields -->
+					<div class="form-contacts__label name">
+						<svg class="icon icon--grey icon--user">
+							<use xlink:href="img/user.svg#user"></use>
+						</svg>
+						<input class="form-contacts__input" type="text" name="Email" placeholder="Name" required>
+					</div>
+					<div class="form-contacts__label subject">
+						<svg class="icon icon--grey icon--tag">
+							<use xlink:href="img/sprite.svg#icon--tag"></use>
+						</svg>
+						<input class="form-contacts__input" type="text" name="Subject" placeholder="Subject" required>
+					</div>
+					<div class="form-contacts__label email">
+						<svg class="icon icon--grey icon--email">
+							<use xlink:href="img/email.svg#email"></use>
+						</svg>
+						<input class="form-contacts__input" type="email" name="Email" placeholder="Email" required>
+					</div>
+					<div class="form-contacts__label textarea">
+						<svg class="icon icon--grey icon--message">
+							<use xlink:href="img/sprite.svg#icon--message"></use>
+						</svg>
+						<textarea class="form-contacts__textarea form-contacts__input" name="Message" placeholder="Message" minlength="1" required></textarea>
+					</div>
+					<button class="form-contacts__btn btn">
+						<svg class="icon icon--send">
+							<use xlink:href="img/sprite.svg#icon--send"></use>
+						</svg>
+						<span>Send</span>
+					</button>
+				</form>
+			</div>
+		</section>		
+		<!-- footer -->
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__row">
+					<p class="footer__copy">all copyrights are reserved for aflam © 2020</p>
+					<div class="footer__icons">
+						<a class="footer__link btn" href="https://rss.com/" target="_blank">
+							<svg class="footer__icon icon icon--rss">
+		    					<use xlink:href="img/sprite.svg#icon--rss"></use>
+		    				</svg>
+		    			</a>
+		    			<a class="footer__link btn" href="https://twitter.com/?lang=ru" target="_blank">
+		    				<svg class="footer__icon icon icon--twitter">
+			    				<use xlink:href="img/sprite.svg#icon--twitter"></use>
+			    			</svg>
+			    		</a>
+		    			<a class="footer__link btn" href="https://www.facebook.com/" target="_blank">
+		    				<svg class="footer__icon icon icon--fb">
+			    				<use xlink:href="img/sprite.svg#icon--fb"></use>
+			    			</svg>
+		    			</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- popups -->
+		<!-- попап для благодарства -->
+		<div class="popup thanks-popup">
+			<div class="popup__body thanks-popup__body">
+				<a href="index.html" class="popup__close">&times;</a>
+				<h3 class="popup__title">Thanks for subscribing our newsletter</h3>
+				<p class="popup__text">Now you will receive messages about our newsletters in your email</p>
+			</div>
+		</div>	</div>
+	<!-- Кнопка наверх -->
+	<a class="btn-up hide lock-margin lazy-anchor" href="#header" data-href="#header">
+		<svg class="btn-up__icon icon icon--arrow-up">
+			<use xlink:href="img/sprite.svg#icon--arrow-up"></use>
+		</svg>
+	</a>
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<!-- jquery lazy load xt library -->
+	<script src="js/jquery.lazyloadxt.min.js"></script>
+	<script src="js/jquery.lazyloadxt.extra.min.js"></script>
+	<!-- Мои скрипты -->
+	<script src="js/main.js"></script>
+</body>
+</html>
