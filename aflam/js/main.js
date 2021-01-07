@@ -24,9 +24,6 @@ doc.addEventListener('DOMContentLoaded', function () {
 		btnUp = doc.querySelector('.btn-up'),
 		dropdown = doc.querySelectorAll('.dropdown'),
 		lazyAnchor = doc.querySelectorAll('.lazy-anchor'),
-		form = doc.querySelectorAll('.form'),
-		thanksPopup = doc.querySelector('.thanks-popup'),
-		closePopup = doc.querySelector('.popup__close'),
 		lockPadding = doc.querySelectorAll('.lock-padding'),
 		lockMargin = doc.querySelectorAll('.lock-margin'),
 		timeout = 500;
@@ -93,24 +90,6 @@ doc.addEventListener('DOMContentLoaded', function () {
 		setTimeout(function() {
 			unlock = true;
 		}, timeout);
-	}
-
-	// Функция для открытия попапа
-	function popupOpen(which) {
-		if (unlock) {
-			which.classList.add('open');
-			bodyLock();
-			return which;
-		}
-	}
-	
-	// Функция для закрытия попапа
-	function popupClose(which) {
-		if (unlock) {
-			which.classList.remove('open');
-			bodyUnlock();
-			return which;
-		}
 	}
 
 	// Функция для открытия/закрытия меню бургера
@@ -187,25 +166,6 @@ doc.addEventListener('DOMContentLoaded', function () {
 		});
 	});
 
-
-	// 
-	// form.forEach(function (item) {
-	// 	item.addEventListener('submit', function() {
-	// 	console.log(item);
-	// 		$.ajax({
-	// 			type: "POST",
-	// 			url: "php/mail.php",
-	// 			data: item.serialize()
-	// 		}).done(function() {
-	// 			popupOpen(thanksPopup);
-	// 			item.trigger("reset");
-	// 			setTimeout(function() {
-	// 				popupClose(thanksPopup);
-	// 			}, 4000);
-	// 		});
-	// 		return false;
-	// 		});
-	// });
 
 	// инициализация swiper слайдера
 	if (doc.querySelector('.slider')) {
@@ -308,14 +268,7 @@ doc.addEventListener('DOMContentLoaded', function () {
 $(doc).ready(function(){
 
 	// переменные const
-	const body = $('body'),
-		  btnUp = $('.btn-up'),
-		  navLink = $('.nav__link'),
-		  btns = $('.btns'),
-		  popup = $('.popup'),
-		  callbackPopup = $('.callback-popup'),
-		  thanksPopup = $('.thanks-popup'),
-		  closePopup = $('.popup__close');
+	const thanksPopup = $('.thanks-popup');
 
 	// Функция для открытия попапа
 	function popupOpen(which) {
