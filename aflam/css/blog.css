@@ -1436,19 +1436,19 @@ html, body {
   padding: 20px 0 20px 23px;
 }
 .newsletter-sidebar__input::-webkit-input-placeholder {
-  font-size: "Myriad Pro";
+  font-family: "Myriad Pro";
   color: #ccc;
 }
 .newsletter-sidebar__input:-moz-placeholder {
-  font-size: "Myriad Pro";
+  font-family: "Myriad Pro";
   color: #ccc;
 }
 .newsletter-sidebar__input::-moz-placeholder {
-  font-size: "Myriad Pro";
+  font-family: "Myriad Pro";
   color: #ccc;
 }
 .newsletter-sidebar__input:-ms-input-placeholder {
-  font-size: "Myriad Pro";
+  font-family: "Myriad Pro";
   color: #ccc;
 }
 .newsletter-sidebar__btn {
