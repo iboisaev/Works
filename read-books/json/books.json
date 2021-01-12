@@ -1,5 +1,15 @@
 [
 	{
+		"id": 118,
+		"img": "img/books/unVahhabi.jpg",
+		"name": "Vəhhabilər və Yanlış Əqidələri",
+		"author": "Unknown",
+		"genres": "Dini",
+		"originalLang": "Азербайджанский",
+		"langs": "Азербайджанский",
+		"classes": "item novel religion az year2"
+	},
+	{
 		"id": 117,
 		"img": "img/books/huqo93Year.jpg",
 		"name": "Девяносто третий год",
