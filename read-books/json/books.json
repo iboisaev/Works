@@ -1,5 +1,15 @@
 [
 	{
+		"id": 119,
+		"img": "img/books/shiraziQasimMektebi.jpg",
+		"name": "Şəhid Qasim Süleymani Məktəbi",
+		"author": "Əli Şirazi",
+		"genres": "Dini",
+		"originalLang": "Персидский",
+		"langs": "Азербайджанский",
+		"classes": "item aliShirazi religion az year2"
+	},
+	{
 		"id": 118,
 		"img": "img/books/unVahhabi.jpg",
 		"name": "Vəhhabilik və Yanlış Əqidələri",
