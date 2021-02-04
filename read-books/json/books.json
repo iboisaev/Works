@@ -1,5 +1,15 @@
 [
 	{
+		"id": 120,
+		"img": "img/books/macfarlandJsAndJquery.jpg",
+		"name": "JavaScript и jQuery: исчерпывающее руководство",
+		"author": "Дэвид Макфарланд",
+		"genres": "Программирование",
+		"originalLang": "Английский",
+		"langs": "Русский",
+		"classes": "item davidMacfarland coding rus year2"
+	},
+	{
 		"id": 119,
 		"img": "img/books/shiraziQasimMektebi.jpg",
 		"name": "Şəhid Qasim Süleymani Məktəbi",
