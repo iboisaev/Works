@@ -1,5 +1,15 @@
 [
 	{
+		"id": 121,
+		"img": "img/books/mutInsanVeTale.jpg",
+		"name": "İnsan və Tale Problemi",
+		"author": "Mürtəza Mütəhhəri",
+		"genres": "Dini",
+		"originalLang": "Персидский",
+		"langs": "Азербайджанский",
+		"classes": "item mürtəzaMütəhhəri religion az year2"
+	},
+	{
 		"id": 120,
 		"img": "img/books/macfarlandJsAndJquery.jpg",
 		"name": "JavaScript и jQuery: исчерпывающее руководство",
