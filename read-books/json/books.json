@@ -1,5 +1,15 @@
 [
 	{
+		"id": 122,
+		"img": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8VuAj_hAGbgqQ4mI32ZuCEwkkC10Z2w_sJRTTzX6k04BUHhue",
+		"name": "Человек, который смеётся",
+		"author": "Виктор Гюго",
+		"genres": "Роман, Художественный вымысел",
+		"originalLang": "France",
+		"langs": "Русский",
+		"classes": "item victorHugo novel authorsFantasy rus year2"
+	},
+	{
 		"id": 121,
 		"img": "img/books/mutInsanVeTale.png",
 		"name": "İnsan və Tale Problemi",
@@ -37,7 +47,7 @@
 		"genres": "Dini",
 		"originalLang": "Азербайджанский",
 		"langs": "Азербайджанский",
-		"classes": "item novel religion az year2"
+		"classes": "item religion az year2"
 	},
 	{
 		"id": 117,
