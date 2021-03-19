@@ -1,5 +1,15 @@
 [
 	{
+		"id": 124,
+		"img": "https://royallib.com/data/images/2/cover_2933.jpg",
+		"name": "Верочка",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year2"
+	},
+	{
 		"id": 123,
 		"img": "https://www.litmir.me/data/Book/0/110000/110170/BC4_1490564159.jpg",
 		"name": "Спать хочется",
