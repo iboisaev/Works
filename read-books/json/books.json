@@ -1,5 +1,25 @@
 [
 	{
+		"id": 126,
+		"img": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_200/22028322-anton-chehov-vosklicatelnyy-znak.jpg",
+		"name": "Восклицательный знак",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year2"
+	},
+	{
+		"id": 125,
+		"img": "https://b1.culture.ru/c/279909.jpg",
+		"name": "Выигрышный билет",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел, Нарратив",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year2"
+	},
+	{
 		"id": 124,
 		"img": "https://royallib.com/data/images/2/cover_2933.jpg",
 		"name": "Верочка",
