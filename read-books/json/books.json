@@ -1,5 +1,35 @@
 [
 	{
+		"id": 129,
+		"img": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/176226-anton-chehov-horoshie-ludi.jpg",
+		"name": "Хорошие люди",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year2"
+	},
+	{
+		"id": 128,
+		"img": "http://i.otzovik.com/objects/b/940000/931927.png",
+		"name": "Кот",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year2"
+	},
+	{
+		"id": 127,
+		"img": "https://files.books.ru/pic/1557001-1558000/1557837/001557837_1_150.jpg",
+		"name": "Беззащитное существо",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year2"
+	},
+	{
 		"id": 126,
 		"img": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_200/22028322-anton-chehov-vosklicatelnyy-znak.jpg",
 		"name": "Восклицательный знак",
