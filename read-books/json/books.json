@@ -1,5 +1,25 @@
 [
 	{
+		"id": 131,
+		"img": "https://cv8.litres.ru/pub/c/elektronnaya-kniga/cover_max1500/176188-anton-chehov-horistka.jpg",
+		"name": "Хористка",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year2"
+	},
+	{
+		"id": 130,
+		"img": "https://cv8.litres.ru/pub/c/elektronnaya-kniga/cover_max1500/146983-author-chehov_anton-kniga_zelenaya_kosa.jpg",
+		"name": "Зелёная коса",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year2"
+	},
+	{
 		"id": 129,
 		"img": "https://cv2.litres.ru/pub/c/elektronnaya-kniga/cover_330/176226-anton-chehov-horoshie-ludi.jpg",
 		"name": "Хорошие люди",
