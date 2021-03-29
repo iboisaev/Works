@@ -1,5 +1,45 @@
 [
 	{
+		"id": 135,
+		"img": "https://www.litmir.me/data/Book/0/5000/5826/BC4_1490513401.jpg",
+		"name": "Брак по расчёту",
+		"author": "А. П. Чехов",
+		"genres": "Роман, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov novel authorsFantasy rus year2"
+	},
+	{
+		"id": 134,
+		"img": "https://i.otzovik.com/objects/b/1010000/1002227.png",
+		"name": "Месть",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year2"
+	},
+	{
+		"id": 133,
+		"img": "https://cdn1.ozone.ru/s3/multimedia-6/6012621138.jpg",
+		"name": "Ариадна",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year2"
+	},
+	{
+		"id": 132,
+		"img": "https://cv4.litres.ru/pub/c/audiokniga/cover_max1500/22873842-anton-chehov-v-ssylke-22873842.jpg",
+		"name": "В ссылке",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year2"
+	},
+	{
 		"id": 131,
 		"img": "https://cv8.litres.ru/pub/c/elektronnaya-kniga/cover_max1500/176188-anton-chehov-horistka.jpg",
 		"name": "Хористка",
