@@ -1,5 +1,35 @@
 [
 	{
+		"id": 138,
+		"img": "https://st2.prosto.im/cache/st2/1/2/5/2/1252339/1252339_230x.jpg",
+		"name": "Сирена",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year2"
+	},
+	{
+		"id": 137,
+		"img": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1438589636l/26029598._SY475_.jpg",
+		"name": "Рыбья любовь",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year2"
+	},
+	{
+		"id": 136,
+		"img": "https://be2.aldebaran.ru/static/bookimages/14/66/18/14661812.bin.dir/14661812.cover_250.jpg",
+		"name": "Дома",
+		"author": "А. П. Чехов",
+		"genres": "Рассказ, Художественный вымысел",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item cexov raskaz authorsFantasy rus year2"
+	},
+	{
 		"id": 135,
 		"img": "https://www.litmir.me/data/Book/0/5000/5826/BC4_1490513401.jpg",
 		"name": "Брак по расчёту",
