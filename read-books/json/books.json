@@ -1,5 +1,15 @@
 [
 	{
+		"id": 139,
+		"img": "https://cdn1.ozone.ru/multimedia/wc1200/1037901676.jpg",
+		"name": "Грокаем алгоритмы. Иллюстрированное пособие для программистов и любопытствующих",
+		"author": "Адитья Бхаргава",
+		"genres": "Программирование",
+		"originalLang": "Английский",
+		"langs": "Русский",
+		"classes": "item adityaBxarqava coding rus year2"
+	},
+	{
 		"id": 138,
 		"img": "https://st2.prosto.im/cache/st2/1/2/5/2/1252339/1252339_230x.jpg",
 		"name": "Сирена",
