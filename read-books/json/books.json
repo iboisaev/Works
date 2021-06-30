@@ -1,5 +1,35 @@
 [
 	{
+		"id": 143,
+		"img": "https://s1.livelib.ru/boocover/1000122470/200/90fc/boocover.jpg",
+		"name": "Гроза",
+		"author": "Александр Островский",
+		"genres": "Пьеса",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item aleksandrOstrovsky piesa rus year2"
+	},
+	{
+		"id": 142,
+		"img": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtdUJ-9i7KbIMjsb-rb12lZsi7FHa_gEdl_B2qzPJceJnBrWSZ",
+		"name": "К вопросу о динамике детского характера",
+		"author": "Лев Выготский",
+		"genres": "Психология",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item levViqotsky pshycology rus year2"
+	},
+	{
+		"id": 141,
+		"img": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaO7bxejn52aEwUYD4kAcTa065NZsJRPH_gHFR00k8P_xM98Xj",
+		"name": "Алгоритмы для начинающих. Теория и практика для разработчика",
+		"author": "Панос Луридас",
+		"genres": "Программирование",
+		"originalLang": "Английский",
+		"langs": "Русский",
+		"classes": "item panosLuridas coding rus year2"
+	},
+	{
 		"id": 140,
 		"img": "https://bakubookcenter.az/ru/get-product-image?fileId=51394&year=2021&month=04",
 		"name": "Fatimə Fatimədir",
