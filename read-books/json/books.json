@@ -1,5 +1,25 @@
 [
 	{
+		"id": 147,
+		"img": "https://static-sl.insales.ru/images/products/1/4188/171069532/large_6b400216a001a06630b7f48ecd6d219c.jpg",
+		"name": "Tereza Raken",
+		"author": "Emil Zolya",
+		"genres": "Роман",
+		"originalLang": "Французский",
+		"langs": "Азербайджанский",
+		"classes": "item emilZola novel az year2"
+	},
+	{
+		"id": 146,
+		"img": "https://img3.labirint.ru/rc/b5c02ec0e18462608bc915622aa82186/220x340/books7/66711/cover.jpg?1467113108",
+		"name": "Ревизор",
+		"author": "Николай Гоголь",
+		"genres": "Комедия",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item gogol comedy rus year2"
+	},
+	{
 		"id": 145,
 		"img": "https://img4.labirint.ru/rc/a84acd4f2be7bd59025d0985d64f78f2/220x340/books11/109230/cover.jpg?1280394613",
 		"name": "На дне",
