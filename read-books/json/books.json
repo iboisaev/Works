@@ -1,5 +1,45 @@
 [
 	{
+		"id": 151,
+		"img": "https://static.insales-cdn.com/images/products/1/7262/393567326/119248113_1587663201395785_2182973662237436350_o.jpg",
+		"name": "İmam Əli (ə) İnsan ədalətinin səsi",
+		"author": "Corc Cordaq",
+		"genres": "Роман",
+		"originalLang": "Arabic",
+		"langs": "Азербайджанский",
+		"classes": "item CorcCordaq novel az year3"
+	},
+	{
+		"id": 150,
+		"img": "https://img3.labirint.ru/rc/c708a4085b044506457390a4c4db6e9f/220x340/books49/482353/cover.jpg?1612679174",
+		"name": "Преступление и наказание",
+		"author": "Ф. М. Достоевский",
+		"genres": "Роман",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item Достоевский novel rus year3"
+	},
+	{
+		"id": 149,
+		"img": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1373052459l/18164005.jpg",
+		"name": "Yol Ayrıcında Azıb Qalanlar",
+		"author": "Varis Yolçuyev",
+		"genres": "Роман",
+		"originalLang": "Азербайджанский",
+		"langs": "Азербайджанский",
+		"classes": "item VarisYolçuyev novel az year2"
+	},
+	{
+		"id": 148,
+		"img": "https://www.mann-ivanov-ferber.ru/assets/images/covers/35/11035/1.00x-thumb.png",
+		"name": "Литературный мастер-класс",
+		"author": "Юрген Вольф",
+		"genres": "Роман",
+		"originalLang": "Русский",
+		"langs": "Русский",
+		"classes": "item ЮргенВольф novel rus year2"
+	},
+	{
 		"id": 147,
 		"img": "https://static-sl.insales.ru/images/products/1/4188/171069532/large_6b400216a001a06630b7f48ecd6d219c.jpg",
 		"name": "Tereza Raken",
