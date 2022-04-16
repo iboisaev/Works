@@ -7,7 +7,7 @@
 		"genres": "Роман",
 		"originalLang": "Arabic",
 		"langs": "Азербайджанский",
-		"classes": "item CorcCordaq novel az year3"
+		"classes": "item xxx novel az year3"
 	},
 	{
 		"id": 150,
@@ -17,7 +17,7 @@
 		"genres": "Роман",
 		"originalLang": "Русский",
 		"langs": "Русский",
-		"classes": "item Достоевский novel rus year3"
+		"classes": "item xxx novel rus year3"
 	},
 	{
 		"id": 149,
@@ -27,7 +27,7 @@
 		"genres": "Роман",
 		"originalLang": "Азербайджанский",
 		"langs": "Азербайджанский",
-		"classes": "item VarisYolçuyev novel az year2"
+		"classes": "item xxx novel az year2"
 	},
 	{
 		"id": 148,
@@ -37,7 +37,7 @@
 		"genres": "Роман",
 		"originalLang": "Русский",
 		"langs": "Русский",
-		"classes": "item ЮргенВольф novel rus year2"
+		"classes": "item xxx novel rus year2"
 	},
 	{
 		"id": 147,
